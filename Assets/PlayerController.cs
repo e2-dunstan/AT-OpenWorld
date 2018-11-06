@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
+    public GameObject cam;
 
     private void Start()
     {
@@ -17,8 +18,10 @@ public class PlayerController : MonoBehaviour
 
         Vector3 newPos = transform.position + dirVector * Time.deltaTime;
 
-        GetComponent<Rigidbody>().MovePosition(newPos);
+        rb.MovePosition(newPos);
 
         transform.LookAt(new Vector3(newPos.x, transform.position.y, newPos.z));
+        cam.transform.position = transform.position;
+        //Camera.main.gameObject.transform.LookAt(transform.position);
     }
 }
