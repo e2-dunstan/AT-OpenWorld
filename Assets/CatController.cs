@@ -9,6 +9,8 @@ public class CatController : MonoBehaviour
     private float moveSpeed = 0;
     private bool damping = false;
 
+    private bool jumping = false;
+
 	void Start ()
     {
         anim = GetComponent<Animator>();
@@ -18,6 +20,7 @@ public class CatController : MonoBehaviour
     {
         Movement();
         Rotation();
+        Jump();
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -53,7 +56,7 @@ public class CatController : MonoBehaviour
         anim.SetFloat("speed", moveSpeed);
     }
 
-    void Rotation()
+    private void Rotation()
     {
         float horizontal = Input.GetAxis("Horizontal");
 
@@ -63,5 +66,27 @@ public class CatController : MonoBehaviour
 
         transform.eulerAngles = new Vector3(transform.rotation.x, y, 
                                 transform.rotation.z);
+    }
+    private void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.applyRootMotion = false;
+            jumping = true;
+            GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (jumping)
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, 15f))
+            {
+                anim.applyRootMotion = true;
+                jumping = false;
+            }
+        }
     }
 }
