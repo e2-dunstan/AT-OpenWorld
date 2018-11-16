@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid : MonoBehaviour
+public class GridClass : MonoBehaviour
 {
+    public static GridClass grid;
+
     public bool renderGrid = true;
 
     public GameObject tilePrefab;
     public int tileSize = 1;
     public Vector2 gridDimensions;
     
-    private List<Vector2> coordinates;
+    private List<Vector2> coordinates = new List<Vector2>();
+    private List<SceneObject> objects = new List<SceneObject>();
 
-    private List<GameObject> terrainObjects;
-    private List<GameObject> buildings;
-    private List<GameObject> vegetation;
 
-    private void Start()
+    private void Awake()
     {
+        // -- CREATE THE GRID -- //
         for (int x = 0; x < gridDimensions.x; x++)
         {
             for (int y = 0; y < gridDimensions.y; y++)
@@ -32,13 +33,13 @@ public class Grid : MonoBehaviour
                 {
                     newTile.GetComponent<MeshRenderer>().enabled = false;
                 }
-
                 coordinates.Add(new Vector2(pos.x, pos.z));
             }
         }
 
         GetObjectsInLayers();
     }
+
 
     private void GetObjectsInLayers()
     {
@@ -48,21 +49,36 @@ public class Grid : MonoBehaviour
 
         GameObject[] allObjects = FindObjectsOfType(typeof(GameObject)) as GameObject[];
 
+        // -- FIND ALL OBJECTS IN THE SCENE -- //
         foreach(GameObject obj in allObjects)
         {
-            if (obj.layer == 9)
+            //Only be concerned with these layers, discard all other objects
+            if (obj.layer == 9 || obj.layer == 10 || obj.layer == 11)
             {
-                terrainObjects.Add(obj);
-            }
-            else if (obj.layer == 10)
-            {
-                buildings.Add(obj);
-            }
-            else if (obj.layer == 11)
-            {
-                vegetation.Add(obj);
+                Vector2 objPos = GetCoordinatesOfObject(obj);
+
+                if (objPos == Vector2.zero)
+                {
+                    Debug.Log("Object does not lie in the grid: " + obj.name);
+                }
+                //Add the object to the list of scene objects
+                else objects.Add(new SceneObject(obj, objPos, (SceneObject.Type)obj.layer));
             }
         }
+    }
+
+    public Vector2 GetCoordinatesOfObject(GameObject obj)
+    {
+        foreach (Vector2 coord in coordinates)
+        {
+            //Object is in this tile
+            if (obj.transform.position.x >= coord.x && obj.transform.position.z >= coord.y
+                && obj.transform.position.x < coord.x + tileSize && obj.transform.position.z < coord.y + tileSize)
+            {
+                return coord;
+            }
+        }
+        return Vector2.zero;
     }
 
 
