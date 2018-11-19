@@ -38,6 +38,7 @@ public class GridClass : MonoBehaviour
         }
 
         GetObjectsInLayers();
+        SaveObjects();
     }
 
 
@@ -81,7 +82,11 @@ public class GridClass : MonoBehaviour
         return Vector2.zero;
     }
 
-
+    public void SaveObjects()
+    {
+        ObjectContainer.oc.sceneObjects = objects;
+        ObjectContainer.oc.Save(Application.persistentDataPath + "sceneobjects.xml");
+    }
 
 
 
