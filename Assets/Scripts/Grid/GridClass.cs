@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class GridClass : MonoBehaviour
 {
     public static GridClass grid;
+
+    public Transform objectTransform;
+
+    private ObjectContainer objectContainer;
 
     public bool renderGrid = true;
 
@@ -12,7 +17,8 @@ public class GridClass : MonoBehaviour
     public int tileSize = 1;
     public Vector2 gridDimensions;
     
-    private List<Vector2> coordinates = new List<Vector2>();
+    [HideInInspector]
+    public List<Vector2> coordinates = new List<Vector2>();
     private List<SceneObject> objects = new List<SceneObject>();
 
 
@@ -28,6 +34,7 @@ public class GridClass : MonoBehaviour
                                           transform.position.z + (y * tileSize));
                 GameObject newTile = Instantiate(tilePrefab, pos, Quaternion.identity, transform);
                 newTile.transform.localScale = new Vector3(tileSize / 10, 1, tileSize / 10);
+                newTile.name = newTile.transform.position.ToString();
 
                 if (!renderGrid)
                 {
@@ -57,15 +64,43 @@ public class GridClass : MonoBehaviour
             if (obj.layer == 9 || obj.layer == 10 || obj.layer == 11)
             {
                 Vector2 objPos = GetCoordinatesOfObject(obj);
+                
+                string path = GetFilePath(obj);
 
-                if (objPos == Vector2.zero)
+                if (objPos == Vector2.zero || path == "")
                 {
-                    Debug.Log("Object does not lie in the grid: " + obj.name);
+                    //Debug.Log("Object does not lie in the grid: " + obj.name);
                 }
-                //Add the object to the list of scene objects
-                else objects.Add(new SceneObject(obj, objPos, (SceneObject.Type)obj.layer));
+                else
+                {
+                    Transform objTrans = obj.transform;
+                    SceneObject newObject = new SceneObject();
+                    newObject.SetVariables(obj.name, path, 
+                        objTrans.position, objTrans.eulerAngles, objTrans.localScale,
+                        objPos, (SceneObject.Type)obj.layer);
+                    objects.Add(newObject);
+
+                    Destroy(obj);
+                }
             }
         }
+    }
+
+    private string GetFilePath(GameObject _obj)
+    {
+        Object parentObject = PrefabUtility.GetCorrespondingObjectFromSource(_obj);
+        string path = AssetDatabase.GetAssetPath(parentObject);
+
+        string resourcePath = "Assets/Resources/";
+        if (path.Contains(resourcePath))
+        {
+            path = path.Replace(resourcePath, "");
+        }
+
+        string[] splitString = path.Split('.');
+        path = splitString[0];
+
+        return path;
     }
 
     public Vector2 GetCoordinatesOfObject(GameObject obj)
@@ -73,8 +108,10 @@ public class GridClass : MonoBehaviour
         foreach (Vector2 coord in coordinates)
         {
             //Object is in this tile
-            if (obj.transform.position.x >= coord.x && obj.transform.position.z >= coord.y
-                && obj.transform.position.x < coord.x + tileSize && obj.transform.position.z < coord.y + tileSize)
+            if (obj.transform.position.x >= coord.x 
+                && obj.transform.position.z >= coord.y
+                && obj.transform.position.x < (coord.x + tileSize) 
+                && obj.transform.position.z < (coord.y + tileSize))
             {
                 return coord;
             }
@@ -84,10 +121,30 @@ public class GridClass : MonoBehaviour
 
     public void SaveObjects()
     {
-        ObjectContainer.oc.sceneObjects = objects;
-        ObjectContainer.oc.Save(Application.persistentDataPath + "sceneobjects.xml");
+        objectContainer = new ObjectContainer();
+        objectContainer.sceneObjects = objects;
+        objectContainer.Save("Assets/Resources/sceneobjects.xml");
     }
 
+    public IEnumerator ToggleObjectsAtTile(Vector2 coord, bool enable)
+    {
+        ObjectContainer objContainer = ObjectContainer.Load("Assets/Resources/sceneobjects.xml");
+
+        foreach(SceneObject obj in objContainer.sceneObjects)
+        {
+            if (obj.coordinate == coord && enable)
+            {
+                GameObject newObject = Instantiate(Resources.Load<GameObject>(obj.path), objectTransform);
+                newObject.transform.position = obj.position;
+                newObject.transform.eulerAngles = obj.rotation;
+                newObject.transform.localScale = obj.scale;
+                newObject.layer = (int)obj.type;
+                //obj.gameObject.SetActive(enable);
+            }
+
+            yield return null;
+        }
+    }
 
 
 

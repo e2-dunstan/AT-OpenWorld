@@ -7,11 +7,9 @@ using System.IO;
 [XmlRoot("ObjectCollection")]
 public class ObjectContainer
 {
-    public static ObjectContainer oc;
-
     [XmlArray("Objects")]
     [XmlArrayItem("Object")]
-    public List<SceneObject> sceneObjects = new List<SceneObject>();
+    public List<SceneObject> sceneObjects;
 
     public static ObjectContainer Load(string path)
     {
@@ -34,7 +32,6 @@ public class ObjectContainer
         {
             serializer.Serialize(stream, this);
         }
-       
     }
 
 }
