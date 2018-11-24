@@ -18,18 +18,20 @@ public class SceneObject
     public Vector3 position;
     public Vector3 rotation;
     public Vector3 scale;
+    public Vector3 tilePosition;
     public Vector2 coordinate;
     public Type type;
     
     public void SetVariables(string _name, string _path, 
         Vector3 _position, Vector3 _rotation, Vector3 _scale, 
-        Vector2 _coordinate, Type _type)
+        Vector3 _tilePosition, Vector2 _coordinate, Type _type)
     {
         name = _name;
         path = _path;
         position = _position;
         rotation = _rotation;
         scale = _scale;
+        tilePosition = _tilePosition;
         coordinate = _coordinate;
         type = _type;
     }
