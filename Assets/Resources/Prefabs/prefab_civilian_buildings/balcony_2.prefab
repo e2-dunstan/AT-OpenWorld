@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33402224970248402}
   - component: {fileID: 23375163905248338}
   - component: {fileID: 64364163491758816}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: balcony_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

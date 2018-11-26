@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33185643593285994}
   - component: {fileID: 23428030588735796}
   - component: {fileID: 64198905407036626}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: civilian_house_31_f
   m_TagString: Untagged
   m_Icon: {fileID: 0}

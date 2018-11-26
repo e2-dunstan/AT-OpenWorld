@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33904589037249716}
   - component: {fileID: 23325105677036846}
   - component: {fileID: 64963122919587956}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: standard_rooftop_window
   m_TagString: Untagged
   m_Icon: {fileID: 0}

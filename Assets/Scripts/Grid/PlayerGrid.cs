@@ -18,7 +18,7 @@ public class PlayerGrid : MonoBehaviour
     {
         tiles = grid.tiles;
         currentTile = GetCoordinate(gameObject);
-        surroundingTiles = new Vector2[8];
+        surroundingTiles = new Vector2[9];
         GetSurroundingTiles(currentTile);
         ToggleObjects();
 	}
@@ -32,12 +32,12 @@ public class PlayerGrid : MonoBehaviour
             && coroutineFinished)
         {
             currentTile = coord;
-            GetSurroundingTiles(currentTile);
+            StartCoroutine(GetSurroundingTiles(currentTile));
             ToggleObjects();
         }
     }
 
-    private void GetSurroundingTiles(Vector2 currentCoord)
+    IEnumerator GetSurroundingTiles(Vector2 currentCoord)
     {
         if (disabledTiles.Count > 0)
         {
@@ -58,28 +58,20 @@ public class PlayerGrid : MonoBehaviour
         surroundingTiles[5] = new Vector2(currentCoord.x - 1, currentCoord.y);
         surroundingTiles[6] = new Vector2(currentCoord.x - 1, currentCoord.y + 1);
         surroundingTiles[7] = new Vector2(currentCoord.x, currentCoord.y + 1);
-
-        int numberRemoved = 0;
-        for (int i = 0; i < disabledTiles.Count; i++)
-        {
-            if (disabledTiles[i] == currentTile)
-            {
-                disabledTiles.RemoveAt(i);
-                numberRemoved++;
-            }
-            foreach(Vector2 tile in surroundingTiles)
-            {
-                if (disabledTiles[i] == tile)
-                {
-                    disabledTiles.RemoveAt(i);
-                    numberRemoved++;
-                }
-            }
-            if (numberRemoved == 9)
-            {
-                break;
-            }
-        }
+        //player tile
+        surroundingTiles[8] = new Vector2(currentCoord.x, currentCoord.y);
+        
+        disabledTiles.Remove(surroundingTiles[0]);
+        disabledTiles.Remove(surroundingTiles[1]);
+        disabledTiles.Remove(surroundingTiles[2]);
+        disabledTiles.Remove(surroundingTiles[3]);
+        disabledTiles.Remove(surroundingTiles[4]);
+        disabledTiles.Remove(surroundingTiles[5]);
+        disabledTiles.Remove(surroundingTiles[6]);
+        disabledTiles.Remove(surroundingTiles[7]);
+        disabledTiles.Remove(surroundingTiles[8]);
+        
+        yield return null;
     }
 
     private Vector2 GetCoordinate(GameObject obj)
@@ -99,16 +91,16 @@ public class PlayerGrid : MonoBehaviour
 
     private void ToggleObjects()
     {
-        Debug.Log("loading new tile: " + currentTile);
+        ObjectContainer objContainer = ObjectContainer.Load("Assets/Resources/sceneobjects.xml");
 
-        StartCoroutine(grid.ToggleObjectsAtTile(currentTile, true));
+        //StartCoroutine(grid.ToggleObjectsAtTile(currentTile, true, objContainer));
         foreach (Vector2 tile in surroundingTiles)
         {
-            StartCoroutine(grid.ToggleObjectsAtTile(tile, true));
+            StartCoroutine(grid.ToggleObjectsAtTile(tile, true, objContainer));
         }
         foreach (Vector2 tile in disabledTiles)
         {
-            StartCoroutine(grid.ToggleObjectsAtTile(tile, false));
+            StartCoroutine(grid.ToggleObjectsAtTile(tile, false, objContainer));
         }
     }
 }

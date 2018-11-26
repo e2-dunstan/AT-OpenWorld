@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33927346122886532}
   - component: {fileID: 23813314243979660}
   - component: {fileID: 64601509296266980}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: roof_building_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

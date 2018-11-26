@@ -13,6 +13,8 @@ public class GridGenerator : MonoBehaviour
     public int tileSize = 1;
     public Vector2 gridDimensions;
 
+    public bool showGrid = false;
+
     [HideInInspector]
     public List<Tile> tiles = new List<Tile>();
     private List<GameObject> allObjectsInScene = new List<GameObject>();
@@ -23,9 +25,12 @@ public class GridGenerator : MonoBehaviour
     {
         Generate();
 
-        foreach(Tile tile in tiles)
+        if (!showGrid)
         {
-            tile.tileObject.GetComponent<MeshRenderer>().enabled = false;
+            foreach (Tile tile in tiles)
+            {
+                tile.tileObject.GetComponent<MeshRenderer>().enabled = false;
+            }
         }
         foreach (GameObject gameObject in allObjectsInScene)
         {
@@ -109,8 +114,7 @@ public class GridGenerator : MonoBehaviour
                         t.buildings.Add(newObject);
                     else if (temp[i].layer == 11)
                         t.vegetation.Add(newObject);
-
-                    temp[i].transform.parent = newParent.transform;
+                    
                     //Don't loop with this object anymore
                     //Debug.Log("Removing item: " + temp[i].name);
                     //allObjectsInScene.Remove(temp[i]);
@@ -119,7 +123,6 @@ public class GridGenerator : MonoBehaviour
             //Discard object if it's not on any of the target layers
             else
             {
-                //Debug.Log("Removing item: " + temp[i].name);
                 allObjectsInScene.Remove(temp[i]);
             }
         }
@@ -159,9 +162,8 @@ public class GridGenerator : MonoBehaviour
         objectContainer.Save("Assets/Resources/sceneobjects.xml");
     }
 
-    public IEnumerator ToggleObjectsAtTile(Vector2 coord, bool enable)
+    public IEnumerator ToggleObjectsAtTile(Vector2 coord, bool enable, ObjectContainer objContainer)
     {
-        ObjectContainer objContainer = ObjectContainer.Load("Assets/Resources/sceneobjects.xml");
         Tile tile = new Tile();
 
         for (int i = 0; i < tiles.Count; i++)
@@ -169,6 +171,7 @@ public class GridGenerator : MonoBehaviour
             if (tiles[i].coordinate == coord)
             {
                 tile = tiles[i];
+                break;
             }
         }
 
@@ -186,20 +189,28 @@ public class GridGenerator : MonoBehaviour
                         newObject.transform.eulerAngles = obj.rotation;
                         newObject.transform.localScale = obj.scale;
                         newObject.layer = (int)obj.type;
-                        
+
                         tile.objects.Add(newObject);
                     }
-                    yield return null;
                 }
             }
         }
         else if (!enable)
         {
-            tile.loaded = false;
-            foreach (GameObject obj in tile.objects)
+            if (tile.loaded)
             {
-                Destroy(obj);
+                List<GameObject> temp = new List<GameObject>();
+                temp.InsertRange(0, tile.objects);
+                foreach (GameObject obj in tile.objects)
+                {
+                    Destroy(obj);
+                    temp.Remove(obj);
+                }
+                tile.objects = temp;
             }
+            tile.loaded = false;
         }
+        
+        yield return null;
     }
 }

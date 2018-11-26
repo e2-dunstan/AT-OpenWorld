@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33065222704422820}
   - component: {fileID: 23923185450618336}
   - component: {fileID: 64559286886630786}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: standard_wooden_roof_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
