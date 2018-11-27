@@ -150,7 +150,7 @@
       <name>walls_segment_06</name>
       <path />
       <position>
-        <x>-185.11</x>
+        <x>-185.109985</x>
         <y>0</y>
         <z>11.2099991</z>
       </position>
@@ -177,9 +177,9 @@
     </Object>
     <Object>
       <name>castle_wall_15m (4)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
-        <x>-170.041168</x>
+        <x>-170.041153</x>
         <y>0</y>
         <z>2.50997162</z>
       </position>
@@ -190,7 +190,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -206,9 +206,9 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
-        <x>-172.119629</x>
+        <x>-172.119614</x>
         <y>0</y>
         <z>3.7099762</z>
       </position>
@@ -235,9 +235,9 @@
     </Object>
     <Object>
       <name>castle_wall_15m (5)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
-        <x>-185.11</x>
+        <x>-185.109985</x>
         <y>0</y>
         <z>11.2099991</z>
       </position>
@@ -248,7 +248,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -554,11 +554,11 @@
     </Object>
     <Object>
       <name>castle_wall_15m (4)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>0</y>
-        <z>126.7</z>
+        <z>126.700005</z>
       </position>
       <rotation>
         <x>270</x>
@@ -567,7 +567,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -583,7 +583,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>0</y>
@@ -612,11 +612,11 @@
     </Object>
     <Object>
       <name>castle_wall_15m (6)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>0</y>
-        <z>109.299995</z>
+        <z>109.3</z>
       </position>
       <rotation>
         <x>270</x>
@@ -625,7 +625,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -641,11 +641,11 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>0</y>
-        <z>111.799995</z>
+        <z>111.8</z>
       </position>
       <rotation>
         <x>270</x>
@@ -672,7 +672,7 @@
       <name>walls_segment_05</name>
       <path />
       <position>
-        <x>-174.64</x>
+        <x>-174.639984</x>
         <y>0</y>
         <z>91.7</z>
       </position>
@@ -699,9 +699,9 @@
     </Object>
     <Object>
       <name>castle_wall_10m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
-        <x>-174.64</x>
+        <x>-174.639984</x>
         <y>0</y>
         <z>91.7</z>
       </position>
@@ -728,9 +728,9 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (3)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
-        <x>-184.56</x>
+        <x>-184.559982</x>
         <y>0</y>
         <z>91.7</z>
       </position>
@@ -757,9 +757,9 @@
     </Object>
     <Object>
       <name>castle_wall_15m (7)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
-        <x>-187.02</x>
+        <x>-187.019989</x>
         <y>0</y>
         <z>91.7</z>
       </position>
@@ -770,37 +770,8 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-250</x>
-        <y>10</y>
-        <z>50</z>
-      </tilePosition>
-      <coordinate>
-        <x>0</x>
-        <y>5</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_tower_rectangular</name>
-      <path>Prefabs/prefab_unique_buildings/castle_tower_rectangular</path>
-      <position>
-        <x>-174.633072</x>
-        <y>-4.87077856</y>
-        <z>111.68</z>
-      </position>
-      <rotation>
-        <x>0</x>
-        <y>0</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>0.4641796</x>
-        <y>0.5272137</y>
-        <z>0.606713235</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -1423,12 +1394,12 @@
       <type>building</type>
     </Object>
     <Object>
-      <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <name>castle_wall_15m (2)</name>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>0</y>
-        <z>171.6</z>
+        <z>186.6</z>
       </position>
       <rotation>
         <x>270</x>
@@ -1452,8 +1423,8 @@
       <type>building</type>
     </Object>
     <Object>
-      <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <name>castle_wall_incline_lower</name>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>0</y>
@@ -1461,7 +1432,7 @@
       </position>
       <rotation>
         <x>270</x>
-        <y>270.000153</y>
+        <y>89.9999542</y>
         <z>0</z>
       </rotation>
       <scale>
@@ -1481,37 +1452,8 @@
       <type>building</type>
     </Object>
     <Object>
-      <name>castle_wall_incline_lower</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_incline_lower</path>
-      <position>
-        <x>-211.290009</x>
-        <y>0</y>
-        <z>186.6</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>89.9999542</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-250</x>
-        <y>10</y>
-        <z>130</z>
-      </tilePosition>
-      <coordinate>
-        <x>0</x>
-        <y>6</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
       <name>castle_wall_5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_5m</path>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>-3</y>
@@ -1523,7 +1465,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.843734</x>
+        <x>1.0119592</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -1540,7 +1482,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_b</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_b</path>
+      <path />
       <position>
         <x>-209.900009</x>
         <y>-3</y>
@@ -1549,6 +1491,35 @@
       <rotation>
         <x>270</x>
         <y>299.999969</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.01253307</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-250</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>0</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m (3)</name>
+      <path />
+      <position>
+        <x>-211.290009</x>
+        <y>0</y>
+        <z>159.1</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>270.000153</y>
         <z>0</z>
       </rotation>
       <scale>
@@ -1568,12 +1539,12 @@
       <type>building</type>
     </Object>
     <Object>
-      <name>castle_wall_15m (3)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <name>castle_wall_15m (4)</name>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>0</y>
-        <z>169.1</z>
+        <z>173.1</z>
       </position>
       <rotation>
         <x>270</x>
@@ -1582,7 +1553,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -1627,7 +1598,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (5)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-211.290009</x>
         <y>0</y>
@@ -1640,7 +1611,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -2062,9 +2033,9 @@
     </Object>
     <Object>
       <name>castle_wall_5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_5m</path>
+      <path />
       <position>
-        <x>-186.76001</x>
+        <x>-186.760025</x>
         <y>-3</y>
         <z>234.055</z>
       </position>
@@ -2074,7 +2045,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.843734</x>
+        <x>1</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -2091,7 +2062,7 @@
     </Object>
     <Object>
       <name>castle_wall_incline_lower</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_incline_lower</path>
+      <path />
       <position>
         <x>-182.430008</x>
         <y>0</y>
@@ -2120,9 +2091,9 @@
     </Object>
     <Object>
       <name>castle_wall_corner_b</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_b</path>
+      <path />
       <position>
-        <x>-191.09</x>
+        <x>-191.090012</x>
         <y>-3</y>
         <z>231.555</z>
       </position>
@@ -2149,7 +2120,7 @@
     </Object>
     <Object>
       <name>castle_wall_10m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
         <x>-194.87001</x>
         <y>-3</y>
@@ -2178,7 +2149,7 @@
     </Object>
     <Object>
       <name>castle_wall_10m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
         <x>-204.94</x>
         <y>-3</y>
@@ -2352,7 +2323,7 @@
     </Object>
     <Object>
       <name>citadel_wall_incline</name>
-      <path>Prefabs/prefab_unique_buildings/citadel_wall_incline</path>
+      <path />
       <position>
         <x>-101.82</x>
         <y>0</y>
@@ -2381,7 +2352,7 @@
     </Object>
     <Object>
       <name>castle_wall_10m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
         <x>-93.79001</x>
         <y>0</y>
@@ -2394,7 +2365,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
+        <y>-1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -2410,7 +2381,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-92.59001</x>
         <y>0</y>
@@ -2423,7 +2394,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
+        <y>-1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -2584,44 +2555,15 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
-        <x>-122.31</x>
+        <x>-122.309982</x>
         <y>0</y>
         <z>-197.82</z>
       </position>
       <rotation>
         <x>270</x>
         <y>29.9999542</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-170</x>
-        <y>10</y>
-        <z>-270</z>
-      </tilePosition>
-      <coordinate>
-        <x>1</x>
-        <y>1</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
-      <position>
-        <x>-122.39</x>
-        <y>0</y>
-        <z>-197.78</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>210.000031</y>
         <z>0</z>
       </rotation>
       <scale>
@@ -2641,8 +2583,37 @@
       <type>building</type>
     </Object>
     <Object>
+      <name>castle_wall_15m (2)</name>
+      <path />
+      <position>
+        <x>-122.389984</x>
+        <y>0</y>
+        <z>-197.78</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>210.000031</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-170</x>
+        <y>10</y>
+        <z>-270</z>
+      </tilePosition>
+      <coordinate>
+        <x>1</x>
+        <y>1</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
       <name>citadel_wall_b</name>
-      <path>Prefabs/prefab_unique_buildings/citadel_wall_b</path>
+      <path />
       <position>
         <x>-101.82</x>
         <y>0</y>
@@ -2671,7 +2642,7 @@
     </Object>
     <Object>
       <name>citadel_wall_b (1)</name>
-      <path>Prefabs/prefab_unique_buildings/citadel_wall_b</path>
+      <path />
       <position>
         <x>-101.82</x>
         <y>0</y>
@@ -2905,7 +2876,7 @@
       <name>walls_segment_08</name>
       <path />
       <position>
-        <x>-141.79</x>
+        <x>-141.789978</x>
         <y>0</y>
         <z>-154.16</z>
       </position>
@@ -2932,9 +2903,9 @@
     </Object>
     <Object>
       <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
-        <x>-137.44</x>
+        <x>-137.439987</x>
         <y>0</y>
         <z>-189.09</z>
       </position>
@@ -2945,7 +2916,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -2961,9 +2932,9 @@
     </Object>
     <Object>
       <name>castle_wall_10m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
-        <x>-141.79</x>
+        <x>-141.789978</x>
         <y>0</y>
         <z>-171.57</z>
       </position>
@@ -2990,9 +2961,9 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
-        <x>-141.79</x>
+        <x>-141.789978</x>
         <y>0</y>
         <z>-169.07</z>
       </position>
@@ -3019,9 +2990,9 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
-        <x>-141.79</x>
+        <x>-141.789978</x>
         <y>0</y>
         <z>-181.57</z>
       </position>
@@ -3031,8 +3002,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <x>1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -3048,9 +3019,9 @@
     </Object>
     <Object>
       <name>castle_wall_15m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
-        <x>-141.79</x>
+        <x>-141.789978</x>
         <y>0</y>
         <z>-154.16</z>
       </position>
@@ -3061,7 +3032,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -3077,9 +3048,9 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
-        <x>-140.62</x>
+        <x>-140.61998</x>
         <y>0</y>
         <z>-185.91</z>
       </position>
@@ -3089,8 +3060,95 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-170</x>
+        <y>10</y>
+        <z>-190</z>
+      </tilePosition>
+      <coordinate>
+        <x>1</x>
+        <y>2</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m (3)</name>
+      <path />
+      <position>
+        <x>-141.789978</x>
+        <y>0</y>
+        <z>-140.16</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>270.000122</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-170</x>
+        <y>10</y>
+        <z>-190</z>
+      </tilePosition>
+      <coordinate>
+        <x>1</x>
+        <y>2</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m (4)</name>
+      <path />
+      <position>
+        <x>-141.789978</x>
+        <y>0</y>
+        <z>-126.16</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>270.000122</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-170</x>
+        <y>10</y>
+        <z>-190</z>
+      </tilePosition>
+      <coordinate>
+        <x>1</x>
+        <y>2</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m (5)</name>
+      <path />
+      <position>
+        <x>-141.789978</x>
+        <y>0</y>
+        <z>-118.16</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>270.000122</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -3686,7 +3744,7 @@
     </Object>
     <Object>
       <name>castle_wall_5m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_5m</path>
+      <path />
       <position>
         <x>-141.78</x>
         <y>0</y>
@@ -3715,7 +3773,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-141.78</x>
         <y>0</y>
@@ -3744,7 +3802,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-141.78</x>
         <y>0</y>
@@ -3757,7 +3815,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -3773,7 +3831,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-141.78</x>
         <y>0</y>
@@ -3782,6 +3840,35 @@
       <rotation>
         <x>270</x>
         <y>270.000153</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-170</x>
+        <y>10</y>
+        <z>-110</z>
+      </tilePosition>
+      <coordinate>
+        <x>1</x>
+        <y>3</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m (2)</name>
+      <path />
+      <position>
+        <x>-141.73</x>
+        <y>0</y>
+        <z>-64.08</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>266.76</y>
         <z>0</z>
       </rotation>
       <scale>
@@ -4208,7 +4295,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-141.78</x>
         <y>0</y>
@@ -4237,7 +4324,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-141.78</x>
         <y>0</y>
@@ -4250,7 +4337,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -4266,7 +4353,7 @@
     </Object>
     <Object>
       <name>castle_wall_10m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
         <x>-141.78</x>
         <y>0</y>
@@ -4295,9 +4382,9 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
-        <x>-136.27</x>
+        <x>-136.269989</x>
         <y>0</y>
         <z>-16.1900024</z>
       </position>
@@ -4307,8 +4394,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <x>1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -4324,7 +4411,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_b</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_b</path>
+      <path />
       <position>
         <x>-137.42</x>
         <y>0</y>
@@ -4353,9 +4440,9 @@
     </Object>
     <Object>
       <name>castle_wall_5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_5m</path>
+      <path />
       <position>
-        <x>-141.21</x>
+        <x>-141.209991</x>
         <y>0</y>
         <z>-8.080002</z>
       </position>
@@ -4365,7 +4452,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.843734</x>
+        <x>1</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -5022,7 +5109,7 @@
       <name>walls_segment_02</name>
       <path />
       <position>
-        <x>-169.4735</x>
+        <x>-169.473511</x>
         <y>0</y>
         <z>103.354996</z>
       </position>
@@ -5049,9 +5136,9 @@
     </Object>
     <Object>
       <name>civilian_house_19 (1)</name>
-      <path>Prefabs/prefab_civilian_buildings/civilian_house_19</path>
+      <path />
       <position>
-        <x>-136.32</x>
+        <x>-136.319992</x>
         <y>0</y>
         <z>87.47</z>
       </position>
@@ -5061,9 +5148,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.12551725</x>
-        <y>1.12551677</y>
-        <z>1</z>
+        <x>1.3342514</x>
+        <y>-1.334251</y>
+        <z>1.18545723</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -5078,9 +5165,9 @@
     </Object>
     <Object>
       <name>street_gate</name>
-      <path>Prefabs/prefab_unique_buildings/street_gate</path>
+      <path />
       <position>
-        <x>-151.89</x>
+        <x>-151.889984</x>
         <y>0</y>
         <z>87.19</z>
       </position>
@@ -5092,6 +5179,35 @@
       <scale>
         <x>0.839745462</x>
         <y>1.04231334</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-170</x>
+        <y>10</y>
+        <z>50</z>
+      </tilePosition>
+      <coordinate>
+        <x>1</x>
+        <y>5</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_tower_rectangular (3)</name>
+      <path />
+      <position>
+        <x>-164.689987</x>
+        <y>0</y>
+        <z>89.3999939</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.4410888</x>
+        <y>1.268792</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -7659,7 +7775,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-99.86</x>
         <y>0</y>
@@ -7688,7 +7804,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-102.29</x>
         <y>0</y>
@@ -7700,8 +7816,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
-        <y>-1</y>
+        <x>1.0071876</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -7717,7 +7833,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-148.85</x>
         <y>0</y>
@@ -7746,7 +7862,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-133.91</x>
         <y>0</y>
@@ -7755,35 +7871,6 @@
       <rotation>
         <x>270</x>
         <y>-2.56132125E-06</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>-1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-170</x>
-        <y>10</y>
-        <z>210</z>
-      </tilePosition>
-      <coordinate>
-        <x>1</x>
-        <y>7</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_wall_corner_b (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_b</path>
-      <position>
-        <x>-128.790009</x>
-        <y>0</y>
-        <z>243.78</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>330.000031</y>
         <z>0</z>
       </rotation>
       <scale>
@@ -7803,8 +7890,37 @@
       <type>building</type>
     </Object>
     <Object>
+      <name>castle_wall_corner_b (1)</name>
+      <path />
+      <position>
+        <x>-128.790009</x>
+        <y>0</y>
+        <z>243.78</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>330.000031</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>-1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-170</x>
+        <y>10</y>
+        <z>210</z>
+      </tilePosition>
+      <coordinate>
+        <x>1</x>
+        <y>7</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
       <name>castle_wall_corner_a (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
         <x>-125.600006</x>
         <y>0</y>
@@ -7816,7 +7932,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
+        <x>1</x>
         <y>-1</y>
         <z>1</z>
       </scale>
@@ -7833,7 +7949,7 @@
     </Object>
     <Object>
       <name>castle_wall_10m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
         <x>-125.369995</x>
         <y>0</y>
@@ -7862,11 +7978,11 @@
     </Object>
     <Object>
       <name>castle_wall_corner_b</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_b</path>
+      <path />
       <position>
-        <x>-125.45</x>
+        <x>-125.520004</x>
         <y>0</y>
-        <z>258.34</z>
+        <z>258.32</z>
       </position>
       <rotation>
         <x>270</x>
@@ -7875,35 +7991,6 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-170</x>
-        <y>10</y>
-        <z>210</z>
-      </tilePosition>
-      <coordinate>
-        <x>1</x>
-        <y>7</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
-      <position>
-        <x>-117.25</x>
-        <y>0</y>
-        <z>263.28</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>345.000031</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>-1</x>
         <y>-1</y>
         <z>1</z>
       </scale>
@@ -7919,8 +8006,37 @@
       <type>building</type>
     </Object>
     <Object>
+      <name>castle_wall_corner_a</name>
+      <path />
+      <position>
+        <x>-117.25</x>
+        <y>0</y>
+        <z>263.28</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>345.000031</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.02767718</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-170</x>
+        <y>10</y>
+        <z>210</z>
+      </tilePosition>
+      <coordinate>
+        <x>1</x>
+        <y>7</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
       <name>castle_wall_5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_5m</path>
+      <path />
       <position>
         <x>-151.290009</x>
         <y>0</y>
@@ -7932,7 +8048,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.843734</x>
+        <x>1</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -7949,9 +8065,9 @@
     </Object>
     <Object>
       <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
-        <x>-169.4735</x>
+        <x>-169.473511</x>
         <y>0</y>
         <z>244.055</z>
       </position>
@@ -7962,7 +8078,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -8616,7 +8732,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-61.8999863</x>
         <y>0</y>
@@ -8629,7 +8745,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
+        <y>-1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -8645,7 +8761,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-44.3999863</x>
         <y>0</y>
@@ -8654,6 +8770,35 @@
       <rotation>
         <x>270</x>
         <y>180.000275</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>-1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>-350</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>0</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m (2)</name>
+      <path />
+      <position>
+        <x>-44.3999939</x>
+        <y>0</y>
+        <z>-320.199951</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>-3.863738E-05</y>
         <z>0</z>
       </rotation>
       <scale>
@@ -8673,37 +8818,8 @@
       <type>building</type>
     </Object>
     <Object>
-      <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
-      <position>
-        <x>-44.3999939</x>
-        <y>0</y>
-        <z>-320.199951</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>-3.863738E-05</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>-1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>-350</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>0</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
       <name>castle_wall_15m (3)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-26.8999825</x>
         <y>0</y>
@@ -8716,7 +8832,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -8732,7 +8848,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-61.80001</x>
         <y>0</y>
@@ -8745,7 +8861,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -8761,7 +8877,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-85.09001</x>
         <y>0</y>
@@ -8790,7 +8906,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
         <x>-85.09001</x>
         <y>0</y>
@@ -8802,8 +8918,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <x>1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -8819,7 +8935,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_b</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_b</path>
+      <path />
       <position>
         <x>-81.91002</x>
         <y>0</y>
@@ -9111,9 +9227,9 @@
       <name>wall_H10m_L50m</name>
       <path>Prefabs/prefab_unique_buildings/wall_H10m_L50m</path>
       <position>
-        <x>-68.2299957</x>
+        <x>-65.2</x>
         <y>0</y>
-        <z>-206.140015</z>
+        <z>-206.110016</z>
       </position>
       <rotation>
         <x>270</x>
@@ -9124,64 +9240,6 @@
         <x>1.90422213</x>
         <y>1.49759936</y>
         <z>1.74992883</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>-270</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>1</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>tent_b (3)</name>
-      <path>Prefabs/prefab_props/tent_b</path>
-      <position>
-        <x>-66.55739</x>
-        <y>3.361702E-05</y>
-        <z>-221.596527</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>300.0001</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1.14064515</x>
-        <y>1.34652674</y>
-        <z>1.14064491</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>-270</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>1</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>tent_a (4)</name>
-      <path>Prefabs/prefab_props/tent_a</path>
-      <position>
-        <x>-89</x>
-        <y>1.835823E-05</y>
-        <z>-257.6</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>150.0002</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1.71177113</x>
-        <y>1.7117722</y>
-        <z>1.71177268</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -9253,35 +9311,6 @@
       <type>building</type>
     </Object>
     <Object>
-      <name>citadel_bridge (2)</name>
-      <path>Prefabs/prefab_unique_buildings/citadel_bridge</path>
-      <position>
-        <x>-31.39</x>
-        <y>0</y>
-        <z>-237.34</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>353.534271</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>0.5564504</x>
-        <y>0.8188941</y>
-        <z>0.71686244</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>-270</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>1</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
       <name>fountain_b</name>
       <path />
       <position>
@@ -9327,6 +9356,93 @@
         <x>1</x>
         <y>1</y>
         <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>-270</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>1</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>tent_b (3)</name>
+      <path>Prefabs/prefab_props/tent_b</path>
+      <position>
+        <x>-66.55739</x>
+        <y>3.361702E-05</y>
+        <z>-221.596527</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>300.0001</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.14064515</x>
+        <y>1.34652674</y>
+        <z>1.14064491</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>-270</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>1</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>tent_a (4)</name>
+      <path>Prefabs/prefab_props/tent_a</path>
+      <position>
+        <x>-89</x>
+        <y>1.835823E-05</y>
+        <z>-257.6</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>150.0002</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.71177113</x>
+        <y>1.7117722</y>
+        <z>1.71177268</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>-270</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>1</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>citadel_bridge (2)</name>
+      <path>Prefabs/prefab_unique_buildings/citadel_bridge</path>
+      <position>
+        <x>-31.39</x>
+        <y>0</y>
+        <z>-237.34</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>353.534271</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>0.5564504</x>
+        <y>0.8188941</y>
+        <z>0.71686244</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -12153,35 +12269,6 @@
       <type>building</type>
     </Object>
     <Object>
-      <name>civilian_house_31_f (1)</name>
-      <path>Prefabs/prefab_civilian_buildings/civilian_house_31_f</path>
-      <position>
-        <x>-16.1199989</x>
-        <y>0</y>
-        <z>13.57</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>315.000031</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>-30</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>4</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
       <name>civilian_house_22 (2)</name>
       <path>Prefabs/prefab_civilian_buildings/civilian_house_22</path>
       <position>
@@ -12285,6 +12372,35 @@
         <x>1.01510954</x>
         <y>1.01510942</y>
         <z>1.01510942</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>-30</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>4</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>civilian_house_31_f (1)</name>
+      <path>Prefabs/prefab_civilian_buildings/civilian_house_31_f</path>
+      <position>
+        <x>-16.1199989</x>
+        <y>0</y>
+        <z>13.57</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>315.000031</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -14273,38 +14389,9 @@
       <name>castle_wall_15m</name>
       <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
       <position>
-        <x>-59.86</x>
+        <x>-58.86</x>
         <y>0</y>
-        <z>263.3</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>-2.56132125E-06</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>-1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>210</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>7</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
-      <position>
-        <x>-42.7399979</x>
-        <y>0</y>
-        <z>263.3</z>
+        <z>257.789978</z>
       </position>
       <rotation>
         <x>270</x>
@@ -14357,109 +14444,22 @@
       <type>building</type>
     </Object>
     <Object>
-      <name>castle_door_1</name>
-      <path>Prefabs/prefab_unique_buildings/castle_door_1</path>
+      <name>castle_wall_15m (2)</name>
+      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
       <position>
-        <x>-74.78</x>
-        <y>19.4300041</y>
-        <z>260.223</z>
+        <x>-70.86</x>
+        <y>0</y>
+        <z>257.789978</z>
       </position>
       <rotation>
         <x>270</x>
-        <y>179.999924</y>
+        <y>-2.56132125E-06</y>
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.13579845</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>210</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>7</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_door_1 (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_door_1</path>
-      <position>
-        <x>-85.069</x>
-        <y>19.4300041</y>
-        <z>260.223</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>8.934897E-05</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>-1.13579845</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>210</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>7</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_door_1 (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_door_1</path>
-      <position>
-        <x>-17.5309944</x>
-        <y>19.4300041</y>
-        <z>260.223</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>-8.934897E-05</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>-1.13579845</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>-90</x>
-        <y>10</y>
-        <z>210</z>
-      </tilePosition>
-      <coordinate>
-        <x>2</x>
-        <y>7</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_door_1</name>
-      <path>Prefabs/prefab_unique_buildings/castle_door_1</path>
-      <position>
-        <x>-27.82</x>
-        <y>19.4300041</y>
-        <z>260.223</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>180.000076</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>-1.13579845</x>
-        <y>1</y>
-        <z>1</z>
+        <x>1</x>
+        <y>-1.00000048</y>
+        <z>1.00000048</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -14474,7 +14474,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-84.86</x>
         <y>0</y>
@@ -14487,7 +14487,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -14518,6 +14518,64 @@
         <x>1</x>
         <y>1</y>
         <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>210</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>7</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m (3)</name>
+      <path />
+      <position>
+        <x>-16.7800026</x>
+        <y>0</y>
+        <z>262.9816</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>-2.56132125E-06</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1.00000048</y>
+        <z>1.00000048</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>210</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>7</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m (4)</name>
+      <path />
+      <position>
+        <x>-30.7800026</x>
+        <y>0</y>
+        <z>262.9816</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>-2.56132125E-06</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1.00000048</y>
+        <z>1.00000048</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -14996,7 +15054,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_b</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_b</path>
+      <path />
       <position>
         <x>53.8900032</x>
         <y>0</y>
@@ -15025,7 +15083,7 @@
     </Object>
     <Object>
       <name>castle_wall_10m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
         <x>53.8900032</x>
         <y>0</y>
@@ -15038,7 +15096,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
+        <y>-1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -15317,7 +15375,7 @@
       <name>citadel_wall_a (1)</name>
       <path>Prefabs/prefab_unique_buildings/citadel_wall_a</path>
       <position>
-        <x>44.7100029</x>
+        <x>57.68999</x>
         <y>0</y>
         <z>-205.01001</z>
       </position>
@@ -15359,6 +15417,35 @@
         <x>1</x>
         <y>1</y>
         <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-10</x>
+        <y>10</y>
+        <z>-270</z>
+      </tilePosition>
+      <coordinate>
+        <x>3</x>
+        <y>1</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>citadel_wall_a (2)</name>
+      <path>Prefabs/prefab_unique_buildings/citadel_wall_a</path>
+      <position>
+        <x>33.68999</x>
+        <y>0</y>
+        <z>-205.01001</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>180</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>-1</x>
+        <y>1.00000048</y>
+        <z>1.00000048</z>
       </scale>
       <tilePosition>
         <x>-10</x>
@@ -22246,7 +22333,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>-2.78000259</x>
         <y>0</y>
@@ -22258,7 +22345,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
+        <x>-1</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -22275,7 +22362,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>-2.78000259</x>
         <y>0</y>
@@ -22288,7 +22375,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -22304,7 +22391,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>14.7199974</x>
         <y>0</y>
@@ -22317,7 +22404,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -22333,7 +22420,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>32.2</x>
         <y>0</y>
@@ -22346,7 +22433,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -22362,7 +22449,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>14.7000008</x>
         <y>0</y>
@@ -22374,7 +22461,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
+        <x>-1.02912486</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -22391,7 +22478,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
         <x>59.37</x>
         <y>-5</y>
@@ -22403,7 +22490,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
+        <x>1</x>
         <y>-1</y>
         <z>1</z>
       </scale>
@@ -22420,7 +22507,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>63.2700081</x>
         <y>-5</y>
@@ -22432,7 +22519,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
+        <x>1.0249958</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -22449,7 +22536,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (2)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>63.3000069</x>
         <y>-5</y>
@@ -22461,8 +22548,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
-        <y>-1</y>
+        <x>-1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -22478,7 +22565,7 @@
     </Object>
     <Object>
       <name>castle_wall_2,5m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>54.59</x>
         <y>-5</y>
@@ -23347,64 +23434,6 @@
       <type>terrain</type>
     </Object>
     <Object>
-      <name>walls_segment_11</name>
-      <path />
-      <position>
-        <x>71.05</x>
-        <y>0</y>
-        <z>-316.49</z>
-      </position>
-      <rotation>
-        <x>0</x>
-        <y>0</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>70</x>
-        <y>10</y>
-        <z>-350</z>
-      </tilePosition>
-      <coordinate>
-        <x>4</x>
-        <y>0</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_wall_15m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
-      <position>
-        <x>71.05</x>
-        <y>0</y>
-        <z>-316.49</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>330.000061</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>-1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>70</x>
-        <y>10</y>
-        <z>-350</z>
-      </tilePosition>
-      <coordinate>
-        <x>4</x>
-        <y>0</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
       <name>walls_segment_12</name>
       <path />
       <position>
@@ -23435,7 +23464,7 @@
     </Object>
     <Object>
       <name>castle_wall_5m_h21m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_5m_h21m</path>
+      <path />
       <position>
         <x>85.81999</x>
         <y>0</y>
@@ -23464,7 +23493,7 @@
     </Object>
     <Object>
       <name>castle_wall_incline_uper</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_incline_uper</path>
+      <path />
       <position>
         <x>85.81999</x>
         <y>0</y>
@@ -23493,7 +23522,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
         <x>85.81999</x>
         <y>0</y>
@@ -23505,8 +23534,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <x>1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -23522,7 +23551,7 @@
     </Object>
     <Object>
       <name>castle_wall_5m_h21m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_5m_h21m</path>
+      <path />
       <position>
         <x>85.81999</x>
         <y>0</y>
@@ -23551,7 +23580,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
         <x>91.7424</x>
         <y>0</y>
@@ -23563,8 +23592,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <x>1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -23580,7 +23609,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>91.7649841</x>
         <y>0</y>
@@ -23609,7 +23638,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
         <x>92.90634</x>
         <y>0</y>
@@ -23621,8 +23650,66 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>-350</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>0</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>walls_segment_11</name>
+      <path />
+      <position>
+        <x>71.05</x>
+        <y>0</y>
+        <z>-316.49</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>-350</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>0</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>castle_wall_15m</name>
+      <path />
+      <position>
+        <x>71.05</x>
+        <y>0</y>
+        <z>-316.49</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>330.000061</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.13607633</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -23756,7 +23843,7 @@
       <name>citadel_wall_b</name>
       <path>Prefabs/prefab_unique_buildings/citadel_wall_b</path>
       <position>
-        <x>70.21001</x>
+        <x>82.2</x>
         <y>0</y>
         <z>-205.01001</z>
       </position>
@@ -23795,9 +23882,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.20133221</x>
-        <y>1.55974019</y>
-        <z>1.201332</z>
+        <x>1.20133</x>
+        <y>1.55974</y>
+        <z>1.20133</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -23812,9 +23899,9 @@
     </Object>
     <Object>
       <name>wall_H10m_L15m</name>
-      <path>Prefabs/prefab_unique_buildings/wall_H10m_L15m</path>
+      <path />
       <position>
-        <x>137.864334</x>
+        <x>137.8643</x>
         <y>0</y>
         <z>-191.366272</z>
       </position>
@@ -23826,7 +23913,7 @@
       <scale>
         <x>1</x>
         <y>1</y>
-        <z>1.365543</z>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -23841,9 +23928,9 @@
     </Object>
     <Object>
       <name>wall_H10m_corner</name>
-      <path>Prefabs/prefab_unique_buildings/wall_H10m_corner</path>
+      <path />
       <position>
-        <x>136.344131</x>
+        <x>136.344086</x>
         <y>0</y>
         <z>-195.579376</z>
       </position>
@@ -23855,7 +23942,7 @@
       <scale>
         <x>1</x>
         <y>1</y>
-        <z>1.365543</z>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -23870,7 +23957,7 @@
     </Object>
     <Object>
       <name>wall_H10m_L50m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/wall_H10m_L50m</path>
+      <path />
       <position>
         <x>114.399963</x>
         <y>0</y>
@@ -23882,9 +23969,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.90422213</x>
-        <y>1.49759936</y>
-        <z>1.74992883</z>
+        <x>1</x>
+        <y>0.73022294</y>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -25072,7 +25159,7 @@
       </rotation>
       <scale>
         <x>1.37958884</x>
-        <y>1</y>
+        <y>0.615594566</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -27035,12 +27122,12 @@
       <position>
         <x>81.39</x>
         <y>4.619997</y>
-        <z>16.2799988</z>
+        <z>33.28</z>
       </position>
       <rotation>
-        <x>-2.414836E-06</x>
-        <y>2.414837E-06</y>
-        <z>89.99998</z>
+        <x>270</x>
+        <y>90</y>
+        <z>0</z>
       </rotation>
       <scale>
         <x>1</x>
@@ -27205,7 +27292,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
         <x>90.69998</x>
         <y>-9.5</y>
@@ -27217,8 +27304,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <x>1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -27234,7 +27321,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>104.48996</x>
         <y>-9.5</y>
@@ -27246,7 +27333,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
+        <x>0.8182402</x>
         <y>-1</y>
         <z>1</z>
       </scale>
@@ -27263,7 +27350,7 @@
     </Object>
     <Object>
       <name>castle_wall_incline_lower</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_incline_lower</path>
+      <path />
       <position>
         <x>108.78418</x>
         <y>-6.5</y>
@@ -27272,35 +27359,6 @@
       <rotation>
         <x>270</x>
         <y>29.9999561</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1</x>
-        <y>1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>70</x>
-        <y>10</y>
-        <z>50</z>
-      </tilePosition>
-      <coordinate>
-        <x>4</x>
-        <y>5</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
-      <position>
-        <x>108.784149</x>
-        <y>-6.5</y>
-        <z>79.29001</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>210</y>
         <z>0</z>
       </rotation>
       <scale>
@@ -27320,8 +27378,37 @@
       <type>building</type>
     </Object>
     <Object>
+      <name>castle_wall_15m (1)</name>
+      <path />
+      <position>
+        <x>108.784149</x>
+        <y>-6.5</y>
+        <z>79.29001</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>210</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>50</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>5</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>123.939606</x>
         <y>-6.5</y>
@@ -27333,7 +27420,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
+        <x>-1.00994</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -27350,7 +27437,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>123.939606</x>
         <y>-6.5</y>
@@ -27363,7 +27450,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -27379,10 +27466,10 @@
     </Object>
     <Object>
       <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>85.81999</x>
-        <y>-10.46</y>
+        <y>-10.4600067</y>
         <z>117.13</z>
       </position>
       <rotation>
@@ -27392,36 +27479,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
-        <z>1</z>
-      </scale>
-      <tilePosition>
-        <x>70</x>
-        <y>10</y>
-        <z>50</z>
-      </tilePosition>
-      <coordinate>
-        <x>4</x>
-        <y>5</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
-      <position>
-        <x>73.58998</x>
-        <y>-10.46</y>
-        <z>127.3484</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>74.99999</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>-1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -28716,7 +28774,7 @@
       <path />
       <position>
         <x>72.42998</x>
-        <y>-2.46</y>
+        <y>-2.46000671</y>
         <z>154.1384</z>
       </position>
       <rotation>
@@ -28741,11 +28799,40 @@
       <type>building</type>
     </Object>
     <Object>
+      <name>castle_wall_corner_a</name>
+      <path />
+      <position>
+        <x>72.42</x>
+        <y>-10.4600067</y>
+        <z>131.71</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>255.000122</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>-1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
       <name>castle_wall_2,5m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_2,5m</path>
+      <path />
       <position>
         <x>72.42998</x>
-        <y>-10.46</y>
+        <y>-10.4600067</y>
         <z>134.16</z>
       </position>
       <rotation>
@@ -28771,10 +28858,10 @@
     </Object>
     <Object>
       <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>72.42998</x>
-        <y>-10.46</y>
+        <y>-10.4600067</y>
         <z>134.15</z>
       </position>
       <rotation>
@@ -28800,10 +28887,10 @@
     </Object>
     <Object>
       <name>castle_wall_incline_lower</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_incline_lower</path>
+      <path />
       <position>
         <x>72.42998</x>
-        <y>-7.46</y>
+        <y>-7.46000671</y>
         <z>154.15</z>
       </position>
       <rotation>
@@ -28829,10 +28916,10 @@
     </Object>
     <Object>
       <name>castle_wall_10m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_10m</path>
+      <path />
       <position>
         <x>72.42998</x>
-        <y>-7.46</y>
+        <y>-7.46000671</y>
         <z>154.138367</z>
       </position>
       <rotation>
@@ -28842,7 +28929,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
+        <y>-1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -30627,7 +30714,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>72.42998</x>
         <y>-5</y>
@@ -30640,7 +30727,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>-1</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -30656,7 +30743,7 @@
     </Object>
     <Object>
       <name>castle_wall_15m (1)</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_15m</path>
+      <path />
       <position>
         <x>72.009964</x>
         <y>-5</y>
@@ -30668,8 +30755,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
-        <y>-1</y>
+        <x>-1</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -30685,7 +30772,7 @@
     </Object>
     <Object>
       <name>castle_wall_corner_a</name>
-      <path>Prefabs/prefab_unique_buildings/castle_wall_corner_a</path>
+      <path />
       <position>
         <x>77.93001</x>
         <y>-5</y>

@@ -8,7 +8,9 @@ public class PlayerGrid : MonoBehaviour
 
     private List<Vector2> disabledTiles = new List<Vector2>();
     private Vector2[] surroundingTiles;
-    private Vector2 currentTile;
+    private Vector2 currentCoordinate;
+    [HideInInspector]
+    public Tile currentTile;
 
     private List<Tile> tiles = new List<Tile>();
 
@@ -17,9 +19,9 @@ public class PlayerGrid : MonoBehaviour
 	void Start ()
     {
         tiles = grid.tiles;
-        currentTile = GetCoordinate(gameObject);
+        currentCoordinate = GetCoordinate(gameObject);
         surroundingTiles = new Vector2[9];
-        GetSurroundingTiles(currentTile);
+        GetSurroundingTiles(currentCoordinate);
         ToggleObjects();
 	}
 
@@ -27,12 +29,12 @@ public class PlayerGrid : MonoBehaviour
     {
         Vector2 coord = GetCoordinate(gameObject);
 
-        if (coord != currentTile
+        if (coord != currentCoordinate
             && coord != new Vector2(-1, -1)
             && coroutineFinished)
         {
-            currentTile = coord;
-            StartCoroutine(GetSurroundingTiles(currentTile));
+            currentCoordinate = coord;
+            StartCoroutine(GetSurroundingTiles(currentCoordinate));
             ToggleObjects();
         }
     }
@@ -83,6 +85,10 @@ public class PlayerGrid : MonoBehaviour
                 && obj.transform.position.x < t.worldPosition.x + grid.tileSize
                 && obj.transform.position.z < t.worldPosition.z + grid.tileSize)
             {
+                if (obj = gameObject)
+                {
+                    currentTile = t;
+                }
                 return t.coordinate;
             }
         }

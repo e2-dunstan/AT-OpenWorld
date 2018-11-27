@@ -194,12 +194,16 @@ public class GridGenerator : MonoBehaviour
                     }
                 }
             }
+
+            GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
         }
         else if (!enable)
         {
             if (tile.loaded)
             {
-                List<GameObject> temp = new List<GameObject>();
+                GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().DestroyAI(tile.worldPosition);
+
+                List <GameObject> temp = new List<GameObject>();
                 temp.InsertRange(0, tile.objects);
                 foreach (GameObject obj in tile.objects)
                 {
@@ -210,7 +214,6 @@ public class GridGenerator : MonoBehaviour
             }
             tile.loaded = false;
         }
-        
         yield return null;
     }
 }

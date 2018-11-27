@@ -7,26 +7,42 @@ public class AIController : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Animator anim;
+    private PlayerGrid player;
 
     private Vector3 targetPos;
     private float range = 25.0f;
+
+    [HideInInspector]
+    public Vector2 coordinate;
+
+    private bool moving = false;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        StartCoroutine(Move(0.1f));
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerGrid>();
     }
 
     private void Update()
     {
-        //if (Vector3.Distance(targetPos, transform.position) < 5.0f)
-        //{
-        //    float time = Random.Range(1, 5);
-        //    StopAllCoroutines();
-        //    StartCoroutine(Move(time));
-        //}
-        anim.SetFloat("Speed", agent.velocity.magnitude);
+        anim.SetFloat("Speed", agent.velocity.magnitude / 5);
+
+        Debug.Log("Player tile: " + player.currentTile.worldPosition);
+        Debug.Log("AI tile: " + coordinate);
+
+        if (!moving && player.currentTile.worldPosition.x == coordinate.x
+            && player.currentTile.worldPosition.z == coordinate.y)
+        {
+            StartCoroutine(Move(0.1f));
+            moving = true;
+        }
+        if (moving && player.currentTile.worldPosition.x != coordinate.x
+            && player.currentTile.worldPosition.z != coordinate.y)
+        {
+            StopAllCoroutines();
+            moving = false;
+        }
     }
 
     IEnumerator Move(float waitTime)
@@ -39,10 +55,7 @@ public class AIController : MonoBehaviour
         NavMeshHit hit;
         NavMesh.SamplePosition(randomDirection, out hit, range, -1);
         targetPos = hit.position;
-        //targetPos = new Vector2(Random.Range(transform.position.x - range, transform.position.x + range),
-        //                        Random.Range(transform.position.z - range, transform.position.z + range));
         agent.destination = targetPos;
-        Debug.Log("New goal: " + targetPos);
 
         StartCoroutine(Move(Random.Range(3, 10)));
 	}
