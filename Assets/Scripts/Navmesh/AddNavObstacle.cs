@@ -23,14 +23,22 @@ public class AddNavObstacle : MonoBehaviour
 
     public void Remove()
     {
+        NavMeshObstacle[] allChildren = GetComponentsInChildren<NavMeshObstacle>();
+
+        foreach (NavMeshObstacle child in allChildren)
+        {
+            Destroy(child.gameObject.GetComponent<NavMeshObstacle>());
+        }
+    }
+
+    public void ApplyPrefabs()
+    {
         Transform[] allChildren = GetComponentsInChildren<Transform>();
 
         foreach (Transform child in allChildren)
         {
-            if (child.gameObject.GetComponent<NavMeshObstacle>() != null)
-            {
-                Destroy(child.gameObject.GetComponent<NavMeshObstacle>());
-            }
+            PrefabUtility.ReplacePrefab(child.gameObject, PrefabUtility.GetCorrespondingObjectFromSource(child.gameObject), 
+                ReplacePrefabOptions.ConnectToPrefab);
         }
     }
 }

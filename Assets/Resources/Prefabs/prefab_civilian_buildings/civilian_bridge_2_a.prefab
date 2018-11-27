@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33704484857104190}
   - component: {fileID: 23686849561448870}
   - component: {fileID: 64334788467999704}
+  - component: {fileID: 208872489971234318}
   m_Layer: 10
   m_Name: civilian_bridge_2_a
   m_TagString: Untagged
@@ -35,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135514099555902}
-  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.4999993, y: -0.5000007, z: -0.5000007, w: -0.4999993}
+  m_LocalPosition: {x: -34.53, y: -5, z: 2.5200043}
+  m_LocalScale: {x: 1.3095185, y: 0.9346998, z: 1.2622015}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -270}
 --- !u!23 &23686849561448870
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -100,3 +101,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 5610288ccb558cb4ab46f06b48c3b13b, type: 3}
+--- !u!208 &208872489971234318
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1135514099555902}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.301, y: 0.96500003, z: 3.1970003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.001, y: 0.004, z: 3.196}
+  m_TimeToStationary: 0.5

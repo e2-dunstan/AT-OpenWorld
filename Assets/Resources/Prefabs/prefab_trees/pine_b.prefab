@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 33859711841223604}
   - component: {fileID: 23331283249850160}
   - component: {fileID: 64731357334232896}
-  m_Layer: 0
+  - component: {fileID: 208821215407491034}
+  m_Layer: 11
   m_Name: pine_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,9 +36,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1238566819580450}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.77308846, y: 0.77308846, z: 1.7840068}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 65.73821, y: 0, z: 12.718958}
+  m_LocalScale: {x: 0.77308846, y: 0.77308893, z: 1.7840078}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,3 +100,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 31c69e98b28c0a446a7982d4f1872d2e, type: 3}
+--- !u!208 &208821215407491034
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238566819580450}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.72, y: 1.651, z: 5.4800005}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.127, y: 0.05, z: 5.4670005}
+  m_TimeToStationary: 0.5

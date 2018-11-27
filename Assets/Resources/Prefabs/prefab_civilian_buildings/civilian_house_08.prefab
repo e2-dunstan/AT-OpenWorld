@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33369611036023074}
   - component: {fileID: 23387173997794884}
   - component: {fileID: 64963654813816954}
+  - component: {fileID: 208251335342107634}
   m_Layer: 10
   m_Name: civilian_house_08
   m_TagString: Untagged
@@ -35,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1088795702756802}
-  m_LocalRotation: {x: -0.50000006, y: 0.49999997, z: 0.49999997, w: 0.50000006}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0.00000022351746, z: 0.00000022351746, w: 0.7071068}
+  m_LocalPosition: {x: 29.49, y: -5, z: 27.440002}
+  m_LocalScale: {x: 0.8426447, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!23 &23387173997794884
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -109,3 +110,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a410cb53efea0fb43a0bb92881d45dbb, type: 3}
+--- !u!208 &208251335342107634
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088795702756802}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 7.873, y: 8.334001, z: 9.549001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 9.4470005}
+  m_TimeToStationary: 0.5

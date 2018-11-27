@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 33038825707194524}
   - component: {fileID: 23271489887156704}
   - component: {fileID: 64618766010536322}
-  m_Layer: 0
+  - component: {fileID: 208913763059213460}
+  m_Layer: 10
   m_Name: castle_wall_incline_uper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1419772997638888}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.35355425, y: -0.612372, z: -0.612372, w: 0.35355425}
+  m_LocalPosition: {x: -12.781681, y: 0, z: 25.298504}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -90.00001}
 --- !u!23 &23271489887156704
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -99,3 +100,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 28952de306378314aaa188484ad62067, type: 3}
+--- !u!208 &208913763059213460
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1419772997638888}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5, y: 2.95, z: 11.3}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -2.5, y: 2.7500002, z: 11.3}
+  m_TimeToStationary: 0.5

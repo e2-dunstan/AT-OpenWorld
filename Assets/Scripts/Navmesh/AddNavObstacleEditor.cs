@@ -17,6 +17,10 @@ public class AddNavObstacleEditor : Editor
         {
             addNavObstacle.Remove();
         }
+        if (GUILayout.Button("Apply Prefabs"))
+        {
+            addNavObstacle.ApplyPrefabs();
+        }
         DrawDefaultInspector();
     }
 }
