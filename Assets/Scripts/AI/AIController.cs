@@ -5,40 +5,60 @@ using UnityEngine.AI;
 
 public class AIController : MonoBehaviour
 {
+    [HideInInspector]
+    public AI data;
+
+    private GridGenerator grid;
     private NavMeshAgent agent;
     private Animator anim;
     private PlayerGrid player;
 
-    private Vector3 targetPos;
     private float range = 25.0f;
 
-    [HideInInspector]
-    public Vector2 coordinate;
+
+    private Vector3 targetPos;
 
     private bool moving = false;
 
     private void Start()
     {
+        grid = GetComponentInParent<ReadCSV>().gridGenerator;
+
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerGrid>();
+
+        transform.position = GetRandomPositionInTile();
+    }
+
+    private Vector3 GetRandomPositionInTile()
+    {
+        Vector2 coord = data.coordinate;
+        Vector3 rand = grid.transform.position + 
+                        new Vector3(Random.Range(coord.x * grid.tileSize, (coord.x * grid.tileSize) + grid.tileSize),
+                                    0,
+                                    Random.Range(coord.y * grid.tileSize, (coord.y * grid.tileSize) + grid.tileSize));
+        Debug.Log("rand: " + rand);
+
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(rand, out hit, range, -1))
+            return hit.position;
+
+        else return Vector3.zero;
     }
 
     private void Update()
     {
         anim.SetFloat("Speed", agent.velocity.magnitude / 5);
 
-        Debug.Log("Player tile: " + player.currentTile.worldPosition);
-        Debug.Log("AI tile: " + coordinate);
-
-        if (!moving && player.currentTile.worldPosition.x == coordinate.x
-            && player.currentTile.worldPosition.z == coordinate.y)
+        if (!moving && player.currentTile.coordinate.x == data.coordinate.x
+            && player.currentTile.coordinate.y == data.coordinate.y)
         {
             StartCoroutine(Move(0.1f));
             moving = true;
         }
-        if (moving && player.currentTile.worldPosition.x != coordinate.x
-            && player.currentTile.worldPosition.z != coordinate.y)
+        if (moving && player.currentTile.coordinate.x != data.coordinate.x
+            && player.currentTile.coordinate.y != data.coordinate.y)
         {
             StopAllCoroutines();
             moving = false;
@@ -49,14 +69,7 @@ public class AIController : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
 
-        Vector3 randomDirection = Random.insideUnitSphere * range;
-        randomDirection += transform.position;
-
-        NavMeshHit hit;
-        NavMesh.SamplePosition(randomDirection, out hit, range, -1);
-        targetPos = hit.position;
-        agent.destination = targetPos;
-
+        agent.destination = GetRandomPositionInTile();
         StartCoroutine(Move(Random.Range(3, 10)));
-	}
+    }
 }

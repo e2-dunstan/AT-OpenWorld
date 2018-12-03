@@ -195,13 +195,14 @@ public class GridGenerator : MonoBehaviour
                 }
             }
 
-            GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
+            //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
+            GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(coord);
         }
         else if (!enable)
         {
             if (tile.loaded)
             {
-                GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().DestroyAI(tile.worldPosition);
+                //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().DestroyAI(tile.worldPosition);
 
                 List <GameObject> temp = new List<GameObject>();
                 temp.InsertRange(0, tile.objects);
