@@ -5,6 +5,10 @@ using UnityEngine.AI;
 
 public class AIController : MonoBehaviour
 {
+    //Optimisation:
+    //- Set culling distance of AI
+
+
     [HideInInspector]
     public AI data;
 
@@ -29,6 +33,8 @@ public class AIController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerGrid>();
 
         transform.position = GetRandomPositionInTile();
+
+        gameObject.layer = 12;
     }
 
     private Vector3 GetRandomPositionInTile()

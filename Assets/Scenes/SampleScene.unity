@@ -88901,7 +88901,7 @@ GameObject:
   - component: {fileID: 1905884271}
   - component: {fileID: 1905884272}
   - component: {fileID: 1905884273}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: AI
   m_TagString: AI
   m_Icon: {fileID: 0}

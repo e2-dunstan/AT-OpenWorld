@@ -9,12 +9,11 @@ public class CameraController : MonoBehaviour
 	void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-	}
+    }
 	
 	void LateUpdate ()
     {
         transform.position = player.transform.position;
-
         transform.rotation = Quaternion.Lerp(transform.rotation, player.transform.rotation, Time.deltaTime * 4);
 	}
 }
