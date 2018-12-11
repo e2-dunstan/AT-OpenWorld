@@ -44,7 +44,6 @@ public class AIController : MonoBehaviour
                         new Vector3(Random.Range(coord.x * grid.tileSize, (coord.x * grid.tileSize) + grid.tileSize),
                                     0,
                                     Random.Range(coord.y * grid.tileSize, (coord.y * grid.tileSize) + grid.tileSize));
-        Debug.Log("rand: " + rand);
 
         NavMeshHit hit;
         if (NavMesh.SamplePosition(rand, out hit, range, -1))
