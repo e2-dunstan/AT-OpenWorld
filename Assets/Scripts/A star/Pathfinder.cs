@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
@@ -21,33 +22,38 @@ public class Pathfinder : MonoBehaviour
         Vector3[] waypoints = new Vector3[0];
         bool pathSuccess = false;
 
-        Node startNode = Grid.g.GetNodeFromWorldPosition(_startPosition);
-        Node targetNode = Grid.g.GetNodeFromWorldPosition(_targetPosition);
+        Node startNode = AStarGrid.g.GetNodeFromWorldPosition(_startPosition);
+        Node targetNode = AStarGrid.g.GetNodeFromWorldPosition(_targetPosition);
 
+        //if the nodes are not obstacles
         if (startNode.walkable && targetNode.walkable)
         {
             //Nodes to evaluate
-            Heap<Node> openList = new Heap<Node>((int)(Grid.g.gridSize.x * Grid.g.gridSize.y));
+            Heap<Node> openList = new Heap<Node>((int)(AStarGrid.g.gridSize.x * AStarGrid.g.gridSize.y));
             //Already evaluated nodes
             List<Node> closedList = new List<Node>();
 
             startNode.gCost = 0;
             openList.Add(startNode);
 
+            //Loop through open list
             while (openList.Count > 0)
             {
                 //Heap optimisation - WRITE ABOUT THIS IN THE REPORT
+                //Remove current node from the open list because it is being evaluated
                 Node currentNode = openList.RemoveFirst();
-                //Very slow
-                //Node lowestFCostNode = null;
-                //foreach(Node n in openList)
-                //{
-                //    if ((lowestFCostNode != null && lowestFCostNode.fCost > n.fCost)
-                //        || (n.fCost == lowestFCostNode.fCost && n.hCost < lowestFCostNode.hCost))
-                //        lowestFCostNode = n;
-                //}
-                //Node currentNode = lowestFCostNode;
 
+                // -- Very slow -- //
+                /*Node lowestFCostNode = null;
+                foreach(Node n in openList)
+                {
+                    if ((lowestFCostNode != null && lowestFCostNode.fCost > n.fCost)
+                        || (n.fCost == lowestFCostNode.fCost && n.hCost < lowestFCostNode.hCost))
+                        lowestFCostNode = n;
+                }
+                Node currentNode = lowestFCostNode;*/
+
+                //Add the current node to the closed (evaluated) list
                 closedList.Add(currentNode);
 
                 //Path found
@@ -57,15 +63,16 @@ public class Pathfinder : MonoBehaviour
                     break;
                 }
 
-                foreach (Node neighbour in Grid.g.GetNodeNeighbours(currentNode))
+                foreach (Node neighbour in AStarGrid.g.GetNodeNeighbours(currentNode))
                 {
+                    //if the neighbour is an obstacle or has already been evaluated
                     if (!neighbour.walkable || closedList.Contains(neighbour))
                         continue;
-
+                    
                     int movementCost = currentNode.gCost + GetDistanceBetweenNodes(currentNode, neighbour);
                     if (movementCost < neighbour.gCost || !openList.Contains(neighbour))
                     {
-                        //set f cost of neighbour
+                        //set f cost of neighbour (g cost + h cost)
                         neighbour.gCost = movementCost;
                         neighbour.hCost = GetDistanceBetweenNodes(neighbour, targetNode);
                         //set parent of neighbour to current
@@ -97,20 +104,48 @@ public class Pathfinder : MonoBehaviour
             path.Add(currentNode);
             currentNode = currentNode.parentNode;
         }
-        path.Reverse();
-        return path;
+        path.Add(startNode);
+
+
+        Vector3[] waypoints = SimplifyPath(path);
+        Array.Reverse(waypoints);
+
+        //path smoothing here
+
+        return waypoints;
     }
 
+    private Vector3[] SimplifyPath(List<Node> _path)
+    {
+        List<Vector3> waypoints = new List<Vector3>();
+
+        Vector2 oldDirection = Vector2.zero;
+
+        for (int i = 1; i < _path.Count; i++)
+        {
+            //direction between two nodes
+            Vector2 newDirection = new Vector2(_path[i - 1].gridPosition.x - _path[i].gridPosition.x,
+                                               _path[i - 1].gridPosition.y - _path[i].gridPosition.y);
+            //if the direction has changed i.e. a corner has been found
+            if (newDirection != oldDirection)
+            {
+                //only keep the corner
+                waypoints.Add(_path[i - 1].worldPosition);
+            }
+            oldDirection = newDirection;
+        }
+        return waypoints.ToArray();
+    }
     private int GetDistanceBetweenNodes(Node nodeA, Node nodeB)
     {
-        Vector2 distance = new Vector2(
-            Mathf.Abs(nodeA.gridPosition.x - nodeB.gridPosition.y),
-            Mathf.Abs(nodeA.gridPosition.y - nodeB.gridPosition.x));
+        Vector2Int distance = new Vector2Int(
+            (int)Mathf.Abs(nodeA.gridPosition.x - nodeB.gridPosition.x),
+            (int)Mathf.Abs(nodeA.gridPosition.y - nodeB.gridPosition.y));
 
         //14 for diagonal, 10 for horizontal/vertical
         if (distance.x > distance.y)
-            return (int)(14 * distance.y + 10 * (distance.x - distance.y));
+            return (14 * distance.y) + (10 * (distance.x - distance.y));
         else
-            return (int)(14 * distance.x + 10 * (distance.y - distance.x));
+            return (14 * distance.x) + (10 * (distance.y - distance.x));
     }
 }

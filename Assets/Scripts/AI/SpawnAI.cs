@@ -39,7 +39,7 @@ public class SpawnAI : MonoBehaviour
             if (npc.coordinate == coord)
             {
                 GameObject newNPC = Instantiate(Resources.Load<GameObject>(npc.path), transform);
-                newNPC.GetComponent<AIController>().data = npc;
+                newNPC.GetComponent<NPC>().data = npc;
             }
         }
     }

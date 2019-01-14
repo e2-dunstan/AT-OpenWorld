@@ -5,8 +5,11 @@ using UnityEngine;
 public class Node : IHeapItem<Node>
 {
     public bool walkable;
+    public bool curve = false;
     public Vector3 worldPosition;
     public Vector2 gridPosition;
+
+    public Vector2 locationInStreamingGrid;
 
     //Distance from starting node
     public int gCost;

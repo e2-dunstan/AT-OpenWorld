@@ -53,6 +53,8 @@ public class GridGenerator : MonoBehaviour
                 allObjectsInScene.Add(child.gameObject);
         }
 
+        Node[,] aStarGrid = AStarGrid.g.grid;
+
         // -- Generate Grid -- //
         for (int x = 0; x < gridDimensions.x; x++)
         {
@@ -73,6 +75,17 @@ public class GridGenerator : MonoBehaviour
 
                 //Find all objects in this tile
                 GetObjectsInTile(tile, newTile);
+
+                foreach(Node node in aStarGrid)
+                {
+                    if (node.worldPosition.x >= tile.worldPosition.x
+                    && node.worldPosition.z >= tile.worldPosition.z
+                    && node.worldPosition.x < tile.worldPosition.x + tileSize
+                    && node.worldPosition.z < tile.worldPosition.z + tileSize)
+                    {
+                        node.locationInStreamingGrid = tile.coordinate;
+                    }
+                }
 
                 tiles.Add(tile);
             }

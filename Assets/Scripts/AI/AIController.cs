@@ -7,8 +7,7 @@ public class AIController : MonoBehaviour
 {
     //Optimisation:
     //- Set culling distance of AI
-
-
+    
     [HideInInspector]
     public AI data;
 

@@ -8,14 +8,16 @@ public class PathRequestManager : MonoBehaviour
     private Queue<PathRequest> pathRequestQueue = new Queue<PathRequest>();
     private PathRequest currentPathRequest;
 
-    private static PathRequestManager instance;
+    private static PathRequestManager prm;
     private Pathfinder pathfinder;
 
     private bool isProcessingPath;
 
     private void Awake()
     {
-        instance = this;
+        if (prm == null)
+            prm = this;
+
         pathfinder = GetComponent<Pathfinder>();
     }
 
@@ -24,8 +26,8 @@ public class PathRequestManager : MonoBehaviour
         Action<Vector3[], bool> _callback)
     {
         PathRequest newRequest = new PathRequest(_pathStart, _pathEnd, _callback);
-        instance.pathRequestQueue.Enqueue(newRequest);
-        instance.TryProcessNext();
+        prm.pathRequestQueue.Enqueue(newRequest);
+        prm.TryProcessNext();
     }
 
     private void TryProcessNext()
@@ -51,6 +53,7 @@ public class PathRequestManager : MonoBehaviour
         public Vector3 pathEnd;
         public Action<Vector3[], bool> callback;
 
+        //Constructor
         public PathRequest(Vector3 _start, Vector3 _end, Action<Vector3[], bool> _cllbck)
         {
             pathStart = _start;
