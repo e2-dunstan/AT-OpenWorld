@@ -49,6 +49,13 @@ public class AStarGrid : MonoBehaviour
                 Vector3 worldPoint = worldZeroCoord
                     + Vector3.right * (x * nodeDiameter + nodeRadius)
                     + Vector3.forward * (y * nodeDiameter + nodeRadius);
+
+                //bool walkable = true;
+                //if (Physics.CheckSphere(worldPoint, nodeRadius, unwalkableMask)
+                //    || Physics.OverlapSphere(worldPoint, nodeRadius, unwalkableMask).Length > 0)
+                //{
+                //    walkable = false;
+                //}
                 bool walkable = !Physics.CheckSphere(worldPoint, nodeRadius, unwalkableMask);
                 grid[x, y] = new Node(walkable, worldPoint, new Vector2(x, y));
             }
@@ -94,11 +101,24 @@ public class AStarGrid : MonoBehaviour
                     continue;
 
                 Vector2 newPos = new Vector2(_node.gridPosition.x + x, _node.gridPosition.y + y);
-
+                
                 //if this position is in the grid, it is valid
                 if (newPos.x >= 0 && newPos.x < gridSize.x
                     && newPos.y >= 0 && newPos.y < gridSize.y)
-                    neighbours.Add(grid[(int)newPos.x, (int)newPos.y]);
+                {
+                    Ray ray = new Ray(_node.worldPosition, grid[(int)newPos.x, (int)newPos.y].worldPosition - _node.worldPosition);
+                    float distance = Vector3.Distance(_node.worldPosition, grid[(int)newPos.x, (int)newPos.y].worldPosition);
+
+                    if (!Physics.Raycast(ray, distance, unwalkableMask))
+                    {
+                        neighbours.Add(grid[(int)newPos.x, (int)newPos.y]);
+                    }
+                    else
+                    {
+                        Debug.Log("Node in building found");
+                        grid[(int)newPos.x, (int)newPos.y].walkable = false;
+                    }
+                }
             }
         }
         return neighbours;

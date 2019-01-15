@@ -7,6 +7,8 @@ public class NPC : MonoBehaviour
     //DESPAWN IF IT LEAVES LOADED TILES?
     //NEVER ROAM OUTSIDE OF ITS TILE?   <-- implemented
 
+    //ISSUE ENCOUNTERED: NODES INSIDE OF BUILDINGS ARE TAGGED AS WALKABLE
+
 
     [HideInInspector]
     public AI data;
@@ -33,7 +35,8 @@ public class NPC : MonoBehaviour
 
         previousPosition = transform.position;
 
-        StartCoroutine(SetNewTarget());
+        //StartCoroutine(SetNewTarget());
+        SetNewTarget();
     }
 
     private void Update()
@@ -53,19 +56,27 @@ public class NPC : MonoBehaviour
     //////////////
     // -- A* -- //
     //////////////
-    private IEnumerator SetNewTarget()
+    private void SetNewTarget()
     {
-        Node randomNode;
-        do
+        Node randomNode = AStarGrid.g.grid[0, 0];
+
+        if (currentTarget == null)
+            currentTarget = randomNode.worldPosition;
+
+        while (randomNode.locationInStreamingGrid != data.coordinate
+            && randomNode.worldPosition != currentTarget)
         {
             randomNode = AStarGrid.g.grid[
-            (int)Random.Range(0, AStarGrid.g.gridSize.x),
-            (int)Random.Range(0, AStarGrid.g.gridSize.y)];
-            yield return null;
+            (int)Random.Range(0, AStarGrid.g.gridSize.x - 1),
+            (int)Random.Range(0, AStarGrid.g.gridSize.y - 1)];
+            //yield return null;
         }
-        while (randomNode.locationInStreamingGrid != data.coordinate);
+        Debug.Log("Target found! Node: " + randomNode.gridPosition + " Tile: " + randomNode.locationInStreamingGrid);
 
-        Debug.Log("target found. Node: " + randomNode.locationInStreamingGrid + " Tile: " + data.coordinate);
+        //Node randomNode = AStarGrid.g.grid[
+        //    (int)Random.Range(0, AStarGrid.g.gridSize.x - 1),
+        //    (int)Random.Range(0, AStarGrid.g.gridSize.y - 1)];
+
         target = randomNode.worldPosition;
     }
 
@@ -79,7 +90,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    IEnumerator FollowPath()
+    private IEnumerator FollowPath()
     {
         Vector3 currentWaypoint = path[0];
 
@@ -92,7 +103,9 @@ public class NPC : MonoBehaviour
                 if (targetWaypoint >= path.Length)
                 {
                     //exit coroutine and find new target
-                    StartCoroutine(SetNewTarget());
+                    //StartCoroutine(SetNewTarget());
+                    Debug.Log("Destination reached");
+                    SetNewTarget();
                     yield break;
                 }
                 currentWaypoint = path[targetWaypoint];

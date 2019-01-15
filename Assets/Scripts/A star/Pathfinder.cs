@@ -66,8 +66,11 @@ public class Pathfinder : MonoBehaviour
                 foreach (Node neighbour in AStarGrid.g.GetNodeNeighbours(currentNode))
                 {
                     //if the neighbour is an obstacle or has already been evaluated
+                    //or is in a building
                     if (!neighbour.walkable || closedList.Contains(neighbour))
+                    {
                         continue;
+                    }
                     
                     int movementCost = currentNode.gCost + GetDistanceBetweenNodes(currentNode, neighbour);
                     if (movementCost < neighbour.gCost || !openList.Contains(neighbour))
@@ -105,8 +108,7 @@ public class Pathfinder : MonoBehaviour
             currentNode = currentNode.parentNode;
         }
         path.Add(startNode);
-
-
+        
         Vector3[] waypoints = SimplifyPath(path);
         Array.Reverse(waypoints);
 

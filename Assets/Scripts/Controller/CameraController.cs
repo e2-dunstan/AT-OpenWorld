@@ -6,7 +6,10 @@ public class CameraController : MonoBehaviour
 {
     private GameObject player;
 
-	void Start ()
+    private int travel;
+    private int scrollSpeed = 40;
+
+    void Start ()
     {
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -14,6 +17,18 @@ public class CameraController : MonoBehaviour
 	void LateUpdate ()
     {
         transform.position = player.transform.position;
-        transform.rotation = Quaternion.Lerp(transform.rotation, player.transform.rotation, Time.deltaTime * 4);
-	}
+
+        float m = Input.GetAxis("Mouse ScrollWheel");
+        if (m > 0f && travel > -15)
+        {
+            travel -= scrollSpeed;
+            transform.GetChild(0).Translate(0, 0, 1 * scrollSpeed * Time.deltaTime, Space.Self);
+        }
+        else if (m < 0f && travel < 500)
+        {
+            travel += scrollSpeed;
+            transform.GetChild(0).Translate(0, 0, -1 * scrollSpeed * Time.deltaTime, Space.Self);
+        }
+
+    }
 }

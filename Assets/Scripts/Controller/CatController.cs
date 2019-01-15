@@ -11,16 +11,24 @@ public class CatController : MonoBehaviour
 
     private bool jumping = false;
 
-	void Start ()
+    private float vertical;
+    private float horizontal;
+
+    private float previousRotation = 0;
+    public float rotationSpeed = 1.0f;
+
+    void Start ()
     {
         anim = GetComponent<Animator>();
 	}
 
 	void FixedUpdate ()
     {
+        vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxis("Horizontal");
+
         Movement();
         Rotation();
-        Jump();
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -31,8 +39,61 @@ public class CatController : MonoBehaviour
             anim.speed = 1;
         }
     }
-
     private void Movement()
+    {
+        if (vertical == 0 && horizontal == 0)
+        {
+            damping = true;
+        }
+        if (damping)
+        {
+            moveSpeed = Mathf.Lerp(moveSpeed, 0, Time.deltaTime * 2);
+            if (Input.GetKeyDown(KeyCode.W) || moveSpeed < 0.01f)
+            {
+                damping = false;
+            }
+        }
+        else
+        {
+            moveSpeed = Mathf.Clamp(Mathf.Abs(vertical) + Mathf.Abs(horizontal), 0, 1);
+        }
+
+        anim.SetFloat("speed", moveSpeed);
+    }
+    private void Rotation()
+    {
+        float theta = Mathf.Rad2Deg * Mathf.Atan(Mathf.Abs(horizontal / vertical));
+
+        //Quartile 1
+        if (Mathf.Sign(horizontal) == 1 && Mathf.Sign(vertical) == 1)
+        {
+            //theta = theta;
+        }
+        //Quartile 2
+        else if (Mathf.Sign(horizontal) == 1 && Mathf.Sign(vertical) == -1)
+        {
+            theta = 180 - theta;
+        }
+        //Quartile 3
+        else if (Mathf.Sign(horizontal) == -1 && Mathf.Sign(vertical) == -1)
+        {
+            theta -= 180;
+        }
+        //Quartile 4
+        else if (Mathf.Sign(horizontal) == -1 && Mathf.Sign(vertical) == 1)
+        {
+            theta = -theta;
+        }
+
+        theta = float.IsNaN(theta) ? previousRotation : theta;
+        
+        transform.rotation = Quaternion.Euler(0, 
+            Mathf.Lerp(previousRotation, theta, Time.deltaTime * rotationSpeed), 0);
+
+        previousRotation = theta;
+    }
+
+    private void OldMovement()
     {
         float vertical = Input.GetAxis("Vertical");
 
@@ -56,7 +117,7 @@ public class CatController : MonoBehaviour
         anim.SetFloat("speed", moveSpeed);
     }
 
-    private void Rotation()
+    private void OldRotation()
     {
         float horizontal = Input.GetAxis("Horizontal");
 
@@ -67,26 +128,26 @@ public class CatController : MonoBehaviour
         transform.eulerAngles = new Vector3(transform.rotation.x, y, 
                                 transform.rotation.z);
     }
-    private void Jump()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.applyRootMotion = false;
-            jumping = true;
-            GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
-        }
-    }
+    //private void Jump()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        anim.applyRootMotion = false;
+    //        jumping = true;
+    //        GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
+    //    }
+    //}
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (jumping)
-        {
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, Vector3.down, out hit, 15f))
-            {
-                anim.applyRootMotion = true;
-                jumping = false;
-            }
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (jumping)
+    //    {
+    //        RaycastHit hit;
+    //        if (Physics.Raycast(transform.position, Vector3.down, out hit, 15f))
+    //        {
+    //            anim.applyRootMotion = true;
+    //            jumping = false;
+    //        }
+    //    }
+    //}
 }
