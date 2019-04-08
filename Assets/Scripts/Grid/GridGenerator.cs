@@ -40,7 +40,6 @@ public class GridGenerator : MonoBehaviour
 
     public void Generate()
     {
-        Debug.Log("Generating grid...");
         //Clear lists
         //tiles.Clear();
         //allObjectsInScene.Clear();
@@ -84,7 +83,8 @@ public class GridGenerator : MonoBehaviour
                     && node.worldPosition.x < tile.worldPosition.x + tileSize
                     && node.worldPosition.z < tile.worldPosition.z + tileSize)
                     {
-                        node.locationInStreamingGrid = tile.coordinate;
+                        node.locationInStreamingGrid = new Vector2(
+                                tile.coordinate.x + 1, tile.coordinate.y + 1);
                     }
                 }
 
@@ -210,7 +210,6 @@ public class GridGenerator : MonoBehaviour
             }
 
             //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
-            Debug.Log("Spawning AI...");
             GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(coord);
         }
         else if (!enable)

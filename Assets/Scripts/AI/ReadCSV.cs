@@ -62,7 +62,6 @@ public class ReadCSV : MonoBehaviour
 
     public List<CSVData> ReadFile()
     {
-        Debug.Log("Reading CSV file...");
         StreamReader inStream = new StreamReader(filePath);
         bool endOfFile = false;
         List<CSVData> csvData = new List<CSVData>();

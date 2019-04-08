@@ -25,9 +25,12 @@ public class Pathfinder : MonoBehaviour
         Node startNode = AStarGrid.g.GetNodeFromWorldPosition(_startPosition);
         Node targetNode = AStarGrid.g.GetNodeFromWorldPosition(_targetPosition);
 
+        //Debug for draw gizmos
+        AStarGrid.g.targetNode = targetNode;
+
         //if the nodes are not obstacles
         if (startNode.walkable && targetNode.walkable)
-        {
+        { 
             //Nodes to evaluate
             Heap<Node> openList = new Heap<Node>((int)(AStarGrid.g.gridSize.x * AStarGrid.g.gridSize.y));
             //Already evaluated nodes
@@ -36,9 +39,15 @@ public class Pathfinder : MonoBehaviour
             startNode.gCost = 0;
             openList.Add(startNode);
 
+            int safetyCheck = 0;
             //Loop through open list
             while (openList.Count > 0)
             {
+                Debug.Log("Looping through the open list...");
+                safetyCheck++;
+                if (safetyCheck > 100)
+                    break;
+
                 //Heap optimisation - WRITE ABOUT THIS IN THE REPORT
                 //Remove current node from the open list because it is being evaluated
                 Node currentNode = openList.RemoveFirst();
@@ -60,6 +69,7 @@ public class Pathfinder : MonoBehaviour
                 if (currentNode == targetNode)
                 {
                     pathSuccess = true;
+                    Debug.Log("Path found!");
                     break;
                 }
 
@@ -87,12 +97,17 @@ public class Pathfinder : MonoBehaviour
                             openList.UpdateItem(neighbour);
                     }
                 }
+                yield return null;
             }
         }
         yield return null;
         if (pathSuccess)
         {
             waypoints = RetracePath(startNode, targetNode);
+        }
+        else
+        {
+            Debug.LogWarning("Path not found!");
         }
         requestManager.FinishedProcessingPath(waypoints, pathSuccess);
     }

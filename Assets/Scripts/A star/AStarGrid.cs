@@ -19,6 +19,8 @@ public class AStarGrid : MonoBehaviour
     [HideInInspector]
     public Node[,] grid;
     [HideInInspector]
+    public Node targetNode;
+    [HideInInspector]
     public Vector2 gridSize;
 
     private void Awake()
@@ -60,6 +62,7 @@ public class AStarGrid : MonoBehaviour
                 grid[x, y] = new Node(walkable, worldPoint, new Vector2(x, y));
             }
         }
+        grid[0, 0].walkable = false;
     }
 
     //Convert world position into grid position
@@ -115,7 +118,7 @@ public class AStarGrid : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("Node in building found");
+                        Debug.LogWarning("Node in building found");
                         grid[(int)newPos.x, (int)newPos.y].walkable = false;
                     }
                 }
@@ -132,7 +135,14 @@ public class AStarGrid : MonoBehaviour
         {
             foreach (Node n in grid)
             {
-                Gizmos.color = (n.walkable) ? Color.white : Color.red;
+                if (n == targetNode)
+                {
+                    Gizmos.color = Color.green;
+                }
+                else
+                {
+                    Gizmos.color = (n.walkable) ? Color.white : Color.red;
+                }
                 Gizmos.DrawCube(n.worldPosition, Vector3.one * nodeDiameter * 0.3f);
             }
         }

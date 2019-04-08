@@ -28,6 +28,8 @@ public class NPC : MonoBehaviour
     private int targetWaypoint;
     private bool targetReached = false;
 
+    public GameObject debugTarget;
+
     private void Start()
     {
         grid = GetComponentInParent<ReadCSV>().gridGenerator;
@@ -43,6 +45,7 @@ public class NPC : MonoBehaviour
     {
         if (target != currentTarget)
         {
+            Debug.Log("Requesting new path");
             PathRequestManager.RequestPath(transform.position, target, OnPathFound);
             currentTarget = target;
         }
@@ -52,7 +55,6 @@ public class NPC : MonoBehaviour
         anim.SetFloat("Speed", speed / animationSpeed);
     }
     
-
     //////////////
     // -- A* -- //
     //////////////
@@ -64,20 +66,23 @@ public class NPC : MonoBehaviour
         //    currentTarget = randomNode.worldPosition;
 
         while (randomNode.locationInStreamingGrid != data.coordinate
-            && randomNode.worldPosition != currentTarget)
+            || randomNode.worldPosition == currentTarget
+            || !randomNode.walkable)
         {
+            Debug.Log("Finding new node");
             randomNode = AStarGrid.g.grid[
             (int)Random.Range(0, AStarGrid.g.gridSize.x - 1),
             (int)Random.Range(0, AStarGrid.g.gridSize.y - 1)];
             //yield return null;
         }
-        Debug.Log("Target found! Node: " + randomNode.gridPosition + " Tile: " + randomNode.locationInStreamingGrid);
+        Debug.Log("New target node: " + randomNode.gridPosition + " Tile: " + randomNode.locationInStreamingGrid);
 
         //Node randomNode = AStarGrid.g.grid[
         //    (int)Random.Range(0, AStarGrid.g.gridSize.x - 1),
         //    (int)Random.Range(0, AStarGrid.g.gridSize.y - 1)];
 
         target = randomNode.worldPosition;
+        //Instantiate(debugTarget, randomNode.worldPosition, Quaternion.identity);
     }
 
     public void OnPathFound(Vector3[] _path, bool _pathSuccess)
@@ -87,6 +92,11 @@ public class NPC : MonoBehaviour
             path = _path;
             StopCoroutine(FollowPath());
             StartCoroutine(FollowPath());
+            currentTarget = target;
+        }
+        else
+        {
+            SetNewTarget();
         }
     }
 
