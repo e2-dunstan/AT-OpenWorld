@@ -9,7 +9,8 @@ public class KittenController : MonoBehaviour
     private NavMeshAgent agent;
     private Animator anim;
 
-    private bool follow = false;
+    [HideInInspector]
+    public bool following = false;
 
     private Vector3 playerPosition;
 
@@ -26,13 +27,13 @@ public class KittenController : MonoBehaviour
         {
             Destroy(transform.parent.GetComponentInChildren<ParticleSystem>());
             playerPosition = player.transform.position;
-            follow = true;
+            following = true;
         }
     }
 
     private void Update()
     {
-        if (!follow)
+        if (!following)
             return;
         
         if (Vector3.Distance(playerPosition, player.transform.position) > 2)

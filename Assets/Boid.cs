@@ -44,9 +44,9 @@ public class Boid : MonoBehaviour
 
     private void UpdateGrid()
     {
-        int x = (int)(transform.position.x * 0.25f);
-        int y = (int)(transform.position.y * 0.25f);
-        int i = ((y * 4) + x);
+        //int x = (int)(transform.position.x * 0.25f);
+        //int y = (int)(transform.position.y * 0.25f);
+        //int i = ((y * 4) + x);
     }
 
     private Vector2 SteeringForce()

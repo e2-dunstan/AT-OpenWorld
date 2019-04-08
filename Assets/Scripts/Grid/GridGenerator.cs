@@ -40,6 +40,7 @@ public class GridGenerator : MonoBehaviour
 
     public void Generate()
     {
+        Debug.Log("Generating grid...");
         //Clear lists
         //tiles.Clear();
         //allObjectsInScene.Clear();
@@ -209,6 +210,7 @@ public class GridGenerator : MonoBehaviour
             }
 
             //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
+            Debug.Log("Spawning AI...");
             GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(coord);
         }
         else if (!enable)

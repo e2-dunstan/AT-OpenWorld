@@ -60,8 +60,8 @@ public class NPC : MonoBehaviour
     {
         Node randomNode = AStarGrid.g.grid[0, 0];
 
-        if (currentTarget == null)
-            currentTarget = randomNode.worldPosition;
+        //if (currentTarget == null)
+        //    currentTarget = randomNode.worldPosition;
 
         while (randomNode.locationInStreamingGrid != data.coordinate
             && randomNode.worldPosition != currentTarget)

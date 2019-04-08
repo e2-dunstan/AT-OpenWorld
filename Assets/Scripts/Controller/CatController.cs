@@ -9,7 +9,7 @@ public class CatController : MonoBehaviour
     private float moveSpeed = 0;
     private bool damping = false;
 
-    private bool jumping = false;
+    //private bool jumping = false;
 
     private float vertical;
     private float horizontal;
