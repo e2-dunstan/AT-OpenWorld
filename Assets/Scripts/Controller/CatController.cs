@@ -30,14 +30,14 @@ public class CatController : MonoBehaviour
         Movement();
         Rotation();
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
+        //if (Input.GetKey(KeyCode.LeftShift))
+        //{
             anim.speed = 1.5f;
-        }
-        else
-        {
-            anim.speed = 1;
-        }
+        //}
+        //else
+        //{
+        //    anim.speed = 1;
+        //}
     }
     private void Movement()
     {
@@ -58,7 +58,7 @@ public class CatController : MonoBehaviour
             moveSpeed = Mathf.Clamp(Mathf.Abs(vertical) + Mathf.Abs(horizontal), 0, 1);
         }
 
-        anim.SetFloat("speed", moveSpeed);
+        anim.SetFloat("speed", moveSpeed * 1.2f);
     }
     private void Rotation()
     {
