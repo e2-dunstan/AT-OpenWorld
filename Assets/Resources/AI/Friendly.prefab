@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 135108265368214238}
   - component: {fileID: 114774257915470754}
   m_Layer: 0
-  m_Name: Low Poly Warrior
+  m_Name: Friendly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

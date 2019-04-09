@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CatController : MonoBehaviour
 {
+    private int health = 100;
+    private bool KO = false;
+
     private Animator anim;
 
     private float moveSpeed = 0;
@@ -30,14 +33,20 @@ public class CatController : MonoBehaviour
         Movement();
         Rotation();
 
-        //if (Input.GetKey(KeyCode.LeftShift))
-        //{
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            anim.speed = 2f;
+        }
+        else
+        {
             anim.speed = 1.5f;
-        //}
-        //else
-        //{
-        //    anim.speed = 1;
-        //}
+        }
+
+        if (health <= 0 && !KO)
+        {
+            anim.SetTrigger("KO");
+            KO = true;
+        }
     }
     private void Movement()
     {
@@ -93,41 +102,47 @@ public class CatController : MonoBehaviour
         previousRotation = theta;
     }
 
-    private void OldMovement()
+    public void TakeDamage()
     {
-        float vertical = Input.GetAxis("Vertical");
-
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            damping = true;
-        }
-        if (damping)
-        {
-            moveSpeed = Mathf.Lerp(moveSpeed, 0, Time.deltaTime * 2);
-            if (Input.GetKeyDown(KeyCode.W) || moveSpeed < 0.01f)
-            {
-                damping = false;
-            }
-        }
-        else
-        {
-            moveSpeed = vertical;
-        }
-
-        anim.SetFloat("speed", moveSpeed);
+        anim.SetTrigger("Hit");
+        health -= 10;
     }
 
-    private void OldRotation()
-    {
-        float horizontal = Input.GetAxis("Horizontal");
+    //private void OldMovement()
+    //{
+    //    float vertical = Input.GetAxis("Vertical");
 
-        float y = transform.eulerAngles.y;
+    //    if (Input.GetKeyUp(KeyCode.W))
+    //    {
+    //        damping = true;
+    //    }
+    //    if (damping)
+    //    {
+    //        moveSpeed = Mathf.Lerp(moveSpeed, 0, Time.deltaTime * 2);
+    //        if (Input.GetKeyDown(KeyCode.W) || moveSpeed < 0.01f)
+    //        {
+    //            damping = false;
+    //        }
+    //    }
+    //    else
+    //    {
+    //        moveSpeed = vertical;
+    //    }
 
-        y += horizontal * 3;
+    //    anim.SetFloat("speed", moveSpeed);
+    //}
 
-        transform.eulerAngles = new Vector3(transform.rotation.x, y, 
-                                transform.rotation.z);
-    }
+    //private void OldRotation()
+    //{
+    //    float horizontal = Input.GetAxis("Horizontal");
+
+    //    float y = transform.eulerAngles.y;
+
+    //    y += horizontal * 3;
+
+    //    transform.eulerAngles = new Vector3(transform.rotation.x, y, 
+    //                            transform.rotation.z);
+    //}
     //private void Jump()
     //{
     //    if (Input.GetKeyDown(KeyCode.Space))

@@ -8,78 +8,101 @@ public class NPC : MonoBehaviour
     //NEVER ROAM OUTSIDE OF ITS TILE?   <-- implemented
 
     //ISSUE ENCOUNTERED: NODES INSIDE OF BUILDINGS ARE TAGGED AS WALKABLE
+    public enum State { ROAMING, CHASING, ATTACKING }
+    [HideInInspector]
+    public State state = State.ROAMING;
 
+    private EnemyController enemy;
 
     [HideInInspector]
     public AI data;
     private GridGenerator grid;
-    private Animator anim;
+    [HideInInspector]
+    public Animator anim;
     
     // -- Movement/Transform variables -- //
     public float animationSpeed = 10.0f;
-    public float movementSpeed = 5.0f;
+    public float movementSpeed = 2.5f;
     private Vector3 previousPosition;
-    
+
+    #region A* variables
+    // -- A* variables -- //
     private Vector3 target;
     private Vector3 currentTarget;
-    
-    // -- A* variables -- //
     private Vector3[] path;
     private int targetWaypoint;
-    private bool targetReached = false;
+    //private bool targetReached = false;
+    #endregion
 
-    public GameObject debugTarget;
+    //public GameObject debugTarget;
 
     private void Start()
     {
         grid = GetComponentInParent<ReadCSV>().gridGenerator;
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
 
+        if (data.type == AI.AIType.ENEMY)
+        {
+            enemy = gameObject.AddComponent<EnemyController>();
+            enemy.npc = this;
+        }
+        
         previousPosition = transform.position;
-
-        //StartCoroutine(SetNewTarget());
         SetNewTarget();
     }
 
     private void Update()
     {
+        switch (state)
+        {
+            case State.ROAMING:
+                                
+                break;
+
+            case State.CHASING:
+                //anim.SetFloat("Speed", chaseSpeed);
+                enemy.Chasing();
+                break;
+
+            case State.ATTACKING:
+                enemy.Attacking();
+                break;
+        }
+        
         if (target != currentTarget)
         {
-            Debug.Log("Requesting new path");
+            //Debug.Log("Requesting new path");
             PathRequestManager.RequestPath(transform.position, target, OnPathFound);
             currentTarget = target;
         }
 
+        //Speed of the animation is determined by the speed of the movement
         float speed = Vector3.Distance(previousPosition, transform.position) / Time.deltaTime;
         previousPosition = transform.position;
         anim.SetFloat("Speed", speed / animationSpeed);
+
+        //FollowPath() coroutine controls actual movement
+
     }
-    
+
+    #region A* region
     //////////////
     // -- A* -- //
     //////////////
-    private void SetNewTarget()
+    public void SetNewTarget()
     {
         Node randomNode = AStarGrid.g.grid[0, 0];
-
-        //if (currentTarget == null)
-        //    currentTarget = randomNode.worldPosition;
 
         while (randomNode.locationInStreamingGrid != data.coordinate
             || randomNode.worldPosition == currentTarget
             || !randomNode.walkable)
         {
-            Debug.Log("Finding new node");
+            //Debug.Log("Finding new node");
             randomNode = AStarGrid.g.grid[
             (int)Random.Range(0, AStarGrid.g.gridSize.x - 1),
             (int)Random.Range(0, AStarGrid.g.gridSize.y - 1)];
-            //yield return null;
         }
-        Debug.Log("New target node: " + randomNode.gridPosition + " Tile: " + randomNode.locationInStreamingGrid);
-
-        //Node randomNode = AStarGrid.g.grid[
-        //    (int)Random.Range(0, AStarGrid.g.gridSize.x - 1),
-        //    (int)Random.Range(0, AStarGrid.g.gridSize.y - 1)];
+        //Debug.Log("New target node: " + randomNode.gridPosition + " Tile: " + randomNode.locationInStreamingGrid);
 
         target = randomNode.worldPosition;
         //Instantiate(debugTarget, randomNode.worldPosition, Quaternion.identity);
@@ -99,12 +122,13 @@ public class NPC : MonoBehaviour
             SetNewTarget();
         }
     }
+    #endregion
 
     private IEnumerator FollowPath()
     {
         Vector3 currentWaypoint = path[0];
 
-        while (true)
+        while (state == State.ROAMING)
         {
             //rotation speed relative to the movement speed
             if (Vector3.Distance(transform.position, currentWaypoint) < 1)
@@ -133,6 +157,7 @@ public class NPC : MonoBehaviour
         }
     }
 
+    #region Debug
     public void OnDrawGizmos()
     {
         if (path != null)
@@ -153,5 +178,5 @@ public class NPC : MonoBehaviour
             }
         }
     }
+    #endregion
 }
-

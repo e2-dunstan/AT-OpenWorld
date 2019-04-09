@@ -118,7 +118,7 @@ public class AStarGrid : MonoBehaviour
                     }
                     else
                     {
-                        Debug.LogWarning("Node in building found");
+                        //Debug.LogWarning("Node in building found");
                         grid[(int)newPos.x, (int)newPos.y].walkable = false;
                     }
                 }

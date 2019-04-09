@@ -43,7 +43,7 @@ public class Pathfinder : MonoBehaviour
             //Loop through open list
             while (openList.Count > 0)
             {
-                Debug.Log("Looping through the open list...");
+                //Debug.Log("Looping through the open list...");
                 safetyCheck++;
                 if (safetyCheck > 100)
                     break;
@@ -107,7 +107,7 @@ public class Pathfinder : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Path not found!");
+            //Debug.LogWarning("Path not found!");
         }
         requestManager.FinishedProcessingPath(waypoints, pathSuccess);
     }

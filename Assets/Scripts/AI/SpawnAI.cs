@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEditor;
 
+/* To do:
+ * save unloaded AI with positions etc when leaving tile so they return to the same positions
+ */
+
 public class SpawnAI : MonoBehaviour
 {
     private AIContainer aiContainer;
@@ -12,22 +16,36 @@ public class SpawnAI : MonoBehaviour
     public GameObject friendly;
     public GameObject enemy;
 
+    public int friendliesPerEnemy = 5;
+
     private void Awake()
     {
         NPCs = new List<AI>();
-
+        
         string friendlyPath = GetFilePath(friendly);
+        string enemyPath = GetFilePath(enemy);
 
         foreach (ReadCSV.CSVData dataItem in GetComponent<ReadCSV>().ReadFile())
         {
             if (dataItem.count == 0)
                 continue;
-
+            
             for (int i = 0; i < dataItem.count; i++)
             {
-                AI friendlyAI = new AI();
-                friendlyAI.SetVariables(friendlyPath, new Vector2(dataItem.x, dataItem.y), AI.AIType.FRIENDLY);
-                NPCs.Add(friendlyAI);
+                //Spawn enemies
+                if (i < dataItem.count / 5)
+                {
+                    AI enemyAI = new AI();
+                    enemyAI.SetVariables(enemyPath, new Vector2(dataItem.x, dataItem.y), AI.AIType.ENEMY);
+                    NPCs.Add(enemyAI);
+                }
+                //Spawn friendlies
+                else
+                {
+                    AI friendlyAI = new AI();
+                    friendlyAI.SetVariables(friendlyPath, new Vector2(dataItem.x, dataItem.y), AI.AIType.FRIENDLY);
+                    NPCs.Add(friendlyAI);
+                }
             }
         }
     }
@@ -40,6 +58,19 @@ public class SpawnAI : MonoBehaviour
             {
                 GameObject newNPC = Instantiate(Resources.Load<GameObject>(npc.path), transform);
                 newNPC.GetComponent<NPC>().data = npc;
+                npc.active = true;
+            }
+        }
+    }
+
+    //NOT IMPLEMENTED
+    public void DespawnAIAtTile(Vector2 coord)
+    {
+        foreach (AI npc in NPCs)
+        {
+            if (npc.coordinate == coord)
+            {
+                npc.active = false;
             }
         }
     }

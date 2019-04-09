@@ -11,6 +11,8 @@ public class AI
     public AIType type;
     public string path;
     public Vector2 coordinate;
+    public bool active;
+    public Vector3 spawnPosition;
 
     public void SetVariables(string _path, Vector2 _coordinate, AIType _type)
     {
