@@ -42,11 +42,7 @@ public class CatController : MonoBehaviour
             anim.speed = 1.5f;
         }
 
-        if (health <= 0 && !KO)
-        {
-            anim.SetTrigger("KO");
-            KO = true;
-        }
+
     }
     private void Movement()
     {
@@ -104,9 +100,26 @@ public class CatController : MonoBehaviour
 
     public void TakeDamage()
     {
-        GetComponentInChildren<ParticleSystem>().Play();
-        anim.SetTrigger("Hit");
-        health -= 10;
+        if (!KO)
+        {
+            GetComponentInChildren<ParticleSystem>().Play();
+            anim.SetTrigger("Hit");
+            health -= 10;
+        }
+
+        if (health <= 0 && !KO)
+        {
+            anim.SetBool("KO", true);
+            GetComponent<AudioSource>().Play();
+            KO = true;
+            StartCoroutine(RestartGame());
+        }
+    }
+
+    private IEnumerator RestartGame()
+    {
+        yield return new WaitForSeconds(3);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
     }
 
     //private void OldMovement()

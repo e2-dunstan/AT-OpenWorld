@@ -23,10 +23,11 @@ public class KittenController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == player && !following)
         {
             Destroy(transform.parent.GetComponentInChildren<ParticleSystem>());
             playerPosition = player.transform.position;
+            GetComponentInParent<AudioSource>().Play();
             following = true;
         }
     }

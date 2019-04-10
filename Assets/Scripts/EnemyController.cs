@@ -11,13 +11,15 @@ public class EnemyController : MonoBehaviour
     private float fov = 50;
 
     private float searchRange;
-    private float chaseSpeed = 0.8f;
     private bool hasRolled = false;
+    private float chaseSpeed = 1;
     //public bool updatingPlayerPosition = false;
 
-    private float attackRange = 2.0f;
+    private float attackRange = 2.5f;
+    private float timeBetweenAttacks = 1.0f;
+    private float timeElapsed = 1.0f;
 
-    private Vector3 lastPlayerLoc = Vector3.zero;
+    //private Vector3 lastPlayerLoc = Vector3.zero;
     
     private void Start()
     {
@@ -59,7 +61,16 @@ public class EnemyController : MonoBehaviour
 
     public void Attacking()
     {
-        npc.anim.SetTrigger("Attack");
+        if (timeElapsed >= timeBetweenAttacks)
+        {
+            npc.anim.SetTrigger("Attack");
+            GetComponent<AudioSource>().Play();
+            timeElapsed = 0;
+        }
+        else
+        {
+            timeElapsed += Time.deltaTime;
+        }
 
         if (GetDistanceFromPlayer() > attackRange * 1.5f)
         {
@@ -67,6 +78,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    //Called from animation event
     public void Hit()
     {
         if (GetDistanceFromPlayer() < 2.0f)
@@ -103,7 +115,7 @@ public class EnemyController : MonoBehaviour
                     npc.anim.SetTrigger("Roll");
                     hasRolled = true;
                 }
-                lastPlayerLoc = player.transform.position;
+                //lastPlayerLoc = player.transform.position;
             }
         }
     }
