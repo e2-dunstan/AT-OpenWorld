@@ -27,6 +27,7 @@ public class CalculateFPS : MonoBehaviour
         {
             float renderTime = Mathf.RoundToInt(UnityStats.renderTime * 10000);
             t.text = renderTime.ToString() + " ms";
+            Statistics.instance.SaveFPS(renderTime);
             yield return new WaitForSeconds(0.5f);
         }
     }

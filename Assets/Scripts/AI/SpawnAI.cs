@@ -144,7 +144,7 @@ public class SpawnAI : MonoBehaviour
             if (npc.coordinate == coord
                 && npc.obj != null)
             {
-                npc.obj.GetComponent<NPC>().StopAllCoroutines();
+                npc.obj.GetComponent<NPC>().Reset();
                 npc.spawnPosition = npc.obj.transform.position;
                 if (destroyRatherThanDisable)
                     Destroy(npc.obj);

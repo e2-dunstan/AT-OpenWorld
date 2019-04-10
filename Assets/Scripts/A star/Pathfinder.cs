@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+//using System.Diagnostics;
 
 public class Pathfinder : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class Pathfinder : MonoBehaviour
 
     private IEnumerator FindPath(Vector3 _startPosition, Vector3 _targetPosition)
     {
+        System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+        sw.Start();
+
         Vector3[] waypoints = new Vector3[0];
         bool pathSuccess = false;
 
@@ -45,7 +49,8 @@ public class Pathfinder : MonoBehaviour
             {
                 //Debug.Log("Looping through the open list...");
                 safetyCheck++;
-                if (safetyCheck > 100)
+                //Can only search in a 20 by 20 space so max 400
+                if (safetyCheck > 400)
                     break;
 
                 //Heap optimisation - WRITE ABOUT THIS IN THE REPORT
@@ -68,8 +73,10 @@ public class Pathfinder : MonoBehaviour
                 //Path found
                 if (currentNode == targetNode)
                 {
+                    sw.Stop();
                     pathSuccess = true;
-                    Debug.Log("Path found!");
+                    Statistics.instance.SavePathfindingTime(sw.ElapsedMilliseconds);
+                    //Debug.Log("Path found in " + sw.ElapsedMilliseconds + " ms");
                     break;
                 }
 
@@ -97,7 +104,6 @@ public class Pathfinder : MonoBehaviour
                             openList.UpdateItem(neighbour);
                     }
                 }
-                yield return null;
             }
         }
         yield return null;
@@ -107,7 +113,7 @@ public class Pathfinder : MonoBehaviour
         }
         else
         {
-            //Debug.LogWarning("Path not found!");
+            Debug.LogWarning("Path not found!");
         }
         requestManager.FinishedProcessingPath(waypoints, pathSuccess);
     }

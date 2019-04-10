@@ -179,6 +179,7 @@ public class GridGenerator : MonoBehaviour
     public IEnumerator ToggleObjectsAtTile(Vector2 coord, bool enable, ObjectContainer objContainer)
     {
         Tile tile = new Tile();
+        Vector2 aiCoord = new Vector2(coord.x + 1, coord.y + 1);
 
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -212,7 +213,7 @@ public class GridGenerator : MonoBehaviour
             }
 
             //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
-            GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(coord);
+            GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(aiCoord);
         }
         else if (!enable)
         {
@@ -230,7 +231,7 @@ public class GridGenerator : MonoBehaviour
                 }
                 tile.objects = temp;
 
-                GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().DespawnAIAtTile(coord);
+                GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().DespawnAIAtTile(aiCoord);
             }
             tile.loaded = false;
         }

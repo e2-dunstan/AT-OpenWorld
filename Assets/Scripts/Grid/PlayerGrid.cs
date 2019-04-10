@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerGrid : MonoBehaviour
 {
+    public static PlayerGrid g;
+
     public GridGenerator grid;
 
     private List<Vector2> disabledTiles = new List<Vector2>();
@@ -18,6 +20,10 @@ public class PlayerGrid : MonoBehaviour
 
 	void Start ()
     {
+        if (g == null)
+        {
+            g = this;
+        }
         tiles = grid.tiles;
         currentCoordinate = GetCoordinate(gameObject);
         surroundingTiles = new Vector2[9];

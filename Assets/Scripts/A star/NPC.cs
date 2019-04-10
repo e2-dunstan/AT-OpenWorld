@@ -8,9 +8,11 @@ public class NPC : MonoBehaviour
     //NEVER ROAM OUTSIDE OF ITS TILE?   <-- implemented
 
     //ISSUE ENCOUNTERED: NODES INSIDE OF BUILDINGS ARE TAGGED AS WALKABLE
-    public enum State { ROAMING, CHASING, ATTACKING }
+    public enum State { IDLE, ROAMING, CHASING, ATTACKING }
     [HideInInspector]
-    public State state = State.ROAMING;
+    public State state = State.IDLE;
+
+    private int roamRange = 10;
 
     private EnemyController enemy;
 
@@ -53,14 +55,21 @@ public class NPC : MonoBehaviour
 
     private void Update()
     {
+        Vector2 currentPlayerTile = new Vector2(PlayerGrid.g.currentTile.coordinate.x + 1,
+                                                PlayerGrid.g.currentTile.coordinate.y + 1);
         switch (state)
         {
+            case State.IDLE:
+                if (data.coordinate == currentPlayerTile)
+                    state = State.ROAMING;
+                break;
+
             case State.ROAMING:
-                                
+                if (data.coordinate != currentPlayerTile)
+                    state = State.IDLE;
                 break;
 
             case State.CHASING:
-                //anim.SetFloat("Speed", chaseSpeed);
                 enemy.Chasing();
                 break;
 
@@ -68,8 +77,8 @@ public class NPC : MonoBehaviour
                 enemy.Attacking();
                 break;
         }
-        
-        if (target != currentTarget)
+
+        if (target != currentTarget && data.coordinate == currentPlayerTile)
         {
             //Debug.Log("Requesting new path");
             PathRequestManager.RequestPath(transform.position, target, OnPathFound);
@@ -80,9 +89,7 @@ public class NPC : MonoBehaviour
         float speed = Vector3.Distance(previousPosition, transform.position) / Time.deltaTime;
         previousPosition = transform.position;
         anim.SetFloat("Speed", speed / animationSpeed);
-
-        //FollowPath() coroutine controls actual movement
-
+        //FollowPath coroutine controls actual movement
     }
 
     #region A* region
@@ -97,7 +104,6 @@ public class NPC : MonoBehaviour
             || randomNode.worldPosition == currentTarget
             || !randomNode.walkable)
         {
-            //Debug.Log("Finding new node");
             randomNode = AStarGrid.g.grid[
             (int)Random.Range(0, AStarGrid.g.gridSize.x - 1),
             (int)Random.Range(0, AStarGrid.g.gridSize.y - 1)];
@@ -110,7 +116,7 @@ public class NPC : MonoBehaviour
 
     public void OnPathFound(Vector3[] _path, bool _pathSuccess)
     {
-        if (_pathSuccess && gameObject.activeInHierarchy)
+        if (_pathSuccess)
         {
             path = _path;
             StopCoroutine(FollowPath());
@@ -126,19 +132,22 @@ public class NPC : MonoBehaviour
 
     private IEnumerator FollowPath()
     {
+        if (path.Length <= 0)
+        {
+            yield break;
+        }
         Vector3 currentWaypoint = path[0];
 
         while (state == State.ROAMING)
         {
+            //Debug.Log("Following path");
             //rotation speed relative to the movement speed
             if (Vector3.Distance(transform.position, currentWaypoint) < 1)
             {
                 targetWaypoint++;
                 if (targetWaypoint >= path.Length)
                 {
-                    //exit coroutine and find new target
-                    //StartCoroutine(SetNewTarget());
-                    Debug.Log("Destination reached");
+                    //Debug.Log("Destination reached");
                     SetNewTarget();
                     yield break;
                 }
@@ -155,6 +164,13 @@ public class NPC : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void Reset()
+    {
+        StopAllCoroutines();
+        currentTarget = Vector3.zero;
+        targetWaypoint = 0;
     }
 
     #region Debug
