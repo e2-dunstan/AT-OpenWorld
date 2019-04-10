@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class SetKittenCounter : MonoBehaviour
 {
+    public GameObject congrats;
+    private bool gameOver = false;
     public KittenController[] kittens;
 
 	void Update ()
@@ -18,5 +20,18 @@ public class SetKittenCounter : MonoBehaviour
             }
         }
         GetComponent<Text>().text = numFollowing.ToString() + " / 9";
+
+        if (numFollowing == 9 && !gameOver)
+        {
+            gameOver = true;
+            congrats.SetActive(true);
+            StartCoroutine(EndGame());
+        }
 	}
+
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(3.0f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
 }
