@@ -104,6 +104,7 @@ public class CatController : MonoBehaviour
 
     public void TakeDamage()
     {
+        GetComponentInChildren<ParticleSystem>().Play();
         anim.SetTrigger("Hit");
         health -= 10;
     }

@@ -16,6 +16,8 @@ public class SpawnAI : MonoBehaviour
     public GameObject friendly;
     public GameObject enemy;
 
+    public bool destroyRatherThanDisable = false;
+
     public int friendliesPerEnemy = 5;
 
     private void Awake()
@@ -33,7 +35,7 @@ public class SpawnAI : MonoBehaviour
             for (int i = 0; i < dataItem.count; i++)
             {
                 //Spawn enemies
-                if (i < dataItem.count / 5)
+                if (i < dataItem.count / friendliesPerEnemy)
                 {
                     AI enemyAI = new AI();
                     enemyAI.SetVariables(enemyPath, new Vector2(dataItem.x, dataItem.y), AI.AIType.ENEMY);
@@ -52,27 +54,13 @@ public class SpawnAI : MonoBehaviour
 
     public void SpawnAIAtTile(Vector2 coord)
     {
-        foreach (AI npc in NPCs)
-        {
-            if (npc.coordinate == coord)
-            {
-                GameObject newNPC = Instantiate(Resources.Load<GameObject>(npc.path), transform);
-                newNPC.GetComponent<NPC>().data = npc;
-                npc.active = true;
-            }
-        }
+        StartCoroutine(SpawnCoroutine(coord));
     }
 
     //NOT IMPLEMENTED
     public void DespawnAIAtTile(Vector2 coord)
     {
-        foreach (AI npc in NPCs)
-        {
-            if (npc.coordinate == coord)
-            {
-                npc.active = false;
-            }
-        }
+        StartCoroutine(DespawnCoroutine(coord));
     }
 
     public void SaveObjects()
@@ -95,6 +83,77 @@ public class SpawnAI : MonoBehaviour
         path = splitString[0];
 
         return path;
+    }
+
+    private Vector3 GetRandomSpawnPosition(Vector2 coord)
+    {
+        Vector2 length = new Vector2(AStarGrid.g.gridSize.x, AStarGrid.g.gridSize.y);
+        Node randNode = AStarGrid.g.grid[0, 0];
+
+        bool invalid = true;
+
+        while (invalid)
+        {
+            randNode = AStarGrid.g.grid[(int)Random.Range(1, length.x - 1), 
+                                        (int)Random.Range(1, length.y - 1)];
+
+            if (randNode.walkable && randNode.locationInStreamingGrid == coord)
+            {
+                invalid = false;
+            }
+        }
+
+        return randNode.worldPosition;
+    }
+
+    private IEnumerator SpawnCoroutine(Vector2 coord)
+    {
+        foreach (AI npc in NPCs)
+        {
+            if (npc.coordinate == coord)
+            {
+                GameObject newNPC = null;
+                if (npc.obj != null)
+                {
+                    npc.obj.SetActive(true);
+                    newNPC = npc.obj;
+                }
+                else
+                {
+                    newNPC = Instantiate(Resources.Load<GameObject>(npc.path), transform);
+                }
+
+                newNPC.GetComponent<NPC>().data = npc;
+                npc.obj = newNPC;
+
+                if (npc.spawnPosition != Vector3.zero)
+                    newNPC.transform.position = npc.spawnPosition;
+                else
+                    newNPC.transform.position = GetRandomSpawnPosition(coord);
+
+                yield return null;
+            }
+        }
+        yield return null;
+    }
+
+    private IEnumerator DespawnCoroutine(Vector2 coord)
+    {
+        foreach (AI npc in NPCs)
+        {
+            if (npc.coordinate == coord
+                && npc.obj != null)
+            {
+                npc.obj.GetComponent<NPC>().StopAllCoroutines();
+                npc.spawnPosition = npc.obj.transform.position;
+                if (destroyRatherThanDisable)
+                    Destroy(npc.obj);
+                else
+                    npc.obj.SetActive(false);
+                yield return null;
+            }
+        }
+        yield return null;
     }
 
     //public void SpawnNewHumanoids(Vector2 coordinate, float tileSize, int count = 1)

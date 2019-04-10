@@ -70,7 +70,9 @@ public class EnemyController : MonoBehaviour
     public void Hit()
     {
         if (GetDistanceFromPlayer() < 2.0f)
+        {
             player.GetComponent<CatController>().TakeDamage();
+        }
     }
 
     //private void SetLastLocationPlayerSpotted()

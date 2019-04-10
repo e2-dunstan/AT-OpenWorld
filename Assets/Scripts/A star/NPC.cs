@@ -110,7 +110,7 @@ public class NPC : MonoBehaviour
 
     public void OnPathFound(Vector3[] _path, bool _pathSuccess)
     {
-        if (_pathSuccess)
+        if (_pathSuccess && gameObject.activeInHierarchy)
         {
             path = _path;
             StopCoroutine(FollowPath());

@@ -205,6 +205,8 @@ public class GridGenerator : MonoBehaviour
                         newObject.layer = (int)obj.type;
 
                         tile.objects.Add(newObject);
+
+                        yield return null;
                     }
                 }
             }
@@ -224,8 +226,11 @@ public class GridGenerator : MonoBehaviour
                 {
                     Destroy(obj);
                     temp.Remove(obj);
+                    yield return null;
                 }
                 tile.objects = temp;
+
+                GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().DespawnAIAtTile(coord);
             }
             tile.loaded = false;
         }
