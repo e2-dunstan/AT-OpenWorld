@@ -8,9 +8,9 @@ public class Heap<T> where T : IHeapItem<T>
     T[] items;
     int currentItemCount;
 
-    public Heap(int maxHeapSize)
+    public Heap(int maxSize)
     {
-        items = new T[maxHeapSize];
+        items = new T[maxSize];
     }
 
     public void Add(T item)

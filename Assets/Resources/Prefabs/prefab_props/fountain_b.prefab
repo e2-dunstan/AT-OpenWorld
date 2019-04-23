@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4563478579932184}
   - component: {fileID: 198988417232782164}
   - component: {fileID: 199279409354471394}
-  - component: {fileID: 208884929845037188}
+  - component: {fileID: 208460676438013030}
   m_Layer: 10
   m_Name: fountain_b
   m_TagString: Untagged
@@ -4632,7 +4632,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!208 &208884929845037188
+--- !u!208 &208460676438013030
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

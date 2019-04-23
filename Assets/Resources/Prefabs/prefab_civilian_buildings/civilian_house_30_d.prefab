@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33146430394984000}
   - component: {fileID: 23371220898236900}
   - component: {fileID: 64855386221466124}
-  - component: {fileID: 208710012643012834}
+  - component: {fileID: 208230029972175772}
   m_Layer: 10
   m_Name: civilian_house_30_d
   m_TagString: Untagged
@@ -36,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1888820923621538}
-  m_LocalRotation: {x: 0.65328187, y: -0.27059716, z: -0.27059716, w: -0.65328187}
-  m_LocalPosition: {x: -46.760002, y: 0, z: -24.75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.000000461936, y: 0.7071068, z: 0.7071068, w: -0.00000046250426}
+  m_LocalPosition: {x: 35.820007, y: 0, z: -16.009995}
+  m_LocalScale: {x: 0.91528004, y: 0.9152796, z: 0.9152796}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 45.000004}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -180.00002}
 --- !u!23 &23371220898236900
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -63,7 +63,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 9923ec4feaebca94382cb2c29c582cfe, type: 2}
   - {fileID: 2100000, guid: 21f5d46cfbe5a1944a447dbbd51d3386, type: 2}
   - {fileID: 2100000, guid: 870bcbe66fbf1e0479f611163b71d61e, type: 2}
-  - {fileID: 2100000, guid: 098163776a757c842bd663b8fcb7f05e, type: 2}
+  - {fileID: 2100000, guid: a242f6773b4ccc74193e486bc805bfd7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,11 +100,11 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b5bc43b8452524d4da0f2a122c75fdbe, type: 3}
---- !u!208 &208710012643012834
+--- !u!208 &208230029972175772
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

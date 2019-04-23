@@ -23,7 +23,7 @@ public class SpawnAI : MonoBehaviour
     private void Awake()
     {
         NPCs = new List<AI>();
-        
+
         string friendlyPath = GetFilePath(friendly);
         string enemyPath = GetFilePath(enemy);
 
@@ -31,7 +31,7 @@ public class SpawnAI : MonoBehaviour
         {
             if (dataItem.count == 0)
                 continue;
-            
+
             for (int i = 0; i < dataItem.count; i++)
             {
                 //Spawn enemies
@@ -92,8 +92,16 @@ public class SpawnAI : MonoBehaviour
 
         bool invalid = true;
 
+        int safetyCheck = 0;
+
         while (invalid)
         {
+            safetyCheck++;
+            if (safetyCheck > 1000)
+            {
+                Debug.LogWarning("Spawn location not found in tile " + coord + ". Please modify aiCount.csv.");
+                return Vector3.zero;
+            }
             randNode = AStarGrid.g.grid[(int)Random.Range(1, length.x - 1), 
                                         (int)Random.Range(1, length.y - 1)];
 
@@ -124,6 +132,7 @@ public class SpawnAI : MonoBehaviour
                 }
 
                 newNPC.GetComponent<NPC>().data = npc;
+                newNPC.GetComponent<NPC>().ResetNPC();
                 npc.obj = newNPC;
 
                 if (npc.spawnPosition != Vector3.zero)
@@ -144,7 +153,7 @@ public class SpawnAI : MonoBehaviour
             if (npc.coordinate == coord
                 && npc.obj != null)
             {
-                npc.obj.GetComponent<NPC>().Reset();
+                npc.obj.GetComponent<NPC>().ResetNPC();
                 npc.spawnPosition = npc.obj.transform.position;
                 if (destroyRatherThanDisable)
                     Destroy(npc.obj);

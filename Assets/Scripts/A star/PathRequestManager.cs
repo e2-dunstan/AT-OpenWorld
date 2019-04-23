@@ -5,10 +5,25 @@ using UnityEngine;
 
 public class PathRequestManager : MonoBehaviour
 {
-    private Queue<PathRequest> pathRequestQueue = new Queue<PathRequest>();
-    private PathRequest currentPathRequest;
+    struct PathRequest
+    {
+        public Vector3 start;
+        public Vector3 end;
+        public Action<Vector3[], bool> callback;
 
-    private static PathRequestManager prm;
+        //Constructor
+        public PathRequest(Vector3 _start, Vector3 _end, Action<Vector3[], bool> _cllbck)
+        {
+            start = _start;
+            end = _end;
+            callback = _cllbck;
+        }
+    }
+
+    private PathRequest currentPathRequest;
+    private Queue<PathRequest> pathRequestQueue = new Queue<PathRequest>();
+
+    public static PathRequestManager prm;
     private Pathfinder pathfinder;
 
     private bool isProcessingPath;
@@ -27,16 +42,16 @@ public class PathRequestManager : MonoBehaviour
     {
         PathRequest newRequest = new PathRequest(_pathStart, _pathEnd, _callback);
         prm.pathRequestQueue.Enqueue(newRequest);
-        prm.TryProcessNext();
+        prm.TryProcessNextPath();
     }
 
-    private void TryProcessNext()
+    private void TryProcessNextPath()
     {
         if (!isProcessingPath && pathRequestQueue.Count > 0)
         {
             currentPathRequest = pathRequestQueue.Dequeue();
             isProcessingPath = true;
-            pathfinder.StartFindPath(currentPathRequest.pathStart, currentPathRequest.pathEnd);
+            pathfinder.StartFindPathCoroutine(currentPathRequest.start, currentPathRequest.end);
         }
     }
 
@@ -44,21 +59,11 @@ public class PathRequestManager : MonoBehaviour
     {
         currentPathRequest.callback(path, success);
         isProcessingPath = false;
-        TryProcessNext();
+        TryProcessNextPath();
     }
 
-    struct PathRequest
+    public void ClearQueue()
     {
-        public Vector3 pathStart;
-        public Vector3 pathEnd;
-        public Action<Vector3[], bool> callback;
-
-        //Constructor
-        public PathRequest(Vector3 _start, Vector3 _end, Action<Vector3[], bool> _cllbck)
-        {
-            pathStart = _start;
-            pathEnd = _end;
-            callback = _cllbck;
-        }
+        pathRequestQueue.Clear();
     }
 }

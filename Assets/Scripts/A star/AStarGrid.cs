@@ -10,7 +10,7 @@ public class AStarGrid : MonoBehaviour
     public GridGenerator streamingGrid;
 
     //buildings and vegetation
-    public LayerMask unwalkableMask;
+    public LayerMask unwalkableLayers;
 
     public Vector2 gridDimensions;
     public float nodeRadius;
@@ -40,8 +40,8 @@ public class AStarGrid : MonoBehaviour
         grid = new Node[(int)gridSize.x, (int)gridSize.y];
         //Bottom left
         Vector3 worldZeroCoord = transform.position
-            - (Vector3.right * gridDimensions.x / 2)
-            - (Vector3.forward * gridDimensions.y / 2);
+            - ((Vector3.right * gridDimensions.x) / 2)
+            - ((Vector3.forward * gridDimensions.y) / 2);
 
         //Initialise nodes
         for (int x = 0; x < gridSize.x; x++)
@@ -52,13 +52,12 @@ public class AStarGrid : MonoBehaviour
                     + Vector3.right * (x * nodeDiameter + nodeRadius)
                     + Vector3.forward * (y * nodeDiameter + nodeRadius);
 
-                //bool walkable = true;
-                //if (Physics.CheckSphere(worldPoint, nodeRadius, unwalkableMask)
-                //    || Physics.OverlapSphere(worldPoint, nodeRadius, unwalkableMask).Length > 0)
-                //{
-                //    walkable = false;
-                //}
-                bool walkable = !Physics.CheckSphere(worldPoint, nodeRadius, unwalkableMask);
+                
+                bool walkable = !Physics.CheckSphere(worldPoint, nodeRadius, unwalkableLayers);
+                if (Physics.OverlapSphere(worldPoint, 0, unwalkableLayers).Length > 0)
+                {
+                    walkable = false;
+                }
                 grid[x, y] = new Node(walkable, worldPoint, new Vector2(x, y));
             }
         }
@@ -68,28 +67,13 @@ public class AStarGrid : MonoBehaviour
     //Convert world position into grid position
     public Node GetNodeFromWorldPosition(Vector3 _worldPosition)
     {
-        Vector2 percent = new Vector2(
+        Vector2 approx = new Vector2(
             Mathf.Clamp01((_worldPosition.x + gridDimensions.x / 2) / gridDimensions.x),
             Mathf.Clamp01((_worldPosition.z + gridDimensions.y / 2) / gridDimensions.y));
 
-        return grid[Mathf.RoundToInt((gridSize.x - 1) * percent.x),
-                    Mathf.RoundToInt((gridSize.y - 1) * percent.y)];
+        return grid[Mathf.RoundToInt((gridSize.x - 1) * approx.x),
+                    Mathf.RoundToInt((gridSize.y - 1) * approx.y)];
     }
-
-    //private Vector2 GetStreamingTile(Vector3 _position)
-    //{
-    //    foreach (Tile t in streamingGrid.tiles)
-    //    {
-    //        if (_position.x >= t.worldPosition.x
-    //            && _position.z >= t.worldPosition.z
-    //            && _position.x < t.worldPosition.x + streamingGrid.tileSize
-    //            && _position.z < t.worldPosition.z + streamingGrid.tileSize)
-    //        {
-    //            return t.coordinate;
-    //        }
-    //    }
-    //    return new Vector2(-1, -1);
-    //}
 
     public List<Node> GetNodeNeighbours(Node _node)
     {
@@ -112,7 +96,7 @@ public class AStarGrid : MonoBehaviour
                     Ray ray = new Ray(_node.worldPosition, grid[(int)newPos.x, (int)newPos.y].worldPosition - _node.worldPosition);
                     float distance = Vector3.Distance(_node.worldPosition, grid[(int)newPos.x, (int)newPos.y].worldPosition);
 
-                    if (!Physics.Raycast(ray, distance, unwalkableMask))
+                    if (!Physics.Raycast(ray, distance, unwalkableLayers))
                     {
                         neighbours.Add(grid[(int)newPos.x, (int)newPos.y]);
                     }
@@ -127,6 +111,7 @@ public class AStarGrid : MonoBehaviour
         return neighbours;
     }
 
+    //Debug
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(gridDimensions.x, 1, gridDimensions.y));

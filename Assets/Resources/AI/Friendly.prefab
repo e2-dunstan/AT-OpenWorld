@@ -5873,10 +5873,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0069ff793d1a9a54abf3ade6e2fba3f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
+  anim: {fileID: 0}
   animationSpeed: 10
-  movementSpeed: 5
-  debugTarget: {fileID: 1436361461255158, guid: b53eabfd56651ce4c802e4979f4a0b28,
-    type: 2}
+  movementSpeed: 2
 --- !u!135 &135108265368214238
 SphereCollider:
   m_ObjectHideFlags: 1

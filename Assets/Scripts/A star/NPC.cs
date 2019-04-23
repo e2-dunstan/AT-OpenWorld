@@ -12,18 +12,20 @@ public class NPC : MonoBehaviour
     [HideInInspector]
     public State state = State.IDLE;
 
-    private int roamRange = 10;
+    //private int roamRange = 10;
 
     private EnemyController enemy;
 
     [HideInInspector]
     public AI data;
-    private GridGenerator grid;
+    //private GridGenerator grid;
     [HideInInspector]
     public Animator anim;
     
     // -- Movement/Transform variables -- //
+    [HideInInspector]
     public float animationSpeed = 10.0f;
+    //Must be set in the inspector
     public float movementSpeed = 2.5f;
     private Vector3 previousPosition;
 
@@ -40,7 +42,7 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
-        grid = GetComponentInParent<ReadCSV>().gridGenerator;
+        //grid = GetComponentInParent<ReadCSV>().gridGenerator;
         anim = gameObject.GetComponent<Animator>();
 
         if (data.type == AI.AIType.ENEMY)
@@ -60,27 +62,41 @@ public class NPC : MonoBehaviour
         switch (state)
         {
             case State.IDLE:
+                if (path != null)
+                    path = null;
                 if (data.coordinate == currentPlayerTile)
                     state = State.ROAMING;
                 break;
 
             case State.ROAMING:
                 if (data.coordinate != currentPlayerTile)
+                {
                     state = State.IDLE;
+                    StopCoroutine(FollowPath());
+                }
                 break;
 
             case State.CHASING:
+                StopCoroutine(FollowPath());
+                if (path != null)
+                    path = null;
                 enemy.Chasing();
                 break;
 
             case State.ATTACKING:
+                StopCoroutine(FollowPath());
+                if (path != null)
+                    path = null;
                 enemy.Attacking();
                 break;
         }
 
+        if (data.coordinate == currentPlayerTile)
+            Debug.Log(data.coordinate + " : " + currentPlayerTile);
+        //Bug - not entering the below if statement when resetting?
         if (target != currentTarget && data.coordinate == currentPlayerTile)
         {
-            //Debug.Log("Requesting new path");
+            Debug.Log("Requesting new path");
             PathRequestManager.RequestPath(transform.position, target, OnPathFound);
             currentTarget = target;
         }
@@ -88,6 +104,7 @@ public class NPC : MonoBehaviour
         //Speed of the animation is determined by the speed of the movement
         float speed = Vector3.Distance(previousPosition, transform.position) / Time.deltaTime;
         previousPosition = transform.position;
+        //Debug.Log(speed / animationSpeed);
         anim.SetFloat("Speed", speed / animationSpeed);
         //FollowPath coroutine controls actual movement
     }
@@ -100,32 +117,34 @@ public class NPC : MonoBehaviour
     {
         Node randomNode = AStarGrid.g.grid[0, 0];
 
-        while (randomNode.locationInStreamingGrid != data.coordinate
-            || randomNode.worldPosition == currentTarget
-            || !randomNode.walkable)
+        while ((randomNode.locationInStreamingGrid != data.coordinate
+            || randomNode.worldPosition == currentTarget || !randomNode.walkable)
+            && state != State.ATTACKING && state != State.CHASING)
         {
             randomNode = AStarGrid.g.grid[
             (int)Random.Range(0, AStarGrid.g.gridSize.x - 1),
             (int)Random.Range(0, AStarGrid.g.gridSize.y - 1)];
         }
         //Debug.Log("New target node: " + randomNode.gridPosition + " Tile: " + randomNode.locationInStreamingGrid);
-
         target = randomNode.worldPosition;
         //Instantiate(debugTarget, randomNode.worldPosition, Quaternion.identity);
     }
 
     public void OnPathFound(Vector3[] _path, bool _pathSuccess)
     {
-        if (_pathSuccess)
+        if (state != State.CHASING && state != State.ATTACKING)
         {
-            path = _path;
-            StopCoroutine(FollowPath());
-            StartCoroutine(FollowPath());
-            currentTarget = target;
-        }
-        else
-        {
-            SetNewTarget();
+            if (_pathSuccess)
+            {
+                path = _path;
+                StopCoroutine(FollowPath());
+                StartCoroutine(FollowPath());
+                currentTarget = target;
+            }
+            else
+            {
+                SetNewTarget();
+            }
         }
     }
     #endregion
@@ -140,14 +159,12 @@ public class NPC : MonoBehaviour
 
         while (state == State.ROAMING)
         {
-            //Debug.Log("Following path");
             //rotation speed relative to the movement speed
             if (Vector3.Distance(transform.position, currentWaypoint) < 1)
             {
                 targetWaypoint++;
-                if (targetWaypoint >= path.Length)
+                if (targetWaypoint >= path.Length) //destination reached
                 {
-                    //Debug.Log("Destination reached");
                     SetNewTarget();
                     yield break;
                 }
@@ -166,11 +183,17 @@ public class NPC : MonoBehaviour
         }
     }
 
-    public void Reset()
+    public void ResetNPC()
     {
         StopAllCoroutines();
-        currentTarget = Vector3.zero;
+        path = null;
+        //PathRequestManager.prm.ClearQueue();
         targetWaypoint = 0;
+        currentTarget = Vector3.zero;
+        SetNewTarget();
+
+        if (anim != null && anim.GetBool("Running"))
+            anim.SetBool("Running", false);
     }
 
     #region Debug

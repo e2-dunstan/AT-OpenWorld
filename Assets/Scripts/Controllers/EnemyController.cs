@@ -11,11 +11,12 @@ public class EnemyController : MonoBehaviour
     private float fov = 50;
 
     private float searchRange;
-    private bool hasRolled = false;
-    private float chaseSpeed = 1;
+    //private bool hasRolled = false;
+    private float chaseSpeed = 5;
+    //private bool chasing = false;
     //public bool updatingPlayerPosition = false;
 
-    private float attackRange = 2.5f;
+    private float attackRange = 2.0f;
     private float timeBetweenAttacks = 1.0f;
     private float timeElapsed = 1.0f;
 
@@ -29,35 +30,34 @@ public class EnemyController : MonoBehaviour
 
     public void Chasing()
     {
-        if (GetDistanceFromPlayer() > searchRange / 2)
+        if (GetDistanceFromPlayer() > searchRange * 1.2f)
         {
-            npc.state = NPC.State.ROAMING;
-            hasRolled = false;
+            //chasing = false;
+            npc.anim.SetBool("Running", false);
+            
             npc.SetNewTarget();
+            npc.state = NPC.State.IDLE;
         }
         else if (GetDistanceFromPlayer() < attackRange)
         {
+            //chasing = false;
+            npc.anim.SetBool("Running", false);
             npc.state = NPC.State.ATTACKING;
         }
         else
         {
-            Debug.Log("Chasing");
+            if (!npc.anim.GetBool("Running"))
+                npc.anim.SetBool("Running", true);
+            
             Vector3 direction = (player.transform.position - transform.position).normalized;
             Quaternion lookRotation = Quaternion.LookRotation(direction);
-
             transform.rotation = Quaternion.Slerp(
                                             transform.rotation, lookRotation,
-                                            npc.movementSpeed * Time.deltaTime);
-            transform.position += transform.forward * Time.deltaTime * npc.movementSpeed;
+                                            chaseSpeed * Time.deltaTime);
+            transform.position += transform.forward * Time.deltaTime * chaseSpeed;
         }
-
-        /*if (!updatingPlayerPosition)
-        {
-            updatingPlayerPosition = true;
-            //StartCoroutine(GetPlayerNode());
-        }*/
-        //Using A* each frame to calculate the path to the player is too slow
     }
+    //Using A* each frame to calculate the path to the player is too slow
 
     public void Attacking()
     {
@@ -72,7 +72,7 @@ public class EnemyController : MonoBehaviour
             timeElapsed += Time.deltaTime;
         }
 
-        if (GetDistanceFromPlayer() > attackRange * 1.5f)
+        if (GetDistanceFromPlayer() > attackRange * 1.2f)
         {
             npc.state = NPC.State.CHASING;
         }
@@ -110,11 +110,11 @@ public class EnemyController : MonoBehaviour
                 < fov)
             {
                 npc.state = NPC.State.CHASING;
-                if (!hasRolled)
-                {
-                    npc.anim.SetTrigger("Roll");
-                    hasRolled = true;
-                }
+                //if (!hasRolled)
+                //{
+                //    npc.anim.SetTrigger("Roll");
+                //    hasRolled = true;
+                //}
                 //lastPlayerLoc = player.transform.position;
             }
         }
@@ -124,12 +124,13 @@ public class EnemyController : MonoBehaviour
     {
         RaycastHit hit;
         if (other.tag == "Player"
-         && Physics.Raycast(transform.position,
+         && (Physics.Raycast(transform.position,
                 player.transform.position - transform.position,
                 out hit, 15f)
-         && hit.collider.tag != "Player")
+         && hit.collider.tag != "Player"))
         {
-            npc.state = NPC.State.ROAMING;
+            npc.ResetNPC();
+            npc.state = NPC.State.IDLE;
         }
     }
 

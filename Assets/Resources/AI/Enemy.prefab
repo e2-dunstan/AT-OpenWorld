@@ -6047,7 +6047,7 @@ MonoBehaviour:
   state: 0
   anim: {fileID: 0}
   animationSpeed: 10
-  movementSpeed: 5
+  movementSpeed: 3
 --- !u!135 &135243186466132326
 SphereCollider:
   m_ObjectHideFlags: 1

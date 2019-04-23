@@ -6,14 +6,13 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {
-    private PathRequestManager requestManager;
-
+    private PathRequestManager prm;
     private void Awake()
     {
-        requestManager = GetComponent<PathRequestManager>();
+        prm = GetComponent<PathRequestManager>();
     }
 
-    public void StartFindPath(Vector3 _startPosition, Vector3 _targetPosition)
+    public void StartFindPathCoroutine(Vector3 _startPosition, Vector3 _targetPosition)
     {
         StartCoroutine(FindPath(_startPosition, _targetPosition));
     }
@@ -52,12 +51,11 @@ public class Pathfinder : MonoBehaviour
                 //Can only search in a 20 by 20 space so max 400
                 if (safetyCheck > 400)
                     break;
-
-                //Heap optimisation - WRITE ABOUT THIS IN THE REPORT
+                
                 //Remove current node from the open list because it is being evaluated
                 Node currentNode = openList.RemoveFirst();
 
-                // -- Very slow -- //
+                // -- Very slow, optimised using the heap -- //
                 /*Node lowestFCostNode = null;
                 foreach(Node n in openList)
                 {
@@ -109,38 +107,49 @@ public class Pathfinder : MonoBehaviour
         yield return null;
         if (pathSuccess)
         {
-            waypoints = RetracePath(startNode, targetNode);
+            waypoints = DefinePath(startNode, targetNode);
         }
-        else
-        {
-            Debug.LogWarning("Path not found!");
-        }
-        requestManager.FinishedProcessingPath(waypoints, pathSuccess);
+        //else
+        //{
+        //    Debug.LogWarning("Path not found!");
+        //}
+        prm.FinishedProcessingPath(waypoints, pathSuccess);
     }
 
-    private Vector3[] RetracePath(Node startNode, Node endNode)
+    private int GetDistanceBetweenNodes(Node nodeA, Node nodeB)
     {
-        List<Node> path = new List<Node>();
+        Vector2Int distance = new Vector2Int(
+            (int)Mathf.Abs(nodeA.gridPosition.x - nodeB.gridPosition.x),
+            (int)Mathf.Abs(nodeA.gridPosition.y - nodeB.gridPosition.y));
+
+        //14 for diagonal, 10 for horizontal/vertical
+        if (distance.x > distance.y)
+            return (14 * distance.y) + (10 * (distance.x - distance.y));
+        else
+            return (14 * distance.x) + (10 * (distance.y - distance.x));
+    }
+
+    private Vector3[] DefinePath(Node startNode, Node endNode)
+    {
+        List<Node> pathNodes = new List<Node>();
         Node currentNode = endNode;
 
         while (currentNode != startNode)
         {
-            path.Add(currentNode);
+            pathNodes.Add(currentNode);
             currentNode = currentNode.parentNode;
         }
-        path.Add(startNode);
+        pathNodes.Add(startNode);
         
-        Vector3[] waypoints = SimplifyPath(path);
-        Array.Reverse(waypoints);
+        Vector3[] pathPositions = SimplifyPath(pathNodes);
+        Array.Reverse(pathPositions);
 
-        //path smoothing here
-
-        return waypoints;
+        return pathPositions;
     }
 
     private Vector3[] SimplifyPath(List<Node> _path)
     {
-        List<Vector3> waypoints = new List<Vector3>();
+        List<Vector3> pathPositions = new List<Vector3>();
 
         Vector2 oldDirection = Vector2.zero;
 
@@ -153,22 +162,10 @@ public class Pathfinder : MonoBehaviour
             if (newDirection != oldDirection)
             {
                 //only keep the corner
-                waypoints.Add(_path[i - 1].worldPosition);
+                pathPositions.Add(_path[i - 1].worldPosition);
             }
             oldDirection = newDirection;
         }
-        return waypoints.ToArray();
-    }
-    private int GetDistanceBetweenNodes(Node nodeA, Node nodeB)
-    {
-        Vector2Int distance = new Vector2Int(
-            (int)Mathf.Abs(nodeA.gridPosition.x - nodeB.gridPosition.x),
-            (int)Mathf.Abs(nodeA.gridPosition.y - nodeB.gridPosition.y));
-
-        //14 for diagonal, 10 for horizontal/vertical
-        if (distance.x > distance.y)
-            return (14 * distance.y) + (10 * (distance.x - distance.y));
-        else
-            return (14 * distance.x) + (10 * (distance.y - distance.x));
+        return pathPositions.ToArray();
     }
 }
