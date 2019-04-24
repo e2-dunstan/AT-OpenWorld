@@ -18,7 +18,7 @@ public class SpawnAI : MonoBehaviour
 
     public bool destroyRatherThanDisable = false;
 
-    public int friendliesPerEnemy = 5;
+    public int friendliesPerEnemy = 10;
 
     private void Awake()
     {
@@ -52,12 +52,11 @@ public class SpawnAI : MonoBehaviour
         }
     }
 
-    public void SpawnAIAtTile(Vector2 coord)
+    public void SpawnAIAtTile(Vector2 coord, bool completeReset = true)
     {
-        StartCoroutine(SpawnCoroutine(coord));
+        StartCoroutine(SpawnCoroutine(coord, completeReset));
     }
-
-    //NOT IMPLEMENTED
+    
     public void DespawnAIAtTile(Vector2 coord)
     {
         StartCoroutine(DespawnCoroutine(coord));
@@ -85,7 +84,7 @@ public class SpawnAI : MonoBehaviour
         return path;
     }
 
-    private Vector3 GetRandomSpawnPosition(Vector2 coord)
+    public Vector3 GetRandomSpawnPosition(Vector2 coord)
     {
         Vector2 length = new Vector2(AStarGrid.g.gridSize.x, AStarGrid.g.gridSize.y);
         Node randNode = AStarGrid.g.grid[0, 0];
@@ -114,21 +113,29 @@ public class SpawnAI : MonoBehaviour
         return randNode.worldPosition;
     }
 
-    private IEnumerator SpawnCoroutine(Vector2 coord)
+    private IEnumerator SpawnCoroutine(Vector2 coord, bool completeReset)
     {
+        PathRequestManager.prm.ClearQueue();
         foreach (AI npc in NPCs)
         {
             if (npc.coordinate == coord)
             {
                 GameObject newNPC = null;
-                if (npc.obj != null)
+                if (completeReset)
                 {
-                    npc.obj.SetActive(true);
-                    newNPC = npc.obj;
+                    if (npc.obj != null)
+                    {
+                        npc.obj.SetActive(true);
+                        newNPC = npc.obj;
+                    }
+                    else
+                    {
+                        newNPC = Instantiate(Resources.Load<GameObject>(npc.path), transform);
+                    }
                 }
                 else
                 {
-                    newNPC = Instantiate(Resources.Load<GameObject>(npc.path), transform);
+                    newNPC = npc.obj;
                 }
 
                 newNPC.GetComponent<NPC>().data = npc;
@@ -141,6 +148,7 @@ public class SpawnAI : MonoBehaviour
                     newNPC.transform.position = GetRandomSpawnPosition(coord);
 
                 yield return null;
+                
             }
         }
         yield return null;
@@ -153,12 +161,18 @@ public class SpawnAI : MonoBehaviour
             if (npc.coordinate == coord
                 && npc.obj != null)
             {
-                npc.obj.GetComponent<NPC>().ResetNPC();
+                //Debug.Log("Resetting NPC");
                 npc.spawnPosition = npc.obj.transform.position;
+                npc.obj.GetComponent<NPC>().ResetNPC();
                 if (destroyRatherThanDisable)
+                {
                     Destroy(npc.obj);
+                    npc.obj = null;
+                }
                 else
+                {
                     npc.obj.SetActive(false);
+                }
                 yield return null;
             }
         }

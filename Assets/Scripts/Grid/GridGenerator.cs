@@ -190,30 +190,36 @@ public class GridGenerator : MonoBehaviour
             }
         }
 
-        if (enable && !tile.loaded)
+        if (enable)
         {
-            tile.loaded = true;
-            foreach (SceneObject obj in objContainer.sceneObjects)
+            if (!tile.loaded)
             {
-                if (obj.coordinate == coord)
+                tile.loaded = true;
+                foreach (SceneObject obj in objContainer.sceneObjects)
                 {
-                    if (Resources.Load<GameObject>(obj.path) != null)
+                    if (obj.coordinate == coord)
                     {
-                        GameObject newObject = Instantiate(Resources.Load<GameObject>(obj.path), objectTransform);
-                        newObject.transform.position = obj.position;
-                        newObject.transform.eulerAngles = obj.rotation;
-                        newObject.transform.localScale = obj.scale;
-                        newObject.layer = (int)obj.type;
+                        if (Resources.Load<GameObject>(obj.path) != null)
+                        {
+                            GameObject newObject = Instantiate(Resources.Load<GameObject>(obj.path), objectTransform);
+                            newObject.transform.position = obj.position;
+                            newObject.transform.eulerAngles = obj.rotation;
+                            newObject.transform.localScale = obj.scale;
+                            newObject.layer = (int)obj.type;
 
-                        tile.objects.Add(newObject);
+                            tile.objects.Add(newObject);
 
-                        yield return null;
+                            yield return null;
+                        }
                     }
                 }
+                GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(aiCoord, true);
             }
-
-            //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
-            GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(aiCoord);
+            else
+            {
+                //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
+                GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(aiCoord, false);
+            }
         }
         else if (!enable)
         {

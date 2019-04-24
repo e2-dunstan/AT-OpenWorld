@@ -51,6 +51,7 @@ public class NPC : MonoBehaviour
             enemy.npc = this;
         }
         
+        transform.position = GetComponentInParent<SpawnAI>().GetRandomSpawnPosition(data.coordinate);
         previousPosition = transform.position;
         SetNewTarget();
     }
@@ -91,12 +92,12 @@ public class NPC : MonoBehaviour
                 break;
         }
 
-        if (data.coordinate == currentPlayerTile)
-            Debug.Log(data.coordinate + " : " + currentPlayerTile);
+        //if (data.coordinate == currentPlayerTile)
+            //Debug.Log(target + " : " + currentTarget);
         //Bug - not entering the below if statement when resetting?
         if (target != currentTarget && data.coordinate == currentPlayerTile)
         {
-            Debug.Log("Requesting new path");
+            //Debug.Log("Requesting new path");
             PathRequestManager.RequestPath(transform.position, target, OnPathFound);
             currentTarget = target;
         }
@@ -186,10 +187,14 @@ public class NPC : MonoBehaviour
     public void ResetNPC()
     {
         StopAllCoroutines();
+
+        if (transform.position != Vector3.zero)
+            data.spawnPosition = transform.position;
+
         path = null;
-        //PathRequestManager.prm.ClearQueue();
-        targetWaypoint = 0;
-        currentTarget = Vector3.zero;
+        //targetWaypoint = 0;
+        //target = AStarGrid.g.grid[0, 0].worldPosition;
+        //currentTarget = AStarGrid.g.grid[0, 0].worldPosition;
         SetNewTarget();
 
         if (anim != null && anim.GetBool("Running"))

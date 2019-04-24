@@ -31317,7 +31317,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -57115,8 +57115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   friendly: {fileID: 1320916369137626, guid: f5fad7255ea58074cb7aa652e72a7a6e, type: 2}
   enemy: {fileID: 1906615774166900, guid: b864bcc20169e4047befaf6675245749, type: 2}
-  destroyRatherThanDisable: 1
-  friendliesPerEnemy: 5
+  destroyRatherThanDisable: 0
+  friendliesPerEnemy: 10
 --- !u!114 &1078887849
 MonoBehaviour:
   m_ObjectHideFlags: 0
