@@ -11,8 +11,9 @@ public class Statistics : MonoBehaviour
     private List<string> pathfindingTime = new List<string>();
 
     private System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
-    
-	private void Start ()
+    private System.Diagnostics.Stopwatch ms_stopwatch = new System.Diagnostics.Stopwatch();
+
+    private void Start ()
     {
         if (instance == null)
             instance = this;
@@ -24,6 +25,27 @@ public class Statistics : MonoBehaviour
         fpsTemp[1] = "ms";
         fpsData.Add(fpsTemp);
 	}
+
+    private IEnumerator msPerFrame()
+    {
+        float timeElapsed = 0;
+        while (true)
+        {
+            if (timeElapsed > 0.5f)
+            {
+                ms_stopwatch.Start();
+                yield return new WaitForEndOfFrame();
+                SaveFPS(ms_stopwatch.ElapsedMilliseconds);
+                ms_stopwatch.Stop();
+                timeElapsed = 0;
+            }
+            else
+            {
+                timeElapsed += Time.deltaTime;
+            }
+            yield return null;
+        }
+    }
 
     public void SaveFPS(float ms)
     {

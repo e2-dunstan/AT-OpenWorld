@@ -24,7 +24,8 @@ public class PathRequestManager : MonoBehaviour
     private Queue<PathRequest> pathRequestQueue = new Queue<PathRequest>();
 
     public static PathRequestManager prm;
-    private Pathfinder pathfinder;
+    [HideInInspector]
+    public Pathfinder pathfinder;
 
     private bool isProcessingPath;
 

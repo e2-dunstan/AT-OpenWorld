@@ -122,14 +122,12 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        RaycastHit hit;
-        if (other.tag == "Player"
-         && (Physics.Raycast(transform.position,
-                player.transform.position - transform.position,
-                out hit, 15f)
-         && hit.collider.tag != "Player"))
+        //RaycastHit hit;
+        if (other.tag == "Player")
+         //&& (Physics.Raycast(transform.position,player.transform.position - transform.position,out hit, 15f)
+         //&& hit.collider.tag != "Player"))
         {
-            npc.ResetNPC();
+            //npc.ResetNPC();
             npc.state = NPC.State.IDLE;
         }
     }

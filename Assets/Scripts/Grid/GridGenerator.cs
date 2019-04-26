@@ -176,43 +176,36 @@ public class GridGenerator : MonoBehaviour
         objectContainer.Save("Assets/Resources/sceneobjects.xml");
     }
 
-    public IEnumerator ToggleObjectsAtTile(Vector2 coord, bool enable, ObjectContainer objContainer)
+    public IEnumerator ToggleObjectsAtTile(Tile tile, bool enable, ObjectContainer objContainer)
     {
-        Tile tile = new Tile();
-        Vector2 aiCoord = new Vector2(coord.x + 1, coord.y + 1);
-
-        for (int i = 0; i < tiles.Count; i++)
-        {
-            if (tiles[i].coordinate == coord)
-            {
-                tile = tiles[i];
-                break;
-            }
-        }
-
+        Vector2 aiCoord = new Vector2(tile.coordinate.x + 1, tile.coordinate.y + 1);
+        
         if (enable)
         {
+            List<SceneObject> objectsToLoad = new List<SceneObject>();
             if (!tile.loaded)
             {
                 tile.loaded = true;
                 foreach (SceneObject obj in objContainer.sceneObjects)
                 {
-                    if (obj.coordinate == coord)
+                    if (obj.coordinate == tile.coordinate)
                     {
-                        if (Resources.Load<GameObject>(obj.path) != null)
+                        //objectsToLoad.Add(obj);
+                        GameObject objToLoad = Resources.Load<GameObject>(obj.path);
+                        if (objToLoad != null)
                         {
-                            GameObject newObject = Instantiate(Resources.Load<GameObject>(obj.path), objectTransform);
+                            GameObject newObject = Instantiate(objToLoad, objectTransform);
                             newObject.transform.position = obj.position;
                             newObject.transform.eulerAngles = obj.rotation;
                             newObject.transform.localScale = obj.scale;
                             newObject.layer = (int)obj.type;
 
                             tile.objects.Add(newObject);
-
-                            yield return null;
                         }
+                        yield return null;
                     }
                 }
+
                 GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(aiCoord, true);
             }
             else
@@ -243,4 +236,20 @@ public class GridGenerator : MonoBehaviour
         }
         yield return null;
     }
+
+
+    //private void LoadObject(Tile tile, List<SceneObject> objectsToLoad, int i)
+    //{
+    //    GameObject objToLoad = Resources.Load<GameObject>(objectsToLoad[i].path);
+    //    if (objToLoad != null)
+    //    {
+    //        GameObject newObject = Instantiate(objToLoad, objectTransform);
+    //        newObject.transform.position = objectsToLoad[i].position;
+    //        newObject.transform.eulerAngles = objectsToLoad[i].rotation;
+    //        newObject.transform.localScale = objectsToLoad[i].scale;
+    //        newObject.layer = (int)objectsToLoad[i].type;
+
+    //        tile.objects.Add(newObject);
+    //    }
+    //}
 }

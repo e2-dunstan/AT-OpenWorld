@@ -52,11 +52,23 @@ public class AStarGrid : MonoBehaviour
                     + Vector3.right * (x * nodeDiameter + nodeRadius)
                     + Vector3.forward * (y * nodeDiameter + nodeRadius);
 
-                
-                bool walkable = !Physics.CheckSphere(worldPoint, nodeRadius, unwalkableLayers);
-                if (Physics.OverlapSphere(worldPoint, 0, unwalkableLayers).Length > 0)
+
+                //bool walkable = !Physics.CheckSphere(worldPoint, nodeRadius, unwalkableLayers);
+                //if (Physics.OverlapSphere(worldPoint, 0, unwalkableLayers).Length > 0)
+                //{
+                //    walkable = false;
+                //}
+                Collider[] collidersInRange = Physics.OverlapSphere(worldPoint, 8, unwalkableLayers);
+                bool walkable = true;
+                if (collidersInRange.Length > 0)
                 {
-                    walkable = false;
+                    for (int i = 0; i < collidersInRange.Length; i++)
+                    {
+                        if (collidersInRange[i].bounds.Contains(worldPoint))
+                        {
+                            walkable = false;
+                        }
+                    }
                 }
                 grid[x, y] = new Node(walkable, worldPoint, new Vector2(x, y));
             }

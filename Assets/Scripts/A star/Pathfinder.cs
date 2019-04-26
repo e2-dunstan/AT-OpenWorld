@@ -53,7 +53,7 @@ public class Pathfinder : MonoBehaviour
                     break;
                 
                 //Remove current node from the open list because it is being evaluated
-                Node currentNode = openList.RemoveFirst();
+                Node currentNode = openList.RemoveFirstItem();
 
                 // -- Very slow, optimised using the heap -- //
                 /*Node lowestFCostNode = null;
@@ -102,9 +102,9 @@ public class Pathfinder : MonoBehaviour
                             openList.UpdateItem(neighbour);
                     }
                 }
+                //yield return null;
             }
         }
-        yield return null;
         if (pathSuccess)
         {
             waypoints = DefinePath(startNode, targetNode);
@@ -114,6 +114,7 @@ public class Pathfinder : MonoBehaviour
         //    Debug.LogWarning("Path not found!");
         //}
         prm.FinishedProcessingPath(waypoints, pathSuccess);
+        yield return null;
     }
 
     private int GetDistanceBetweenNodes(Node nodeA, Node nodeB)

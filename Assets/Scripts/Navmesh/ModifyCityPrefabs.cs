@@ -38,7 +38,7 @@ public class ModifyCityPrefabs : MonoBehaviour
         foreach (Transform child in allChildren)
         {
             PrefabUtility.ReplacePrefab(child.gameObject, PrefabUtility.GetCorrespondingObjectFromSource(child.gameObject),
-                ReplacePrefabOptions.ConnectToPrefab);
+                ReplacePrefabOptions.Default);
         }
     }
 
@@ -60,4 +60,32 @@ public class ModifyCityPrefabs : MonoBehaviour
             child.convex = false;
         }
     }
+
+    public void SetCollidersPrimitive()
+    {
+        Transform[] allChildren = GetComponentsInChildren<Transform>();
+
+        foreach(Transform child in allChildren)
+        {
+            if (PrefabUtility.GetCorrespondingObjectFromSource(child.gameObject) != null
+                && PrefabUtility.GetPrefabObject(child) != null)
+            {
+                if (child.GetComponent<MeshCollider>())
+                    child.GetComponent<MeshCollider>().enabled = false;
+
+                if (child.GetComponents<BoxCollider>().Length > 1)
+                {
+                    foreach(BoxCollider col in child.GetComponents<BoxCollider>())
+                    {
+                        DestroyImmediate(col);
+                    }
+                }
+
+                if (!child.gameObject.GetComponent<BoxCollider>())
+                    child.gameObject.AddComponent<BoxCollider>();
+            }
+        }
+    }
+
+    
 }

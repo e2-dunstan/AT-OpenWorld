@@ -50,8 +50,16 @@ public class NPC : MonoBehaviour
             enemy = gameObject.AddComponent<EnemyController>();
             enemy.npc = this;
         }
-        
-        transform.position = GetComponentInParent<SpawnAI>().GetRandomSpawnPosition(data.coordinate);
+
+        if (data.spawnPosition != Vector3.zero)
+        {
+            transform.position = data.spawnPosition;
+        }
+        else
+        {
+            transform.position = GetComponentInParent<SpawnAI>().GetRandomSpawnPosition(data.coordinate);
+        }
+
         previousPosition = transform.position;
         SetNewTarget();
     }
@@ -91,10 +99,7 @@ public class NPC : MonoBehaviour
                 enemy.Attacking();
                 break;
         }
-
-        //if (data.coordinate == currentPlayerTile)
-            //Debug.Log(target + " : " + currentTarget);
-        //Bug - not entering the below if statement when resetting?
+        
         if (target != currentTarget && data.coordinate == currentPlayerTile)
         {
             //Debug.Log("Requesting new path");
@@ -105,7 +110,6 @@ public class NPC : MonoBehaviour
         //Speed of the animation is determined by the speed of the movement
         float speed = Vector3.Distance(previousPosition, transform.position) / Time.deltaTime;
         previousPosition = transform.position;
-        //Debug.Log(speed / animationSpeed);
         anim.SetFloat("Speed", speed / animationSpeed);
         //FollowPath coroutine controls actual movement
     }
@@ -187,6 +191,8 @@ public class NPC : MonoBehaviour
     public void ResetNPC()
     {
         StopAllCoroutines();
+        //PathRequestManager.prm.ClearQueue();
+        PathRequestManager.prm.pathfinder.StopAllCoroutines();
 
         if (transform.position != Vector3.zero)
             data.spawnPosition = transform.position;

@@ -25,9 +25,9 @@ public class CalculateFPS : MonoBehaviour
     {
         while (true)
         {
-            float renderTime = Mathf.RoundToInt(UnityStats.renderTime * 10000);
-            t.text = renderTime.ToString() + " ms";
-            Statistics.instance.SaveFPS(renderTime);
+            float frameTime = Mathf.RoundToInt(UnityStats.frameTime);
+            t.text = frameTime.ToString() + " ms";
+            Statistics.instance.SaveFPS(frameTime);
             yield return new WaitForSeconds(0.5f);
         }
     }

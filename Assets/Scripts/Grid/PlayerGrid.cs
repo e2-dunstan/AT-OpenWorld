@@ -68,7 +68,7 @@ public class PlayerGrid : MonoBehaviour
         surroundingTiles[7] = new Vector2(currentCoord.x, currentCoord.y + 1);
         //player tile
         surroundingTiles[8] = new Vector2(currentCoord.x, currentCoord.y);
-        
+
         disabledTiles.Remove(surroundingTiles[0]);
         disabledTiles.Remove(surroundingTiles[1]);
         disabledTiles.Remove(surroundingTiles[2]);
@@ -106,12 +106,32 @@ public class PlayerGrid : MonoBehaviour
         ObjectContainer objContainer = ObjectContainer.Load("Assets/Resources/sceneobjects.xml");
 
         //StartCoroutine(grid.ToggleObjectsAtTile(currentTile, true, objContainer));
-        foreach (Vector2 tile in surroundingTiles)
+        foreach (Vector2 tileVec in surroundingTiles)
         {
+            Tile tile = new Tile();
+
+            for (int i = 0; i < tiles.Count; i++)
+            {
+                if (tiles[i].coordinate == tileVec)
+                {
+                    tile = tiles[i];
+                    break;
+                }
+            }
             StartCoroutine(grid.ToggleObjectsAtTile(tile, true, objContainer));
         }
-        foreach (Vector2 tile in disabledTiles)
+        foreach (Vector2 tileVec in disabledTiles)
         {
+            Tile tile = new Tile();
+
+            for (int i = 0; i < tiles.Count; i++)
+            {
+                if (tiles[i].coordinate == tileVec)
+                {
+                    tile = tiles[i];
+                    break;
+                }
+            }
             StartCoroutine(grid.ToggleObjectsAtTile(tile, false, objContainer));
         }
     }

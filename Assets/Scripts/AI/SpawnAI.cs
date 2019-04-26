@@ -115,7 +115,7 @@ public class SpawnAI : MonoBehaviour
 
     private IEnumerator SpawnCoroutine(Vector2 coord, bool completeReset)
     {
-        PathRequestManager.prm.ClearQueue();
+        //PathRequestManager.prm.ClearQueue();
         foreach (AI npc in NPCs)
         {
             if (npc.coordinate == coord)

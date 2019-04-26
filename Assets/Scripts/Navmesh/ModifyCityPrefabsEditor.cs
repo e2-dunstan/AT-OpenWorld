@@ -29,6 +29,10 @@ public class ModifyCityPrefabsEditor : Editor
         {
             modifyCityPrefabs.SetCollidersConcave();
         }
+        if (GUILayout.Button("Set Colliders Primitive"))
+        {
+            modifyCityPrefabs.SetCollidersPrimitive();
+        }
         DrawDefaultInspector();
     }
 }
