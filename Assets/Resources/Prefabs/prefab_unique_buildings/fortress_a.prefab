@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23242103118752322}
   - component: {fileID: 64474510779795664}
   - component: {fileID: 208475119048773834}
+  - component: {fileID: 65214493115733090}
   m_Layer: 10
   m_Name: fortress_a
   m_TagString: Untagged
@@ -98,12 +99,24 @@ MeshCollider:
   m_GameObject: {fileID: 1716669688774322}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3add72fcb625bc841b8309c9b9f7d61c, type: 3}
+--- !u!65 &65214493115733090
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716669688774322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 24.527676, y: 21.622108, z: 26.390282}
+  m_Center: {x: -1.429202, y: -0.000052018586, z: 13.172816}
 --- !u!208 &208475119048773834
 NavMeshObstacle:
   m_ObjectHideFlags: 1

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23624753597612434}
   - component: {fileID: 64747587695107860}
   - component: {fileID: 208806632586093234}
+  - component: {fileID: 65655292159673370}
   m_Layer: 10
   m_Name: citadel_tower_e
   m_TagString: Untagged
@@ -94,12 +95,24 @@ MeshCollider:
   m_GameObject: {fileID: 1345654732466328}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 4a208b341e831064f9aee574e92ea563, type: 3}
+--- !u!65 &65655292159673370
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1345654732466328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.07377, y: 22.07377, z: 41.41415}
+  m_Center: {x: -0.00004752186, y: 0.00011514844, z: 20.70716}
 --- !u!208 &208806632586093234
 NavMeshObstacle:
   m_ObjectHideFlags: 1

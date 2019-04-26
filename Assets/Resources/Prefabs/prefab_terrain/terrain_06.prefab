@@ -22,7 +22,9 @@ GameObject:
   - component: {fileID: 33373655297076720}
   - component: {fileID: 23614263468649222}
   - component: {fileID: 64904171713261630}
-  m_Layer: 0
+  - component: {fileID: 65094174663185900}
+  - component: {fileID: 65430804342910084}
+  m_Layer: 9
   m_Name: terrain_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,13 +37,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1259544212071048}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 17, y: 17, z: 17}
+  m_LocalRotation: {x: -0.5000003, y: -0.49999982, z: -0.49999973, w: 0.50000024}
+  m_LocalPosition: {x: -201.6, y: 25.3, z: -479.6}
+  m_LocalScale: {x: 57.500652, y: 57.500683, z: 50.823566}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -90.00001}
 --- !u!23 &23614263468649222
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -92,9 +94,33 @@ MeshCollider:
   m_GameObject: {fileID: 1259544212071048}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 75029797fd1319c4d9b0213567756513, type: 3}
+--- !u!65 &65094174663185900
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1259544212071048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.97, y: 5.957344, z: 0.6669367}
+  m_Center: {x: -0.000000002040053, y: -0.006328108, z: -0.16726586}
+--- !u!65 &65430804342910084
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1259544212071048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.9700003, y: 5.9573455, z: 0.66693777}
+  m_Center: {x: 0.0000009674583, y: -0.0063280985, z: -0.1672659}

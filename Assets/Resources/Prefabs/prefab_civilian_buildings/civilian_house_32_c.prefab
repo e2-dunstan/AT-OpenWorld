@@ -22,7 +22,9 @@ GameObject:
   - component: {fileID: 33857629997637270}
   - component: {fileID: 23084364637753034}
   - component: {fileID: 64675427310387192}
-  - component: {fileID: 208370882259599084}
+  - component: {fileID: 208531452061910028}
+  - component: {fileID: 65472816137107140}
+  - component: {fileID: 65618678976951306}
   m_Layer: 10
   m_Name: civilian_house_32_c
   m_TagString: Untagged
@@ -36,8 +38,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1480241360480094}
-  m_LocalRotation: {x: -0.27059802, y: 0.65328157, z: 0.65328145, w: 0.27059805}
-  m_LocalPosition: {x: 36.85, y: 0, z: -41.239998}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 17.509995, y: 0, z: -28.129997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,13 +100,37 @@ MeshCollider:
   m_GameObject: {fileID: 1480241360480094}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 80f3425253f3d804f80236a8b3ad4808, type: 3}
---- !u!208 &208370882259599084
+--- !u!65 &65472816137107140
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480241360480094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.568255, y: 8.506388, z: 11.94186}
+  m_Center: {x: 0.000009146852, y: 0.0000063544126, z: 5.970929}
+--- !u!65 &65618678976951306
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480241360480094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.568254, y: 8.506386, z: 11.941858}
+  m_Center: {x: 0.0000011920929, y: -0.000015735626, z: 5.970929}
+--- !u!208 &208531452061910028
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

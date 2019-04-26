@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33922014065213450}
   - component: {fileID: 23296701302818796}
   - component: {fileID: 64088817612088946}
+  - component: {fileID: 65225284961842178}
+  - component: {fileID: 208109242066680852}
   m_Layer: 10
   m_Name: roof_building_6_b
   m_TagString: Untagged
@@ -35,9 +37,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1835297315867510}
-  m_LocalRotation: {x: -0.000000030908623, y: 0.7071068, z: 0.7071068, w: 0.000000030908623}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.000000029802322, y: 0.70710677, z: 0.7071068, w: 0.000000033258747}
+  m_LocalPosition: {x: 31.18, y: 6.720004, z: 3.4300003}
+  m_LocalScale: {x: 0.7472464, y: 0.7472459, z: 0.62984395}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,9 +97,36 @@ MeshCollider:
   m_GameObject: {fileID: 1835297315867510}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c61ecee472e0f3a48ba2a27fecc60f69, type: 3}
+--- !u!65 &65225284961842178
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1835297315867510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.656917, y: 4.656918, z: 5.5619526}
+  m_Center: {x: 0.00000333786, y: 0.00001749452, z: 2.7809079}
+--- !u!208 &208109242066680852
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1835297315867510}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.328, y: 2.328, z: 2.7810001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 2.7810001}
+  m_TimeToStationary: 0.5

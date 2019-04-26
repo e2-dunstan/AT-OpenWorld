@@ -23,6 +23,9 @@ GameObject:
   - component: {fileID: 23799965706448326}
   - component: {fileID: 64948531866958778}
   - component: {fileID: 208990333544044024}
+  - component: {fileID: 65696970116704536}
+  - component: {fileID: 65656652484768956}
+  - component: {fileID: 65345441383878084}
   m_Layer: 10
   m_Name: citadel_bridge
   m_TagString: Untagged
@@ -94,12 +97,48 @@ MeshCollider:
   m_GameObject: {fileID: 1155155821425916}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3bb9d063a89b65548ad1df3aa1919330, type: 3}
+--- !u!65 &65345441383878084
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1155155821425916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.921291, y: 60.715317, z: 10.455181}
+  m_Center: {x: -0.000010251422, y: 0.01744079, z: 5.1978645}
+--- !u!65 &65656652484768956
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1155155821425916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.92129, y: 60.715313, z: 10.455181}
+  m_Center: {x: 0.0000202661, y: 0.017456053, z: 5.1978645}
+--- !u!65 &65696970116704536
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1155155821425916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.921289, y: 60.715336, z: 10.455183}
+  m_Center: {x: -0.000014066696, y: 0.0174408, z: 5.1978655}
 --- !u!208 &208990333544044024
 NavMeshObstacle:
   m_ObjectHideFlags: 1

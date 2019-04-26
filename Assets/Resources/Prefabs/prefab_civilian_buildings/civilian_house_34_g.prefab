@@ -22,6 +22,9 @@ GameObject:
   - component: {fileID: 33943244225696222}
   - component: {fileID: 23235486833125984}
   - component: {fileID: 64581866759709492}
+  - component: {fileID: 208701403476736764}
+  - component: {fileID: 65593433601015104}
+  - component: {fileID: 65506368828956836}
   m_Layer: 10
   m_Name: civilian_house_34_g
   m_TagString: Untagged
@@ -35,9 +38,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1677642438990034}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 35.45, y: 0, z: 33}
+  m_LocalScale: {x: 0.97, y: 0.9700005, z: 0.9700005}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,9 +100,48 @@ MeshCollider:
   m_GameObject: {fileID: 1677642438990034}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: d4f6ed5ff1f180e42b99a6a396f49a3a, type: 3}
+--- !u!65 &65506368828956836
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677642438990034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.609511, y: 5.1071553, z: 10.536131}
+  m_Center: {x: -0.00000047683716, y: -0.000007867813, z: 5.2680655}
+--- !u!65 &65593433601015104
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677642438990034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.609511, y: 5.1071553, z: 10.536131}
+  m_Center: {x: 0, y: 0.00000166893, z: 5.2680655}
+--- !u!208 &208701403476736764
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677642438990034}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5.3050003, y: 2.5540001, z: 5.268}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 5.268}
+  m_TimeToStationary: 0.5

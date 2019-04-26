@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23110317094434396}
   - component: {fileID: 64742928969325724}
   - component: {fileID: 208184534145589612}
+  - component: {fileID: 65428719570577632}
   m_Layer: 10
   m_Name: church_c
   m_TagString: Untagged
@@ -101,12 +102,24 @@ MeshCollider:
   m_GameObject: {fileID: 1911461125620986}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9906240cad1ee95419939f4697357d0d, type: 3}
+--- !u!65 &65428719570577632
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1911461125620986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 25.663534, y: 35.87446, z: 32.222984}
+  m_Center: {x: 0, y: 0.0000076293945, z: 16.104}
 --- !u!208 &208184534145589612
 NavMeshObstacle:
   m_ObjectHideFlags: 1

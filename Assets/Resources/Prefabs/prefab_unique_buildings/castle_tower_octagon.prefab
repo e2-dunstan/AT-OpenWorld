@@ -23,6 +23,9 @@ GameObject:
   - component: {fileID: 23857534362595606}
   - component: {fileID: 64733324738178730}
   - component: {fileID: 208008160196734130}
+  - component: {fileID: 65672190515979154}
+  - component: {fileID: 65119293862810314}
+  - component: {fileID: 65932458849258160}
   m_Layer: 10
   m_Name: castle_tower_octagon
   m_TagString: Untagged
@@ -95,12 +98,48 @@ MeshCollider:
   m_GameObject: {fileID: 1933501008555322}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: d7668ad5f64a7ed4683c61ca91f3a439, type: 3}
+--- !u!65 &65119293862810314
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1933501008555322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.470407, y: 12.891636, z: 24.799995}
+  m_Center: {x: -3.500007, y: -0.00000021397886, z: 12.400096}
+--- !u!65 &65672190515979154
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1933501008555322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.4704056, y: 12.891633, z: 24.799994}
+  m_Center: {x: -3.4999976, y: 0.000007263746, z: 12.400096}
+--- !u!65 &65932458849258160
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1933501008555322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.4704065, y: 12.891635, z: 24.799995}
+  m_Center: {x: -3.4999955, y: 0.000006549636, z: 12.400096}
 --- !u!208 &208008160196734130
 NavMeshObstacle:
   m_ObjectHideFlags: 1

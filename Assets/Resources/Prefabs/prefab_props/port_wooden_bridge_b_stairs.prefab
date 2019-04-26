@@ -22,7 +22,10 @@ GameObject:
   - component: {fileID: 33406854608089518}
   - component: {fileID: 23063281721799652}
   - component: {fileID: 64189534503354572}
-  m_Layer: 0
+  - component: {fileID: 208747731040517820}
+  - component: {fileID: 65953300628661702}
+  - component: {fileID: 65299867643209912}
+  m_Layer: 10
   m_Name: port_wooden_bridge_b_stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,13 +38,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1122152505045698}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.0121976, z: 1}
+  m_LocalRotation: {x: -0.50000024, y: -0.49999976, z: -0.49999973, w: 0.5000003}
+  m_LocalPosition: {x: 42.619995, y: -0.1800003, z: -8.279999}
+  m_LocalScale: {x: 2.246402, y: 2.246402, z: 2.246402}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -90.00001}
 --- !u!23 &23063281721799652
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -92,9 +95,48 @@ MeshCollider:
   m_GameObject: {fileID: 1122152505045698}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7b9d4603340e77c419de7ae56d9762a8, type: 3}
+--- !u!65 &65299867643209912
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122152505045698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.112458, y: 3.6448078, z: 2.3226485}
+  m_Center: {x: 0.1842655, y: -0.01064984, z: 1.1613238}
+--- !u!65 &65953300628661702
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122152505045698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.112459, y: 3.6448088, z: 2.3226485}
+  m_Center: {x: 0.18424265, y: -0.010653612, z: 1.1613243}
+--- !u!208 &208747731040517820
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122152505045698}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.056, y: 1.8220001, z: 1.161}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.18400002, y: -0.011000001, z: 1.161}
+  m_TimeToStationary: 0.5

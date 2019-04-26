@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 33068830982041894}
   - component: {fileID: 23436056174255976}
   - component: {fileID: 64440156591283626}
-  - component: {fileID: 208446143762289312}
+  - component: {fileID: 208205980904244748}
+  - component: {fileID: 65376395510165606}
   m_Layer: 10
   m_Name: sentinel_tower_b
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1080326275983898}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -50.299995, y: 0, z: -19.166428}
+  m_LocalPosition: {x: -45.84311, y: 0.00018620491, z: 3.1340027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,13 +98,25 @@ MeshCollider:
   m_GameObject: {fileID: 1080326275983898}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 42dae9c689b614041936ba5f1a9b52e4, type: 3}
---- !u!208 &208446143762289312
+--- !u!65 &65376395510165606
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1080326275983898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.251234, y: 12.251237, z: 24.842417}
+  m_Center: {x: 0.00000023841858, y: 0.000015497208, z: 12.421205}
+--- !u!208 &208205980904244748
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

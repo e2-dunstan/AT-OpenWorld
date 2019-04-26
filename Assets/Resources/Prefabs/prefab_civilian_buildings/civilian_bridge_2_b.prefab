@@ -22,7 +22,12 @@ GameObject:
   - component: {fileID: 33766012309663880}
   - component: {fileID: 23046177704865036}
   - component: {fileID: 64139110977199186}
-  - component: {fileID: 208102339663148528}
+  - component: {fileID: 208162996741037722}
+  - component: {fileID: 65958294163932480}
+  - component: {fileID: 65725681928860890}
+  - component: {fileID: 65747152834609374}
+  - component: {fileID: 65346621351433758}
+  - component: {fileID: 65286594307552932}
   m_Layer: 10
   m_Name: civilian_bridge_2_b
   m_TagString: Untagged
@@ -36,13 +41,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743145126053366}
-  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 54.13186, y: 0, z: -13.0099945}
-  m_LocalScale: {x: -1.3242326, y: 1.0636342, z: 1.3242326}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0.000000037913814, w: 0.70710677}
+  m_LocalPosition: {x: -3.9100037, y: 5.14, z: 13.300003}
+  m_LocalScale: {x: 1.0022144, y: 0.7076268, z: 0.64595366}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!23 &23046177704865036
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -60,7 +65,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: 9b2f7a9877042784da6f113d45cd70e6, type: 2}
   - {fileID: 2100000, guid: a0c6c4757d70d784b9a1cb379ed3b317, type: 2}
-  - {fileID: 2100000, guid: 870bcbe66fbf1e0479f611163b71d61e, type: 2}
+  - {fileID: 2100000, guid: 79cb73a5095332d418ed29b096788715, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,13 +100,73 @@ MeshCollider:
   m_GameObject: {fileID: 1743145126053366}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6ab0d11cdb825204eb30f9fe6bb0e339, type: 3}
---- !u!208 &208102339663148528
+--- !u!65 &65286594307552932
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743145126053366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.824277, y: 2.1114762, z: 6.1241703}
+  m_Center: {x: -0.040498137, y: 0.00023710726, z: 3.0610862}
+--- !u!65 &65346621351433758
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743145126053366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.824277, y: 2.111477, z: 6.1241713}
+  m_Center: {x: -0.040498257, y: 0.00020642656, z: 3.0610862}
+--- !u!65 &65725681928860890
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743145126053366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.8242803, y: 2.111478, z: 6.124172}
+  m_Center: {x: -0.040498156, y: 0.00020592351, z: 3.061087}
+--- !u!65 &65747152834609374
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743145126053366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.8242774, y: 2.1114771, z: 6.1241727}
+  m_Center: {x: -0.040498268, y: 0.00019908049, z: 3.061087}
+--- !u!65 &65958294163932480
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743145126053366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.824277, y: 2.1114762, z: 6.1241703}
+  m_Center: {x: -0.040513396, y: 0.00022184847, z: 3.0610862}
+--- !u!208 &208162996741037722
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,5 +179,5 @@ NavMeshObstacle:
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: -0.041, y: 0, z: 3.061}
+  m_Center: {x: -0.040000003, y: 0, z: 3.061}
   m_TimeToStationary: 0.5

@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33871795449147584}
   - component: {fileID: 23219233735458232}
   - component: {fileID: 64402900013085270}
+  - component: {fileID: 208393079047183336}
+  - component: {fileID: 65677541226267254}
   m_Layer: 10
   m_Name: roof_building_8
   m_TagString: Untagged
@@ -35,13 +37,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1556677782104186}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.32306248}
+  m_LocalRotation: {x: -0.65328157, y: 0.27059788, z: 0.27059785, w: 0.6532816}
+  m_LocalPosition: {x: 31.350002, y: 6.730004, z: 10.889999}
+  m_LocalScale: {x: 0.7673281, y: 0.7673285, z: 0.22266032}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 45.000004}
 --- !u!23 &23219233735458232
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -93,9 +95,36 @@ MeshCollider:
   m_GameObject: {fileID: 1556677782104186}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a0bb50c9ae8f258438444dab4dab9a37, type: 3}
+--- !u!65 &65677541226267254
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1556677782104186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5101218, y: 3.564239, z: 10.023462}
+  m_Center: {x: -0.00038945558, y: -0.005672517, z: 5.0020223}
+--- !u!208 &208393079047183336
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1556677782104186}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.7550001, y: 1.7820001, z: 5.012}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.006, z: 5.0020003}
+  m_TimeToStationary: 0.5

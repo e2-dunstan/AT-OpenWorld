@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 33402224970248402}
   - component: {fileID: 23375163905248338}
   - component: {fileID: 64364163491758816}
-  - component: {fileID: 208261583046075110}
+  - component: {fileID: 65736323641079622}
+  - component: {fileID: 208478896827922684}
   m_Layer: 10
   m_Name: balcony_2
   m_TagString: Untagged
@@ -36,13 +37,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1194959033583686}
-  m_LocalRotation: {x: 0.000000059604638, y: 0.7071068, z: -0.000000059604638, w: 0.70710677}
-  m_LocalPosition: {x: 0.15400028, y: 4.766, z: -20.345001}
-  m_LocalScale: {x: 1.0927849, y: 0.44517973, z: 0.5034591}
+  m_LocalRotation: {x: 0.000000059604645, y: 0.38268363, z: -0.00000008940697, w: 0.92387944}
+  m_LocalPosition: {x: 21.189999, y: 8.910001, z: -8.419998}
+  m_LocalScale: {x: 1.7963659, y: 0.65170276, z: 0.6870445}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45.000004, z: 0}
 --- !u!23 &23375163905248338
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -95,13 +96,25 @@ MeshCollider:
   m_GameObject: {fileID: 1194959033583686}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 342cdcf438ec40640a2560974332a8f6, type: 3}
---- !u!208 &208261583046075110
+--- !u!65 &65736323641079622
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1194959033583686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3495688, y: 4.724759, z: 2.3352644}
+  m_Center: {x: -0.000007867813, y: 0.00000023841858, z: 0.000004708767}
+--- !u!208 &208478896827922684
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

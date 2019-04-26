@@ -22,7 +22,9 @@ GameObject:
   - component: {fileID: 33074715788490718}
   - component: {fileID: 23455203216187250}
   - component: {fileID: 64304409591560776}
-  m_Layer: 0
+  - component: {fileID: 208530296722454968}
+  - component: {fileID: 65295694814591876}
+  m_Layer: 10
   m_Name: street_oil_light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,13 +37,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1426769608828836}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6605992, y: 2.0222447, z: 1.2744095}
+  m_LocalRotation: {x: -0.00000013760793, y: -0.7071068, z: -0.7071067, w: 0.00000016391273}
+  m_LocalPosition: {x: -67.82, y: -3.81, z: -8.220001}
+  m_LocalScale: {x: 1.6605992, y: 2.0222437, z: 1.274409}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: -180.00002}
 --- !u!23 &23455203216187250
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -97,9 +99,36 @@ MeshCollider:
   m_GameObject: {fileID: 1426769608828836}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 47cdb03718b7455499aa6692ceba2a82, type: 3}
+--- !u!65 &65295694814591876
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426769608828836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.61842716, y: 1.7015324, z: 3.6694052}
+  m_Center: {x: 0.000022917986, y: -0.5926586, z: 1.8347027}
+--- !u!208 &208530296722454968
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426769608828836}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.30900002, y: 0.851, z: 1.835}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.59300005, z: 1.835}
+  m_TimeToStationary: 0.5

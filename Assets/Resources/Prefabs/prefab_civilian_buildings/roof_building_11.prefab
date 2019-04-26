@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33214854626901732}
   - component: {fileID: 23243802681911444}
   - component: {fileID: 64153296463222936}
+  - component: {fileID: 208147663712093300}
+  - component: {fileID: 65939844127937218}
   m_Layer: 10
   m_Name: roof_building_11
   m_TagString: Untagged
@@ -35,13 +37,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1893920872311520}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: 0.000000037913814, w: 0.70710677}
+  m_LocalPosition: {x: -98.340004, y: 0.08, z: -42.729996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!23 &23243802681911444
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -94,9 +96,36 @@ MeshCollider:
   m_GameObject: {fileID: 1893920872311520}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: afe3c2b7362e66346be153b59850d724, type: 3}
+--- !u!65 &65939844127937218
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893920872311520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.38262, y: 7.050663, z: 3.600001}
+  m_Center: {x: -0.0000051259995, y: 0.000014901161, z: 1.7999853}
+--- !u!208 &208147663712093300
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893920872311520}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.1910002, y: 3.525, z: 1.8000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 1.8000001}
+  m_TimeToStationary: 0.5

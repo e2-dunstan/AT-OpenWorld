@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33871994379676744}
   - component: {fileID: 23207502397320694}
   - component: {fileID: 64599091226424752}
+  - component: {fileID: 208223118038927186}
+  - component: {fileID: 65445154373193390}
   m_Layer: 10
   m_Name: standard_wooden_roof_3
   m_TagString: Untagged
@@ -35,9 +37,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1642598782982912}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 68.34, y: 8.390001, z: -42.72}
+  m_LocalScale: {x: 0.9120899, y: 1.5666668, z: 1.3003111}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,8 +59,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 870bcbe66fbf1e0479f611163b71d61e, type: 2}
   - {fileID: 2100000, guid: 79cb73a5095332d418ed29b096788715, type: 2}
+  - {fileID: 2100000, guid: 870bcbe66fbf1e0479f611163b71d61e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,9 +95,36 @@ MeshCollider:
   m_GameObject: {fileID: 1642598782982912}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e6b42c148fbfc36459f07e0de226e338, type: 3}
+--- !u!65 &65445154373193390
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642598782982912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.2558227, y: 7.3310256, z: 2.4410703}
+  m_Center: {x: -0.0000009536743, y: 0.000015497208, z: 1.2205364}
+--- !u!208 &208223118038927186
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642598782982912}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.1280003, y: 3.6660001, z: 1.2210001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 1.2210001}
+  m_TimeToStationary: 0.5
