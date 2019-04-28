@@ -24,6 +24,8 @@ public class Statistics : MonoBehaviour
         fpsTemp[0] = "Time";
         fpsTemp[1] = "ms";
         fpsData.Add(fpsTemp);
+
+        StartCoroutine(msPerFrame());
 	}
 
     private IEnumerator msPerFrame()
@@ -37,6 +39,7 @@ public class Statistics : MonoBehaviour
                 yield return new WaitForEndOfFrame();
                 SaveFPS(ms_stopwatch.ElapsedMilliseconds);
                 ms_stopwatch.Stop();
+                ms_stopwatch.Reset();
                 timeElapsed = 0;
             }
             else

@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 23893521907527218}
   - component: {fileID: 64088899587437540}
   - component: {fileID: 208390083587150842}
-  - component: {fileID: 65010271348843216}
-  - component: {fileID: 65727076024891682}
   m_Layer: 10
   m_Name: overhang_building_a
   m_TagString: Untagged
@@ -97,36 +95,12 @@ MeshCollider:
   m_GameObject: {fileID: 1251731219124296}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 2f906bf9b86990c46aa6003077fba317, type: 3}
---- !u!65 &65010271348843216
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251731219124296}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.349744, y: 6.190542, z: 12.35228}
-  m_Center: {x: 0.00003049874, y: 0.000004062109, z: 5.263873}
---- !u!65 &65727076024891682
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251731219124296}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.3497443, y: 6.190542, z: 12.35228}
-  m_Center: {x: -5.4277785e-13, y: 0, z: 5.2638702}
 --- !u!208 &208390083587150842
 NavMeshObstacle:
   m_ObjectHideFlags: 1

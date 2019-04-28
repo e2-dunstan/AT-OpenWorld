@@ -23,11 +23,6 @@ GameObject:
   - component: {fileID: 23444894064246960}
   - component: {fileID: 64648689872573598}
   - component: {fileID: 208103721520949808}
-  - component: {fileID: 65720724839515312}
-  - component: {fileID: 65192114955195002}
-  - component: {fileID: 65729541972449774}
-  - component: {fileID: 65663923395449750}
-  - component: {fileID: 65238090470291012}
   m_Layer: 10
   m_Name: citadel_wall_a
   m_TagString: Untagged
@@ -99,72 +94,12 @@ MeshCollider:
   m_GameObject: {fileID: 1066124637356120}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 0d2f9593c52242b4da8e97c09e209d51, type: 3}
---- !u!65 &65192114955195002
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066124637356120}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 25.572845, y: 7.003976, z: 21.999973}
-  m_Center: {x: 0, y: 0, z: 11.000015}
---- !u!65 &65238090470291012
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066124637356120}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 25.572857, y: 7.0039816, z: 21.99998}
-  m_Center: {x: -0.0000038146973, y: -0.0000026226082, z: 11.000018}
---- !u!65 &65663923395449750
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066124637356120}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 25.572845, y: 7.0039763, z: 21.999979}
-  m_Center: {x: 0, y: 0, z: 11.000018}
---- !u!65 &65720724839515312
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066124637356120}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 25.572845, y: 7.003976, z: 21.999973}
-  m_Center: {x: 0, y: 0, z: 11.000015}
---- !u!65 &65729541972449774
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1066124637356120}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 25.572845, y: 7.0039763, z: 21.999979}
-  m_Center: {x: 0, y: 0, z: 11.000018}
 --- !u!208 &208103721520949808
 NavMeshObstacle:
   m_ObjectHideFlags: 1

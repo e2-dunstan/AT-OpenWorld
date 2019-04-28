@@ -22,15 +22,7 @@ GameObject:
   - component: {fileID: 33703784977268340}
   - component: {fileID: 23292087788627674}
   - component: {fileID: 64210835636968036}
-  - component: {fileID: 208003933427560908}
-  - component: {fileID: 65735237263928424}
-  - component: {fileID: 65818719855771250}
-  - component: {fileID: 65420906021774562}
-  - component: {fileID: 65847845511340236}
-  - component: {fileID: 65224440107249444}
-  - component: {fileID: 65514650091281416}
-  - component: {fileID: 65158436885312520}
-  - component: {fileID: 65966602767869984}
+  - component: {fileID: 208719266782149822}
   m_Layer: 10
   m_Name: port_wooden_bridge_b
   m_TagString: Untagged
@@ -101,109 +93,13 @@ MeshCollider:
   m_GameObject: {fileID: 1549572522181326}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 77758a36f9effc64aa9052cd6edca9ef, type: 3}
---- !u!65 &65158436885312520
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1549572522181326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.3342266, y: 3.644809, z: 1.7996861}
-  m_Center: {x: 0.29514092, y: -0.010657647, z: 0.8998426}
---- !u!65 &65224440107249444
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1549572522181326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.3342266, y: 3.644809, z: 1.7996861}
-  m_Center: {x: 0.2951333, y: -0.010657647, z: 0.8998426}
---- !u!65 &65420906021774562
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1549572522181326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.334224, y: 3.6448076, z: 1.799685}
-  m_Center: {x: 0.29512548, y: -0.010657484, z: 0.8998424}
---- !u!65 &65514650091281416
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1549572522181326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.3342266, y: 3.644809, z: 1.7996861}
-  m_Center: {x: 0.29514092, y: -0.010650017, z: 0.8998426}
---- !u!65 &65735237263928424
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1549572522181326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.3342257, y: 3.6448092, z: 1.7996862}
-  m_Center: {x: 0.29514068, y: -0.010657575, z: 0.8998421}
---- !u!65 &65818719855771250
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1549572522181326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.334224, y: 3.6448076, z: 1.799685}
-  m_Center: {x: 0.2951331, y: -0.010657484, z: 0.8998419}
---- !u!65 &65847845511340236
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1549572522181326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.334224, y: 3.6448076, z: 1.799685}
-  m_Center: {x: 0.29514074, y: -0.010653669, z: 0.8998424}
---- !u!65 &65966602767869984
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1549572522181326}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.3342257, y: 3.6448092, z: 1.7996862}
-  m_Center: {x: 0.2951445, y: -0.010657575, z: 0.8998421}
---- !u!208 &208003933427560908
+--- !u!208 &208719266782149822
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

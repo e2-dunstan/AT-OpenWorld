@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 23048162433060388}
   - component: {fileID: 64067747759088824}
   - component: {fileID: 208075160041696006}
-  - component: {fileID: 65490338537660822}
-  - component: {fileID: 65315566755405178}
   m_Layer: 10
   m_Name: castle_gate_a
   m_TagString: Untagged
@@ -99,36 +97,12 @@ MeshCollider:
   m_GameObject: {fileID: 1867812825733334}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ee05a5bc585b53f459ae5c3a598aa081, type: 3}
---- !u!65 &65315566755405178
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1867812825733334}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 15.875871, y: 36.3568, z: 26.242092}
-  m_Center: {x: -0.000007867813, y: -0.000015258789, z: 12.672934}
---- !u!65 &65490338537660822
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1867812825733334}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 15.875869, y: 36.356808, z: 26.242098}
-  m_Center: {x: -0.00000023841856, y: 0, z: 12.672936}
 --- !u!208 &208075160041696006
 NavMeshObstacle:
   m_ObjectHideFlags: 1

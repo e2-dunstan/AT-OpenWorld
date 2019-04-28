@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ObjectCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <O>
+    <SceneObject>
+      <name>boat_02 (2)</name>
+      <path>Prefabs/prefab_props/boat_02</path>
+      <position>
+        <x>332.3</x>
+        <y>-9.1</y>
+        <z>218.6</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>351.749634</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>2.134736</x>
+        <y>1.78581214</y>
+        <z>1.78581238</z>
+      </scale>
+      <tilePosition>
+        <x>310</x>
+        <y>10</y>
+        <z>210</z>
+      </tilePosition>
+      <coordinate>
+        <x>7</x>
+        <y>7</y>
+      </coordinate>
+      <type>building</type>
+    </SceneObject>
+  </O>
+</ObjectCollection>

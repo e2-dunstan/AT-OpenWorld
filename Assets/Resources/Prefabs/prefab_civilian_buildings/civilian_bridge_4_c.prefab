@@ -23,10 +23,6 @@ GameObject:
   - component: {fileID: 23122647885684382}
   - component: {fileID: 64181148448836302}
   - component: {fileID: 208580768363496808}
-  - component: {fileID: 65304333768438494}
-  - component: {fileID: 65719677641696698}
-  - component: {fileID: 65301541529885466}
-  - component: {fileID: 65948875792252482}
   m_Layer: 10
   m_Name: civilian_bridge_4_c
   m_TagString: Untagged
@@ -98,60 +94,12 @@ MeshCollider:
   m_GameObject: {fileID: 1221762900386834}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 901e056a38f72bc428a388fd129b2705, type: 3}
---- !u!65 &65301541529885466
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1221762900386834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.7615623, y: 2.345524, z: 5.8410916}
-  m_Center: {x: -0.0000076293945, y: -0.0058959713, z: 2.9206464}
---- !u!65 &65304333768438494
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1221762900386834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.7615623, y: 2.345524, z: 5.8410916}
-  m_Center: {x: 0.0000076293945, y: -0.005884527, z: 2.9206464}
---- !u!65 &65719677641696698
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1221762900386834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.7615657, y: 2.3455262, z: 5.8410935}
-  m_Center: {x: -0.0000038146973, y: -0.0058854204, z: 2.9206471}
---- !u!65 &65948875792252482
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1221762900386834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.7615657, y: 2.3455262, z: 5.8410935}
-  m_Center: {x: -0.0000020116568, y: -0.0058816057, z: 2.9206471}
 --- !u!208 &208580768363496808
 NavMeshObstacle:
   m_ObjectHideFlags: 1

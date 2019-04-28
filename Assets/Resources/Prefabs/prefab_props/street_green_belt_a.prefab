@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23825690611949124}
   - component: {fileID: 64038033624830734}
   - component: {fileID: 208853615084652462}
-  - component: {fileID: 65047861070909896}
   m_Layer: 11
   m_Name: street_green_belt_a
   m_TagString: Untagged
@@ -95,24 +94,12 @@ MeshCollider:
   m_GameObject: {fileID: 1002010129215208}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: dbd4bc18a3c6e7b468ae2edb7cc58848, type: 3}
---- !u!65 &65047861070909896
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1002010129215208}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.017356696, y: 0.016893, z: 0.08327946}
-  m_Center: {x: -0.0004635062, y: -0.0000011997647, z: 0.0415796}
 --- !u!208 &208853615084652462
 NavMeshObstacle:
   m_ObjectHideFlags: 1

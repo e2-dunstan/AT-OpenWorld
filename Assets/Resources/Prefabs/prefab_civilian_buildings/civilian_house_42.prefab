@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23531623840492694}
   - component: {fileID: 64010284442226968}
   - component: {fileID: 208286516488938748}
-  - component: {fileID: 65568693280437168}
   m_Layer: 10
   m_Name: civilian_house_42
   m_TagString: Untagged
@@ -97,24 +96,12 @@ MeshCollider:
   m_GameObject: {fileID: 1195444476389782}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 8c250eaae67b9c54191b2027be780ed7, type: 3}
---- !u!65 &65568693280437168
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1195444476389782}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.7856836, y: 8.328094, z: 8.588002}
-  m_Center: {x: 0.000017762184, y: 0.0000009536748, z: 4.290418}
 --- !u!208 &208286516488938748
 NavMeshObstacle:
   m_ObjectHideFlags: 1

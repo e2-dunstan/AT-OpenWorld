@@ -22,9 +22,7 @@ GameObject:
   - component: {fileID: 33529278521760022}
   - component: {fileID: 23595509105291746}
   - component: {fileID: 64793110540715044}
-  - component: {fileID: 208934765951331886}
-  - component: {fileID: 65357829825413606}
-  - component: {fileID: 65713605561007128}
+  - component: {fileID: 208806634932616430}
   m_Layer: 10
   m_Name: port_wall_b_corner
   m_TagString: Untagged
@@ -97,37 +95,13 @@ MeshCollider:
   m_GameObject: {fileID: 1307057663251330}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c902eca6f5ad0834f933888f38705dc5, type: 3}
---- !u!65 &65357829825413606
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1307057663251330}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 14.358749, y: 5.2377534, z: 18.088741}
-  m_Center: {x: 3.8206291, y: 2.3688908, z: 9.044365}
---- !u!65 &65713605561007128
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1307057663251330}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 14.358749, y: 5.2377534, z: 18.088741}
-  m_Center: {x: 3.8206136, y: 2.368875, z: 9.044365}
---- !u!208 &208934765951331886
+--- !u!208 &208806634932616430
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

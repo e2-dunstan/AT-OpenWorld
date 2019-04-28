@@ -16,8 +16,6 @@ public class PlayerGrid : MonoBehaviour
 
     private List<Tile> tiles = new List<Tile>();
 
-    private bool coroutineFinished = true;
-
 	void Start ()
     {
         if (g == null)
@@ -28,7 +26,7 @@ public class PlayerGrid : MonoBehaviour
         currentCoordinate = GetCoordinate(gameObject);
         surroundingTiles = new Vector2[9];
         GetSurroundingTiles(currentCoordinate);
-        ToggleObjects();
+        //ToggleObjects();
 	}
 
     void FixedUpdate()
@@ -36,16 +34,14 @@ public class PlayerGrid : MonoBehaviour
         Vector2 coord = GetCoordinate(gameObject);
 
         if (coord != currentCoordinate
-            && coord != new Vector2(-1, -1)
-            && coroutineFinished)
+            && coord != new Vector2(-1, -1))
         {
             currentCoordinate = coord;
-            StartCoroutine(GetSurroundingTiles(currentCoordinate));
-            ToggleObjects();
+            GetSurroundingTiles(currentCoordinate);
         }
     }
 
-    IEnumerator GetSurroundingTiles(Vector2 currentCoord)
+    private void GetSurroundingTiles(Vector2 currentCoord)
     {
         if (disabledTiles.Count > 0)
         {
@@ -68,7 +64,7 @@ public class PlayerGrid : MonoBehaviour
         surroundingTiles[7] = new Vector2(currentCoord.x, currentCoord.y + 1);
         //player tile
         surroundingTiles[8] = new Vector2(currentCoord.x, currentCoord.y);
-
+        
         disabledTiles.Remove(surroundingTiles[0]);
         disabledTiles.Remove(surroundingTiles[1]);
         disabledTiles.Remove(surroundingTiles[2]);
@@ -78,8 +74,8 @@ public class PlayerGrid : MonoBehaviour
         disabledTiles.Remove(surroundingTiles[6]);
         disabledTiles.Remove(surroundingTiles[7]);
         disabledTiles.Remove(surroundingTiles[8]);
-        
-        yield return null;
+
+        StartCoroutine(ToggleObjects());
     }
 
     private Vector2 GetCoordinate(GameObject obj)
@@ -101,10 +97,8 @@ public class PlayerGrid : MonoBehaviour
         return new Vector2(-1, -1);
     }
 
-    private void ToggleObjects()
+    private IEnumerator ToggleObjects()
     {
-        ObjectContainer objContainer = ObjectContainer.Load("Assets/Resources/sceneobjects.xml");
-
         //StartCoroutine(grid.ToggleObjectsAtTile(currentTile, true, objContainer));
         foreach (Vector2 tileVec in surroundingTiles)
         {
@@ -118,6 +112,8 @@ public class PlayerGrid : MonoBehaviour
                     break;
                 }
             }
+            yield return null;
+            ObjectContainer objContainer = ObjectContainerClass.Load("Assets/Resources/sceneobjects" + tile.id.ToString() + ".xml");
             StartCoroutine(grid.ToggleObjectsAtTile(tile, true, objContainer));
         }
         foreach (Vector2 tileVec in disabledTiles)
@@ -132,6 +128,8 @@ public class PlayerGrid : MonoBehaviour
                     break;
                 }
             }
+            yield return null;
+            ObjectContainer objContainer = ObjectContainerClass.Load("Assets/Resources/sceneobjects" + tile.id.ToString() + ".xml");
             StartCoroutine(grid.ToggleObjectsAtTile(tile, false, objContainer));
         }
     }

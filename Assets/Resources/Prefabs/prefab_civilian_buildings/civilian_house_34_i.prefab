@@ -23,14 +23,6 @@ GameObject:
   - component: {fileID: 23207128577456830}
   - component: {fileID: 64581435861007428}
   - component: {fileID: 208231587495934316}
-  - component: {fileID: 65555338770257086}
-  - component: {fileID: 65873718677715754}
-  - component: {fileID: 65777507601209802}
-  - component: {fileID: 65042799456910388}
-  - component: {fileID: 65267399963335256}
-  - component: {fileID: 65063204315703426}
-  - component: {fileID: 65322919211961718}
-  - component: {fileID: 65308772931937470}
   m_Layer: 10
   m_Name: civilian_house_34_i
   m_TagString: Untagged
@@ -106,108 +98,12 @@ MeshCollider:
   m_GameObject: {fileID: 1994703282430264}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6f3e1248bc3939247869a2a03c2ac7b5, type: 3}
---- !u!65 &65042799456910388
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994703282430264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.044265, y: 5.1638513, z: 10.930712}
-  m_Center: {x: -0.000011984654, y: -0.0000007707423, z: 5.465453}
---- !u!65 &65063204315703426
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994703282430264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.044266, y: 5.163851, z: 10.930711}
-  m_Center: {x: -0.00000882149, y: 0.000000485074, z: 5.465453}
---- !u!65 &65267399963335256
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994703282430264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.044269, y: 5.1638536, z: 10.930713}
-  m_Center: {x: 0.00000007190283, y: -0.0000056220197, z: 5.465453}
---- !u!65 &65308772931937470
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994703282430264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.04426, y: 5.1638474, z: 10.930708}
-  m_Center: {x: -0.000008658604, y: -0.0000075857206, z: 5.4654517}
---- !u!65 &65322919211961718
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994703282430264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.04426, y: 5.1638474, z: 10.930708}
-  m_Center: {x: -0.000008658604, y: -0.0000037710233, z: 5.4654517}
---- !u!65 &65555338770257086
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994703282430264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.044265, y: 5.1638513, z: 10.930712}
-  m_Center: {x: -0.000009473022, y: -0.00000077074, z: 5.465453}
---- !u!65 &65777507601209802
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994703282430264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.04426, y: 5.1638474, z: 10.930707}
-  m_Center: {x: -0.000008726073, y: -0.000007978955, z: 5.4654517}
---- !u!65 &65873718677715754
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1994703282430264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.04426, y: 5.163846, z: 10.930705}
-  m_Center: {x: -0.000008821487, y: 0.000019907951, z: 5.465451}
 --- !u!208 &208231587495934316
 NavMeshObstacle:
   m_ObjectHideFlags: 1

@@ -22,11 +22,6 @@ GameObject:
   - component: {fileID: 198152870529892656}
   - component: {fileID: 199775104053667692}
   - component: {fileID: 208947941414818596}
-  - component: {fileID: 65336221414630738}
-  - component: {fileID: 65226710175051740}
-  - component: {fileID: 65941548253977492}
-  - component: {fileID: 65645736005637532}
-  - component: {fileID: 65733842345735902}
   m_Layer: 10
   m_Name: fountain_a
   m_TagString: Untagged
@@ -47,66 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!65 &65226710175051740
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1202832428585020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.230461, y: 15.040462, z: 5.142}
-  m_Center: {x: 0, y: -4.905, z: 2.5}
---- !u!65 &65336221414630738
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1202832428585020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.2304626, y: 15.040467, z: 5.142002}
-  m_Center: {x: -0.0000015828562, y: -4.905002, z: 2.5000012}
---- !u!65 &65645736005637532
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1202832428585020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.230461, y: 15.040462, z: 5.142}
-  m_Center: {x: 0, y: -4.905, z: 2.5}
---- !u!65 &65733842345735902
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1202832428585020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.230461, y: 15.040462, z: 5.142}
-  m_Center: {x: 0, y: -4.905, z: 2.5}
---- !u!65 &65941548253977492
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1202832428585020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.230461, y: 15.040462, z: 5.142}
-  m_Center: {x: 0, y: -4.905, z: 2.5}
 --- !u!198 &198152870529892656
 ParticleSystem:
   m_ObjectHideFlags: 1

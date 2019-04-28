@@ -15,9 +15,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>10000.002</x>
-        <y>7188.62744</y>
-        <z>2761.21875</z>
+        <x>13972.5205</x>
+        <y>4653.71143</y>
+        <z>2063.52661</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -103,7 +103,7 @@
       </rotation>
       <scale>
         <x>1.29891157</x>
-        <y>1.86902118</y>
+        <y>1.4441458</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -132,7 +132,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1.471688</y>
+        <y>1.046631</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -434,7 +434,7 @@
         <x>0</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>cliff_02 (1)</name>
@@ -450,8 +450,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.29891157</x>
-        <y>1.86902118</y>
+        <x>1.414968</x>
+        <y>1.50729287</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -479,8 +479,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.12535238</x>
-        <y>1.64773726</y>
+        <x>1</x>
+        <y>1.27683377</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -509,7 +509,7 @@
       </rotation>
       <scale>
         <x>3.32659125</x>
-        <y>2.28079224</y>
+        <y>1.47698176</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -538,7 +538,7 @@
       </rotation>
       <scale>
         <x>1.29891157</x>
-        <y>1.86902118</y>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -1235,7 +1235,7 @@
       <scale>
         <x>1.280569</x>
         <y>1</y>
-        <z>1</z>
+        <z>1.1308738</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -1291,9 +1291,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
+        <x>1.151634</x>
         <y>1</y>
-        <z>1</z>
+        <z>1.0251292</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -1320,9 +1320,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.12535238</x>
-        <y>1.64773726</y>
-        <z>1</z>
+        <x>1.661806</x>
+        <y>2.330549</y>
+        <z>1.03952229</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -1784,9 +1784,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.5626079</x>
+        <y>0.5626079</y>
+        <z>0.5626079</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -1797,7 +1797,7 @@
         <x>0</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_pond_a (6)</name>
@@ -1813,9 +1813,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.5626079</x>
+        <y>0.5626079</y>
+        <z>0.5626079</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -1826,7 +1826,7 @@
         <x>0</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_h (1)</name>
@@ -1884,7 +1884,7 @@
         <x>0</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (3)</name>
@@ -1929,9 +1929,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.12535238</x>
-        <y>1.64773726</y>
-        <z>1</z>
+        <x>1.27830219</x>
+        <y>1</y>
+        <z>1.06599712</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -1958,9 +1958,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>3.32659125</x>
-        <y>2.28079224</y>
-        <z>1</z>
+        <x>0.7970988</x>
+        <y>1.30186987</y>
+        <z>1.05211484</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -2192,7 +2192,7 @@
       <scale>
         <x>1</x>
         <y>1</y>
-        <z>1</z>
+        <z>-1</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -2219,9 +2219,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
+        <x>1.18523061</x>
         <y>1.471688</y>
-        <z>1</z>
+        <z>1.04692829</z>
       </scale>
       <tilePosition>
         <x>-250</x>
@@ -2422,9 +2422,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>3.32659125</x>
-        <y>2.28079224</y>
-        <z>1</z>
+        <x>1.81780148</x>
+        <y>2.40358615</y>
+        <z>1.09009767</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -2451,9 +2451,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
-        <y>1.471688</y>
-        <z>1</z>
+        <x>1.48737645</x>
+        <y>1.34892774</y>
+        <z>1.06193876</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -2480,9 +2480,9 @@
         <z>179.999863</z>
       </rotation>
       <scale>
-        <x>35.24892</x>
-        <y>35.2489433</y>
-        <z>15.5948906</z>
+        <x>19.5315189</x>
+        <y>36.92536</y>
+        <z>41.3900757</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -2654,8 +2654,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>3.32659125</x>
-        <y>2.28079224</y>
+        <x>1.81780207</x>
+        <y>2.40358567</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -2683,8 +2683,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.29891157</x>
-        <y>1.86902118</y>
+        <x>1</x>
+        <y>2.040334</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -2712,8 +2712,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1</x>
-        <y>1.471688</y>
+        <x>1.3204186</x>
+        <y>1.49795854</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -3437,7 +3437,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.17333114</x>
+        <x>1.2829814</x>
         <y>1.19720709</y>
         <z>1</z>
       </scale>
@@ -3466,8 +3466,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.12535238</x>
-        <y>1.64773726</y>
+        <x>1.19842625</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -3495,8 +3495,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.12535238</x>
-        <y>1.64773726</y>
+        <x>1.49934387</x>
+        <y>1.36889064</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -4175,7 +4175,7 @@
         <x>1</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>cliff_06 (4)</name>
@@ -4191,8 +4191,8 @@
         <z>89.99963</z>
       </rotation>
       <scale>
-        <x>1.12535238</x>
-        <y>1.64773726</y>
+        <x>1.81413651</x>
+        <y>1.56036949</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -4784,7 +4784,7 @@
         <x>1</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_j (2)</name>
@@ -4842,7 +4842,7 @@
         <x>1</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_pond_a (11)</name>
@@ -4871,7 +4871,7 @@
         <x>1</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_h</name>
@@ -4917,8 +4917,8 @@
       </rotation>
       <scale>
         <x>0.700394034</x>
-        <y>0.773088932</y>
-        <z>1.78400779</z>
+        <y>0.7003943</y>
+        <z>1.6162554</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -4929,7 +4929,7 @@
         <x>1</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>cliff_03 (1)</name>
@@ -4945,8 +4945,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.17333114</x>
-        <y>1.19720709</y>
+        <x>1.1395874</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -5989,9 +5989,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.504254341</x>
+        <y>0.504254341</y>
+        <z>0.504254341</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -6002,7 +6002,7 @@
         <x>1</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (38)</name>
@@ -6031,7 +6031,7 @@
         <x>1</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (4)</name>
@@ -6047,9 +6047,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>161.025558</x>
-        <y>188.225449</y>
-        <z>188.225449</z>
+        <x>92.55414</x>
+        <y>96.25006</y>
+        <z>169.75296</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -6089,7 +6089,7 @@
         <x>1</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_pond_a (2)</name>
@@ -6105,9 +6105,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.504254341</x>
+        <y>0.504254341</y>
+        <z>0.504254341</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -6118,7 +6118,7 @@
         <x>1</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_c</name>
@@ -6147,7 +6147,7 @@
         <x>1</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b</name>
@@ -6176,7 +6176,7 @@
         <x>1</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>civilian_house_33_f</name>
@@ -7597,7 +7597,7 @@
         <x>1</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_i</name>
@@ -7684,7 +7684,7 @@
         <x>1</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_a</name>
@@ -8454,9 +8454,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.703650534</x>
+        <y>0.5626075</y>
+        <z>0.562607646</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -8467,7 +8467,7 @@
         <x>1</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (6)</name>
@@ -8496,7 +8496,7 @@
         <x>1</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (2)</name>
@@ -8541,8 +8541,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.17333114</x>
-        <y>1.19720709</y>
+        <x>1.07427371</x>
+        <y>1.08963513</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -8570,8 +8570,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.29891157</x>
-        <y>1.86902118</y>
+        <x>1.18565917</x>
+        <y>1</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -8599,9 +8599,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.17333114</x>
-        <y>1.19720709</y>
-        <z>1</z>
+        <x>1.35975075</x>
+        <y>1.80983138</y>
+        <z>1.0550499</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -8628,9 +8628,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>10000.002</x>
-        <y>7188.62744</y>
-        <z>2761.21875</z>
+        <x>7403.56348</x>
+        <y>7403.56543</y>
+        <z>2044.28577</z>
       </scale>
       <tilePosition>
         <x>-170</x>
@@ -9076,7 +9076,7 @@
         <x>2</x>
         <y>0</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (2)</name>
@@ -9105,7 +9105,7 @@
         <x>2</x>
         <y>0</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_pond_a</name>
@@ -9413,7 +9413,7 @@
       <scale>
         <x>0.700394034</x>
         <y>0.773088932</y>
-        <z>1.78400779</z>
+        <z>1.55366242</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -9424,7 +9424,7 @@
         <x>2</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_c (8)</name>
@@ -9453,7 +9453,7 @@
         <x>2</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (24)</name>
@@ -9482,7 +9482,7 @@
         <x>2</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (6)</name>
@@ -9511,7 +9511,7 @@
         <x>2</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_c</name>
@@ -9540,7 +9540,7 @@
         <x>2</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (5)</name>
@@ -9569,7 +9569,7 @@
         <x>2</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a</name>
@@ -9627,7 +9627,7 @@
         <x>2</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>civilian_house_25 (8)</name>
@@ -10642,7 +10642,7 @@
         <x>2</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_c (1)</name>
@@ -10700,7 +10700,7 @@
         <x>2</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (26)</name>
@@ -10729,7 +10729,7 @@
         <x>2</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (9)</name>
@@ -11454,7 +11454,7 @@
         <x>2</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (16)</name>
@@ -11483,7 +11483,7 @@
         <x>2</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>wagon (2)</name>
@@ -11499,9 +11499,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.11193991</x>
-        <y>0.9669362</y>
-        <z>0.486779243</z>
+        <x>1.08570182</x>
+        <y>0.944120049</y>
+        <z>0.47529304</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -11763,6 +11763,35 @@
         <x>0.92</x>
         <y>0.92</y>
         <z>0.92</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>-30</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>4</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>civilian_house_17 (2)</name>
+      <path>Prefabs/prefab_civilian_buildings/civilian_house_17</path>
+      <position>
+        <x>-12.4500008</x>
+        <y>9.989998</y>
+        <z>-13.7376709</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>270.000031</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.15688908</x>
+        <y>1</y>
+        <z>0.738304734</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -12672,7 +12701,7 @@
         <x>2</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_green_belt_a</name>
@@ -12730,7 +12759,7 @@
         <x>2</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a</name>
@@ -12747,8 +12776,8 @@
       </rotation>
       <scale>
         <x>161.025558</x>
-        <y>188.225449</y>
-        <z>188.225449</z>
+        <y>161.02562</y>
+        <z>223.217422</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -13500,9 +13529,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.504254341</x>
+        <y>0.504254341</y>
+        <z>0.504254341</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -13513,7 +13542,7 @@
         <x>2</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_pond_a (5)</name>
@@ -13529,9 +13558,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.7251773</x>
+        <y>0.504254341</y>
+        <z>0.504254341</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -13542,7 +13571,7 @@
         <x>2</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (9)</name>
@@ -13571,7 +13600,7 @@
         <x>2</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_d (2)</name>
@@ -13588,8 +13617,8 @@
       </rotation>
       <scale>
         <x>0.8000397</x>
-        <y>0.9882081</y>
-        <z>1.51927733</z>
+        <y>0.800040245</y>
+        <z>2.274738</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -14371,8 +14400,8 @@
       </rotation>
       <scale>
         <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <y>0.725620151</y>
+        <z>0.725620151</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -14383,7 +14412,7 @@
         <x>2</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>city_gate_01</name>
@@ -14963,7 +14992,7 @@
         <x>2</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>cliff_01</name>
@@ -14979,8 +15008,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>3.32659125</x>
-        <y>2.28079224</y>
+        <x>1.17662823</x>
+        <y>0.8772437</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -15009,7 +15038,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
+        <y>1.06627655</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -15037,8 +15066,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.12535238</x>
-        <y>1.64773726</y>
+        <x>1</x>
+        <y>1.5990535</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -15067,7 +15096,7 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
+        <y>1.06627607</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -15096,8 +15125,8 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1</y>
-        <z>1</z>
+        <y>1.468113</y>
+        <z>-0.558844149</z>
       </scale>
       <tilePosition>
         <x>-90</x>
@@ -15369,7 +15398,7 @@
         <x>3</x>
         <y>0</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>citadel_gate</name>
@@ -16297,7 +16326,7 @@
         <x>3</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_c (1)</name>
@@ -16326,7 +16355,7 @@
         <x>3</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_d (1)</name>
@@ -16413,7 +16442,7 @@
         <x>3</x>
         <y>1</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (1)</name>
@@ -17515,7 +17544,7 @@
         <x>3</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_c (9)</name>
@@ -17544,7 +17573,7 @@
         <x>3</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_pond_a (14)</name>
@@ -17573,7 +17602,7 @@
         <x>3</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (23)</name>
@@ -17602,7 +17631,7 @@
         <x>3</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (8)</name>
@@ -18646,7 +18675,7 @@
         <x>3</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (33)</name>
@@ -18675,7 +18704,7 @@
         <x>3</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (22)</name>
@@ -18704,7 +18733,7 @@
         <x>3</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (21)</name>
@@ -18733,7 +18762,7 @@
         <x>3</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_c (7)</name>
@@ -18762,7 +18791,7 @@
         <x>3</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (20)</name>
@@ -18791,15 +18820,15 @@
         <x>3</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>civilian_house_27 (3)</name>
       <path>Prefabs/prefab_civilian_buildings/civilian_house_27</path>
       <position>
-        <x>7.06000137</x>
+        <x>-2.93999863</x>
         <y>0</y>
-        <z>-13.6499939</z>
+        <z>-13.6476746</z>
       </position>
       <rotation>
         <x>270</x>
@@ -18826,9 +18855,9 @@
       <name>civilian_house_26</name>
       <path>Prefabs/prefab_civilian_buildings/civilian_house_26</path>
       <position>
-        <x>1.68999863</x>
+        <x>-8.310001</x>
         <y>0</y>
-        <z>-13.7723389</z>
+        <z>-13.7700043</z>
       </position>
       <rotation>
         <x>270</x>
@@ -18839,35 +18868,6 @@
         <x>1.24000049</x>
         <y>1.24000037</y>
         <z>1.24000037</z>
-      </scale>
-      <tilePosition>
-        <x>-10</x>
-        <y>10</y>
-        <z>-30</z>
-      </tilePosition>
-      <coordinate>
-        <x>3</x>
-        <y>4</y>
-      </coordinate>
-      <type>building</type>
-    </Object>
-    <Object>
-      <name>civilian_house_17 (2)</name>
-      <path>Prefabs/prefab_civilian_buildings/civilian_house_17</path>
-      <position>
-        <x>-2.45000076</x>
-        <y>9.989998</y>
-        <z>-13.73999</z>
-      </position>
-      <rotation>
-        <x>270</x>
-        <y>270.000031</y>
-        <z>0</z>
-      </rotation>
-      <scale>
-        <x>1.15688908</x>
-        <y>1</y>
-        <z>0.738304734</z>
       </scale>
       <tilePosition>
         <x>-10</x>
@@ -19408,7 +19408,7 @@
       <position>
         <x>66.36</x>
         <y>0</y>
-        <z>-4.230011</z>
+        <z>-5.230011</z>
       </position>
       <rotation>
         <x>270</x>
@@ -19516,7 +19516,7 @@
         <x>3</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (34)</name>
@@ -19574,7 +19574,7 @@
         <x>3</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (6)</name>
@@ -19590,9 +19590,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>161.025558</x>
-        <y>188.225449</y>
-        <z>188.225449</z>
+        <x>100.214935</x>
+        <y>100.215</y>
+        <z>179.943466</z>
       </scale>
       <tilePosition>
         <x>-10</x>
@@ -19632,7 +19632,7 @@
         <x>3</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>civilian_house_25</name>
@@ -20734,7 +20734,7 @@
         <x>3</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (10)</name>
@@ -20763,7 +20763,7 @@
         <x>3</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_j (1)</name>
@@ -21998,8 +21998,8 @@
       </rotation>
       <scale>
         <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <y>0.725620151</y>
+        <z>0.725620151</z>
       </scale>
       <tilePosition>
         <x>-10</x>
@@ -22010,7 +22010,7 @@
         <x>3</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_pond_a (10)</name>
@@ -22026,9 +22026,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.653103</x>
+        <y>0.653103</y>
+        <z>0.653103</z>
       </scale>
       <tilePosition>
         <x>-10</x>
@@ -22039,7 +22039,7 @@
         <x>3</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>street_pond_a (9)</name>
@@ -22055,9 +22055,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.7256199</x>
-        <y>1</y>
-        <z>1</z>
+        <x>0.653103</x>
+        <y>0.653103</y>
+        <z>0.653103</z>
       </scale>
       <tilePosition>
         <x>-10</x>
@@ -22068,7 +22068,7 @@
         <x>3</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_c (4)</name>
@@ -22097,7 +22097,7 @@
         <x>3</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (5)</name>
@@ -22144,7 +22144,7 @@
       <scale>
         <x>0.700394034</x>
         <y>0.773088932</y>
-        <z>1.78400779</z>
+        <z>1.589124</z>
       </scale>
       <tilePosition>
         <x>-10</x>
@@ -22155,7 +22155,7 @@
         <x>3</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_j</name>
@@ -22213,7 +22213,7 @@
         <x>3</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (3)</name>
@@ -22242,7 +22242,7 @@
         <x>3</x>
         <y>6</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>castle_wall_2,5m</name>
@@ -23054,7 +23054,7 @@
         <x>3</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_d</name>
@@ -23112,7 +23112,7 @@
         <x>3</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (5)</name>
@@ -23141,7 +23141,7 @@
         <x>3</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_c (2)</name>
@@ -23170,7 +23170,7 @@
         <x>3</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (7)</name>
@@ -23244,9 +23244,9 @@
         <z>77.46626</z>
       </rotation>
       <scale>
-        <x>1</x>
-        <y>1.471688</y>
-        <z>1</z>
+        <x>1.17855215</x>
+        <y>1</y>
+        <z>1.07709</z>
       </scale>
       <tilePosition>
         <x>-10</x>
@@ -23274,7 +23274,7 @@
       </rotation>
       <scale>
         <x>1.12535238</x>
-        <y>1.64773726</y>
+        <y>1.599053</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -23302,8 +23302,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>3.32659125</x>
-        <y>2.28079224</y>
+        <x>1.17663062</x>
+        <y>1.58208907</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -23331,8 +23331,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.29891157</x>
-        <y>1.86902118</y>
+        <x>0.9790194</x>
+        <y>1.39338255</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -23708,8 +23708,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>3.32659125</x>
-        <y>2.28079224</y>
+        <x>1.3162539</x>
+        <y>1.61958766</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -23737,9 +23737,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.12535238</x>
-        <y>1.64773726</y>
-        <z>1</z>
+        <x>0.980000734</x>
+        <y>1.3315382</y>
+        <z>0.9800005</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -24114,8 +24114,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>3.32659125</x>
-        <y>2.28079224</y>
+        <x>1</x>
+        <y>1.61958838</y>
         <z>1</z>
       </scale>
       <tilePosition>
@@ -24968,7 +24968,7 @@
         <x>4</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_d (4)</name>
@@ -25055,7 +25055,7 @@
         <x>4</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_d</name>
@@ -25102,7 +25102,7 @@
       <scale>
         <x>0.700394034</x>
         <y>0.773088932</y>
-        <z>1.78400779</z>
+        <z>1.990955</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -25113,7 +25113,7 @@
         <x>4</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b</name>
@@ -25142,7 +25142,7 @@
         <x>4</x>
         <y>2</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>fountain_a</name>
@@ -26273,7 +26273,7 @@
         <x>4</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (31)</name>
@@ -26302,7 +26302,7 @@
         <x>4</x>
         <y>3</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>civilian_house_31_d (1)</name>
@@ -26977,7 +26977,7 @@
       <position>
         <x>72.6000061</x>
         <y>0</y>
-        <z>-6.36000061</z>
+        <z>-7.36000061</z>
       </position>
       <rotation>
         <x>270</x>
@@ -27056,7 +27056,7 @@
         <x>4</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (37)</name>
@@ -27085,7 +27085,7 @@
         <x>4</x>
         <y>4</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_d</name>
@@ -27694,7 +27694,7 @@
         <x>4</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>dead_tree_g</name>
@@ -27752,7 +27752,7 @@
         <x>4</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (10)</name>
@@ -27781,7 +27781,7 @@
         <x>4</x>
         <y>5</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_a (6)</name>
@@ -28000,7 +28000,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>1.12566757</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28029,7 +28029,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>0.8471256</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28058,7 +28058,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.7404312</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28087,7 +28087,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>0.84712553</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28145,7 +28145,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28232,7 +28232,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>1.12566757</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28261,7 +28261,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>0.8471256</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28290,7 +28290,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.7404312</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28319,7 +28319,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>0.84712553</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28377,7 +28377,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -28928,8 +28928,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.11193991</x>
-        <y>0.9669362</y>
+        <x>1.11194</x>
+        <y>0.9669361</y>
         <z>0.486779243</z>
       </scale>
       <tilePosition>
@@ -29002,6 +29002,122 @@
       <type>building</type>
     </Object>
     <Object>
+      <name>stone_stairs_1</name>
+      <path>Models/Civilian_Buildings/stone_stairs_1</path>
+      <position>
+        <x>121.789993</x>
+        <y>-5.08</y>
+        <z>164.0257</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>2.73570657</x>
+        <y>4.1133604</y>
+        <z>2.304539</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>stone_stairs_1 (1)</name>
+      <path>Models/Civilian_Buildings/stone_stairs_1</path>
+      <position>
+        <x>117.92</x>
+        <y>-2.34</y>
+        <z>164.0257</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>2.73570657</x>
+        <y>-4.11336</y>
+        <z>2.304539</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>stone_stairs_1 (2)</name>
+      <path>Models/Civilian_Buildings/stone_stairs_1</path>
+      <position>
+        <x>117.92</x>
+        <y>-2.34</y>
+        <z>172.453033</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>2.73570657</x>
+        <y>4.1133604</y>
+        <z>2.304539</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>stone_stairs_1 (3)</name>
+      <path>Models/Civilian_Buildings/stone_stairs_1</path>
+      <position>
+        <x>121.789993</x>
+        <y>-5.08</y>
+        <z>172.453033</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>2.73570657</x>
+        <y>-4.11336</y>
+        <z>2.304539</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
       <name>fences</name>
       <path />
       <position>
@@ -29044,9 +29160,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.58199739</x>
-        <y>1.488938</y>
-        <z>2.039996</z>
+        <x>2.581999</x>
+        <y>2.582</y>
+        <z>2.040001</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29073,9 +29189,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.58199739</x>
-        <y>2.58199883</y>
-        <z>2.04699755</z>
+        <x>2.581999</x>
+        <y>2.58199954</y>
+        <z>2.04699349</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29102,9 +29218,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.58199739</x>
-        <y>2.58199883</y>
-        <z>2.04699755</z>
+        <x>2.581999</x>
+        <y>2.58199954</y>
+        <z>2.04699349</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29131,9 +29247,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.58199739</x>
-        <y>1.488938</y>
-        <z>2.039996</z>
+        <x>2.581999</x>
+        <y>2.582</y>
+        <z>2.040001</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29160,9 +29276,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.58199739</x>
-        <y>2.58199883</y>
-        <z>2.04699755</z>
+        <x>2.581999</x>
+        <y>2.58199954</y>
+        <z>2.04699349</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29189,9 +29305,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.58199739</x>
-        <y>2.58199883</y>
-        <z>2.04699755</z>
+        <x>2.581999</x>
+        <y>2.58199954</y>
+        <z>2.04699349</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29218,9 +29334,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.58199739</x>
-        <y>1.488938</y>
-        <z>2.039996</z>
+        <x>2.581999</x>
+        <y>2.582</y>
+        <z>2.040001</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29248,8 +29364,8 @@
       </rotation>
       <scale>
         <x>2.58199739</x>
-        <y>1.488938</y>
-        <z>2.039996</z>
+        <y>1.48893881</y>
+        <z>2.039997</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29335,7 +29451,7 @@
       </rotation>
       <scale>
         <x>2.58199739</x>
-        <y>1.488938</y>
+        <y>-1.68381262</y>
         <z>2.039996</z>
       </scale>
       <tilePosition>
@@ -29364,7 +29480,7 @@
       </rotation>
       <scale>
         <x>2.58199739</x>
-        <y>1.488938</y>
+        <y>-2.12967229</y>
         <z>2.039996</z>
       </scale>
       <tilePosition>
@@ -29422,8 +29538,8 @@
       </rotation>
       <scale>
         <x>2.58199739</x>
-        <y>1.488938</y>
-        <z>2.039996</z>
+        <y>-1.78104985</y>
+        <z>1.81473136</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29479,9 +29595,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.58199739</x>
-        <y>1.488938</y>
-        <z>2.039996</z>
+        <x>2.582</x>
+        <y>-1.78105068</y>
+        <z>1.81473708</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -29567,7 +29683,7 @@
       </rotation>
       <scale>
         <x>2.58199739</x>
-        <y>1.488938</y>
+        <y>-2.1296742</y>
         <z>2.039996</z>
       </scale>
       <tilePosition>
@@ -29596,7 +29712,7 @@
       </rotation>
       <scale>
         <x>2.58199739</x>
-        <y>1.488938</y>
+        <y>-1.68381667</y>
         <z>2.039996</z>
       </scale>
       <tilePosition>
@@ -29769,7 +29885,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -29798,7 +29914,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -29827,7 +29943,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -29856,7 +29972,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -29914,7 +30030,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -29943,7 +30059,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -29972,7 +30088,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -30001,7 +30117,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -30191,6 +30307,35 @@
       <type>building</type>
     </Object>
     <Object>
+      <name>fountain_a</name>
+      <path>Models/Props/fountain_a</path>
+      <position>
+        <x>100.68013</x>
+        <y>0.0832032561</y>
+        <z>179.952682</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>337.5</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.80993867</x>
+        <y>1.80993974</y>
+        <z>1.80993938</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
       <name>civilian_house_38_e</name>
       <path>Prefabs/prefab_civilian_buildings/civilian_house_38_e</path>
       <position>
@@ -30207,6 +30352,64 @@
         <x>-1.417151</x>
         <y>-1.41715145</y>
         <z>1.41715133</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>stone_stairs_1</name>
+      <path>Models/Civilian_Buildings/stone_stairs_1</path>
+      <position>
+        <x>108.7</x>
+        <y>0.0832032561</y>
+        <z>148</z>
+      </position>
+      <rotation>
+        <x>270.019775</x>
+        <y>179.999985</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>3.2356596</x>
+        <y>5.30445433</y>
+        <z>1.63564026</z>
+      </scale>
+      <tilePosition>
+        <x>70</x>
+        <y>10</y>
+        <z>130</z>
+      </tilePosition>
+      <coordinate>
+        <x>4</x>
+        <y>6</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>port_house_base</name>
+      <path>Models/Unique_Buildings/port_house_base</path>
+      <position>
+        <x>117.14</x>
+        <y>-5.14</y>
+        <z>151.461639</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1.365928</x>
+        <y>1.36592853</y>
+        <z>1.47306991</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -30507,7 +30710,7 @@
         <x>4</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>pine_b (11)</name>
@@ -30536,7 +30739,7 @@
         <x>4</x>
         <y>7</y>
       </coordinate>
-      <type>building</type>
+      <type>vegetation</type>
     </Object>
     <Object>
       <name>port_wooden_bridge_a (2)</name>
@@ -30552,9 +30755,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.67176318</x>
-        <y>2.246406</y>
-        <z>2.24640679</z>
+        <x>2.24640322</x>
+        <y>2.24640346</y>
+        <z>2.24640346</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -30611,8 +30814,8 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1.00000036</y>
-        <z>1.00000036</z>
+        <y>1</y>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -30726,7 +30929,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -30755,7 +30958,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.9571857</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -30784,7 +30987,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.9571857</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -30813,7 +31016,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.9571851</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -30842,7 +31045,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.9571851</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -30958,7 +31161,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-1.08007729</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -30987,7 +31190,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.9571857</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -31016,7 +31219,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.9571857</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -31045,7 +31248,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.9571851</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -31074,7 +31277,7 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-1.23927224</x>
+        <x>-0.9571851</x>
         <y>1</y>
         <z>1</z>
       </scale>
@@ -31394,8 +31597,8 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1.00000036</y>
-        <z>1.00000036</z>
+        <y>1</y>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>70</x>
@@ -31886,9 +32089,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.2464025</x>
-        <y>-2.24640226</y>
-        <z>2.246402</z>
+        <x>2.246405</x>
+        <y>2.24640346</y>
+        <z>2.246403</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -31915,9 +32118,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.246403</x>
-        <y>2.246403</y>
-        <z>2.246403</z>
+        <x>2.246402</x>
+        <y>2.246402</y>
+        <z>2.246402</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -31944,8 +32147,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.2464025</x>
-        <y>-2.24640226</y>
+        <x>2.24640179</x>
+        <y>2.24640179</y>
         <z>2.246402</z>
       </scale>
       <tilePosition>
@@ -31974,8 +32177,37 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1.00000036</y>
-        <z>1.00000036</z>
+        <y>1</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>150</x>
+        <y>10</y>
+        <z>50</z>
+      </tilePosition>
+      <coordinate>
+        <x>5</x>
+        <y>5</y>
+      </coordinate>
+      <type>building</type>
+    </Object>
+    <Object>
+      <name>overhang_building_a</name>
+      <path>Models/Unique_Buildings/overhang_building_a</path>
+      <position>
+        <x>152.85</x>
+        <y>0</y>
+        <z>84.57</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>47.7076225</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>0.6689241</x>
+        <y>0.6689241</y>
+        <z>0.606713235</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32002,9 +32234,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.02087343</x>
-        <y>1.02087379</y>
-        <z>0.8244156</z>
+        <x>1.291333</x>
+        <y>1.29133368</y>
+        <z>1.04282773</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32031,9 +32263,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.07937086</x>
-        <y>1.07937121</y>
-        <z>1.07937133</z>
+        <x>1.2599988</x>
+        <y>1.25999892</y>
+        <z>1.07760453</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32060,9 +32292,9 @@
         <z>90.0000458</z>
       </rotation>
       <scale>
-        <x>1.07937086</x>
-        <y>1.07937121</y>
-        <z>1.07937133</z>
+        <x>1.25999856</x>
+        <y>1.2599988</y>
+        <z>1.07760382</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32119,8 +32351,8 @@
       </rotation>
       <scale>
         <x>1.95430791</x>
-        <y>1.954309</y>
-        <z>1.954309</z>
+        <y>2.38557982</y>
+        <z>1.954308</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32147,8 +32379,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.95430791</x>
-        <y>1.954309</y>
+        <x>1.954308</x>
+        <y>1.95430851</y>
         <z>1.954309</z>
       </scale>
       <tilePosition>
@@ -32234,9 +32466,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.67176318</x>
-        <y>2.246406</y>
-        <z>2.24640679</z>
+        <x>2.24640417</x>
+        <y>2.24640346</y>
+        <z>2.24640346</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32263,9 +32495,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.67176318</x>
-        <y>2.246406</y>
-        <z>2.24640679</z>
+        <x>2.24640417</x>
+        <y>2.24640346</y>
+        <z>2.24640346</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32437,9 +32669,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.02087343</x>
-        <y>1.02087379</y>
-        <z>0.8244156</z>
+        <x>1.291333</x>
+        <y>1.29133368</y>
+        <z>1.04282773</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32495,9 +32727,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.246456</x>
-        <y>1.24645638</y>
-        <z>1.24645638</z>
+        <x>1.31874955</x>
+        <y>1.436474</y>
+        <z>1.31875026</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32524,9 +32756,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.16739035</x>
-        <y>2.16739082</y>
-        <z>2.16739082</z>
+        <x>1.70286751</x>
+        <y>1.25763023</y>
+        <z>1.25762987</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32553,9 +32785,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.246456</x>
-        <y>1.24645638</y>
-        <z>1.24645638</z>
+        <x>1.60265911</x>
+        <y>1.1948117</y>
+        <z>1.1948117</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32640,9 +32872,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.02087343</x>
-        <y>1.02087379</y>
-        <z>0.8244156</z>
+        <x>0.8358912</x>
+        <y>0.8358915</y>
+        <z>0.675031364</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32669,9 +32901,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.02087343</x>
-        <y>1.02087379</y>
-        <z>0.8244156</z>
+        <x>1.03513</x>
+        <y>1.03513074</y>
+        <z>0.8359287</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32698,9 +32930,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.67176318</x>
-        <y>2.246406</y>
-        <z>2.24640679</z>
+        <x>2.24640226</x>
+        <y>2.2464025</y>
+        <z>2.2464025</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32727,9 +32959,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.2464025</x>
-        <y>-2.24640226</y>
-        <z>2.246402</z>
+        <x>2.2464087</x>
+        <y>-2.24640727</y>
+        <z>2.246407</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32756,9 +32988,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.246403</x>
-        <y>2.246403</y>
-        <z>2.246403</z>
+        <x>2.33009648</x>
+        <y>2.246409</y>
+        <z>2.246408</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32785,9 +33017,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.246403</x>
-        <y>2.246403</y>
-        <z>2.246403</z>
+        <x>2.33009315</x>
+        <y>2.24640751</y>
+        <z>2.246407</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32814,9 +33046,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.246402</x>
-        <y>2.246402</y>
-        <z>2.246402</z>
+        <x>2.50562286</x>
+        <y>2.24640679</y>
+        <z>2.46341443</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -32873,7 +33105,7 @@
       </rotation>
       <scale>
         <x>1.246456</x>
-        <y>1.24645638</y>
+        <y>1</y>
         <z>1.24645638</z>
       </scale>
       <tilePosition>
@@ -32901,9 +33133,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.4006</x>
-        <y>2.40060043</y>
-        <z>2.40060043</z>
+        <x>1.79956067</x>
+        <y>1.7995615</y>
+        <z>1.7995615</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -33018,8 +33250,8 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1.00000036</y>
-        <z>1.00000036</z>
+        <y>1</y>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -33046,9 +33278,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.4006</x>
-        <y>2.40060043</y>
-        <z>2.40060043</z>
+        <x>2.16749525</x>
+        <y>2.16749573</y>
+        <z>2.16749525</z>
       </scale>
       <tilePosition>
         <x>150</x>
@@ -33104,9 +33336,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.246403</x>
-        <y>2.246403</y>
-        <z>2.246403</z>
+        <x>2.246402</x>
+        <y>2.246402</y>
+        <z>2.246402</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33133,9 +33365,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.246403</x>
-        <y>2.246403</y>
-        <z>2.246403</z>
+        <x>2.246402</x>
+        <y>2.246402</y>
+        <z>2.246402</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33192,8 +33424,8 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1.00000036</y>
-        <z>1.00000036</z>
+        <y>1</y>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33221,8 +33453,8 @@
       </rotation>
       <scale>
         <x>1</x>
-        <y>1.00000036</y>
-        <z>1.00000036</z>
+        <y>1</y>
+        <z>1</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33249,8 +33481,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-2.24640179</x>
-        <y>2.2464025</y>
+        <x>-2.246402</x>
+        <y>2.246403</y>
         <z>2.246403</z>
       </scale>
       <tilePosition>
@@ -33278,9 +33510,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-2.24640179</x>
-        <y>2.2464025</y>
-        <z>2.246403</z>
+        <x>-2.24639988</x>
+        <y>2.24640083</y>
+        <z>2.24640083</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33307,9 +33539,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>-2.24640179</x>
-        <y>2.2464025</y>
-        <z>2.246403</z>
+        <x>-2.24639988</x>
+        <y>2.24640083</y>
+        <z>2.24640083</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33336,9 +33568,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.16739035</x>
-        <y>2.16739082</y>
-        <z>2.16739082</z>
+        <x>1.83177447</x>
+        <y>1.831774</y>
+        <z>1.83177376</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33510,9 +33742,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.02087343</x>
-        <y>1.02087379</y>
-        <z>0.8244156</z>
+        <x>0.8358912</x>
+        <y>0.8358915</y>
+        <z>0.675031364</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33539,9 +33771,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>1.02087343</x>
-        <y>1.02087379</y>
-        <z>0.8244156</z>
+        <x>1.0351299</x>
+        <y>1.035131</y>
+        <z>0.8359287</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33568,8 +33800,8 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>0.8423547</x>
-        <y>0.518717051</y>
+        <x>0.8423548</x>
+        <y>0.5187171</y>
         <z>0.6962344</z>
       </scale>
       <tilePosition>
@@ -33597,9 +33829,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.246403</x>
-        <y>2.246403</y>
-        <z>2.246403</z>
+        <x>2.33009648</x>
+        <y>2.246409</y>
+        <z>2.246408</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33655,9 +33887,9 @@
         <z>177.349014</z>
       </rotation>
       <scale>
-        <x>4.75191164</x>
-        <y>4.1837697</y>
-        <z>4.1837697</z>
+        <x>4.48210239</x>
+        <y>3.946218</y>
+        <z>3.94621682</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33684,9 +33916,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.4006</x>
-        <y>2.40060043</y>
-        <z>2.40060043</z>
+        <x>2.60279083</x>
+        <y>2.60279059</y>
+        <z>2.60279036</z>
       </scale>
       <tilePosition>
         <x>230</x>
@@ -33858,9 +34090,9 @@
         <z>0</z>
       </rotation>
       <scale>
-        <x>2.4006</x>
-        <y>2.40060043</y>
-        <z>2.40060043</z>
+        <x>2.134736</x>
+        <y>1.78581214</y>
+        <z>1.78581238</z>
       </scale>
       <tilePosition>
         <x>310</x>

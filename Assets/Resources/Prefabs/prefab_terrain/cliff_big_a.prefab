@@ -22,9 +22,6 @@ GameObject:
   - component: {fileID: 33744475295287392}
   - component: {fileID: 23746305628213122}
   - component: {fileID: 64814610826589050}
-  - component: {fileID: 65473284969328746}
-  - component: {fileID: 65712687582895670}
-  - component: {fileID: 65194972604229768}
   m_Layer: 9
   m_Name: cliff_big_a
   m_TagString: Untagged
@@ -95,45 +92,9 @@ MeshCollider:
   m_GameObject: {fileID: 1545783907101060}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ed2e698cd87bb1d47944a570fa7962d3, type: 3}
---- !u!65 &65194972604229768
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1545783907101060}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 251.05653, y: 112.202255, z: 36.42473}
-  m_Center: {x: 0.5978063, y: 4.4642215, z: 14.304114}
---- !u!65 &65473284969328746
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1545783907101060}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 251.0566, y: 112.20228, z: 36.42473}
-  m_Center: {x: 0.5978066, y: 4.4642205, z: 14.30411}
---- !u!65 &65712687582895670
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1545783907101060}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 251.05649, y: 112.20223, z: 36.42472}
-  m_Center: {x: 0.5978345, y: 4.464221, z: 14.304111}

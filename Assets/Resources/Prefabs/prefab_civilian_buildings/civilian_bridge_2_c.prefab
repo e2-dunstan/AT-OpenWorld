@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23963743690522032}
   - component: {fileID: 64626713413555850}
   - component: {fileID: 208440457725094110}
-  - component: {fileID: 65309426124134840}
   m_Layer: 10
   m_Name: civilian_bridge_2_c
   m_TagString: Untagged
@@ -95,24 +94,12 @@ MeshCollider:
   m_GameObject: {fileID: 1014859568342068}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9320bddde81452349a3c7addb1246399, type: 3}
---- !u!65 &65309426124134840
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1014859568342068}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.8270116, y: 2.07472, z: 6.7510195}
-  m_Center: {x: 0.05261922, y: 0.000001847744, z: 3.3745108}
 --- !u!208 &208440457725094110
 NavMeshObstacle:
   m_ObjectHideFlags: 1

@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23844920210220236}
   - component: {fileID: 64762167631815478}
   - component: {fileID: 208412789127215550}
-  - component: {fileID: 65027432673571290}
   m_Layer: 10
   m_Name: castle_wall_corner_b
   m_TagString: Untagged
@@ -95,24 +94,12 @@ MeshCollider:
   m_GameObject: {fileID: 1193220643542642}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 23f7df39782ef59468f371bfa6e726d7, type: 3}
---- !u!65 &65027432673571290
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1193220643542642}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.2877545, y: 6.5264077, z: 19.61002}
-  m_Center: {x: -2.6438568, y: 3.0631688, z: 9.80501}
 --- !u!208 &208412789127215550
 NavMeshObstacle:
   m_ObjectHideFlags: 1

@@ -22,10 +22,7 @@ GameObject:
   - component: {fileID: 33455178259157632}
   - component: {fileID: 23038758011700150}
   - component: {fileID: 64471745225634484}
-  - component: {fileID: 208845399922430022}
-  - component: {fileID: 65201697337136468}
-  - component: {fileID: 65772683048498070}
-  - component: {fileID: 65391774418393570}
+  - component: {fileID: 208957076119133182}
   m_Layer: 10
   m_Name: boat_03
   m_TagString: Untagged
@@ -99,49 +96,13 @@ MeshCollider:
   m_GameObject: {fileID: 1372221035203834}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 1fc714e0ee6763a43b1700e624f9a488, type: 3}
---- !u!65 &65201697337136468
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1372221035203834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 18.477562, y: 9.281366, z: 11.391063}
-  m_Center: {x: 0.45424446, y: -0.0000017793957, z: 5.4879923}
---- !u!65 &65391774418393570
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1372221035203834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 18.47756, y: 9.281362, z: 11.391059}
-  m_Center: {x: 0.45424435, y: -0.0000018116154, z: 5.4879913}
---- !u!65 &65772683048498070
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1372221035203834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 18.47757, y: 9.281366, z: 11.391063}
-  m_Center: {x: 0.45422918, y: -0.000002723482, z: 5.4879923}
---- !u!208 &208845399922430022
+--- !u!208 &208957076119133182
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

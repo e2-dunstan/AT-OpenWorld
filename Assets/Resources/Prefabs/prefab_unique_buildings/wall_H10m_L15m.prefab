@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23504177146587782}
   - component: {fileID: 64501176515324050}
   - component: {fileID: 208934341683116168}
-  - component: {fileID: 65767835317048212}
   m_Layer: 10
   m_Name: wall_H10m_L15m
   m_TagString: Untagged
@@ -95,24 +94,12 @@ MeshCollider:
   m_GameObject: {fileID: 1716566097077554}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3c4128e82def34347a6623ea90212fcc, type: 3}
---- !u!65 &65767835317048212
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1716566097077554}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.000002, y: 15.000001, z: 11.231372}
-  m_Center: {x: -0.00003052762, y: -7.500006, z: 5.615686}
 --- !u!208 &208934341683116168
 NavMeshObstacle:
   m_ObjectHideFlags: 1

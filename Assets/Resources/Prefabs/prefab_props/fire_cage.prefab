@@ -22,9 +22,7 @@ GameObject:
   - component: {fileID: 33797121125745522}
   - component: {fileID: 23945452325930938}
   - component: {fileID: 64542650830011924}
-  - component: {fileID: 208808472901496670}
-  - component: {fileID: 65245381011108488}
-  - component: {fileID: 65073076810469684}
+  - component: {fileID: 208497999840877998}
   m_Layer: 10
   m_Name: fire_cage
   m_TagString: Untagged
@@ -95,37 +93,13 @@ MeshCollider:
   m_GameObject: {fileID: 1235266061306044}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: d35b39c89d21c8445b096b8317580776, type: 3}
---- !u!65 &65073076810469684
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235266061306044}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6098748, y: 0.6098747, z: 1.1281395}
-  m_Center: {x: 0.0000076144934, y: 0.0000037550926, z: 0.56406665}
---- !u!65 &65245381011108488
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235266061306044}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6098748, y: 0.6098747, z: 1.1281395}
-  m_Center: {x: 0.0000076144934, y: 0.0000037550926, z: 0.56406665}
---- !u!208 &208808472901496670
+--- !u!208 &208497999840877998
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

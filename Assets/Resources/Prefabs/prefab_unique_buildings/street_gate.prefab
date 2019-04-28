@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23301561831494386}
   - component: {fileID: 64610305838966874}
   - component: {fileID: 208380538008887440}
-  - component: {fileID: 65840441423644576}
   m_Layer: 10
   m_Name: street_gate
   m_TagString: Untagged
@@ -95,24 +94,12 @@ MeshCollider:
   m_GameObject: {fileID: 1839979610895992}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6f5a1bdc98b38384ea3bf8efd8a20e24, type: 3}
---- !u!65 &65840441423644576
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1839979610895992}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.0542035, y: 25.00001, z: 11.683862}
-  m_Center: {x: -0.0000053189096, y: -0.000001025263, z: 5.8419294}
 --- !u!208 &208380538008887440
 NavMeshObstacle:
   m_ObjectHideFlags: 1

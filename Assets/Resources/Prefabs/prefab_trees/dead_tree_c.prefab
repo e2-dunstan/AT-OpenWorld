@@ -22,10 +22,7 @@ GameObject:
   - component: {fileID: 33338093532237422}
   - component: {fileID: 23487773396924662}
   - component: {fileID: 64156305899363142}
-  - component: {fileID: 208486083579285114}
-  - component: {fileID: 65016819904842104}
-  - component: {fileID: 65865678666080252}
-  - component: {fileID: 65317518205523446}
+  - component: {fileID: 208080753243010456}
   m_Layer: 11
   m_Name: dead_tree_c
   m_TagString: Untagged
@@ -96,49 +93,13 @@ MeshCollider:
   m_GameObject: {fileID: 1361885322256504}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 11c7098f2a19a4f4b83e66024cb30219, type: 3}
---- !u!65 &65016819904842104
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1361885322256504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.335225, y: 5.9025254, z: 9.679055}
-  m_Center: {x: 1.2456179, y: 0.14886943, z: 4.8248754}
---- !u!65 &65317518205523446
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1361885322256504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.335225, y: 5.9025254, z: 9.679055}
-  m_Center: {x: 1.2456102, y: 0.14886561, z: 4.8248754}
---- !u!65 &65865678666080252
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1361885322256504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.335225, y: 5.9025254, z: 9.679055}
-  m_Center: {x: 1.245616, y: 0.1488618, z: 4.8248754}
---- !u!208 &208486083579285114
+--- !u!208 &208080753243010456
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

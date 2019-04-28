@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33847964029574828}
   - component: {fileID: 23586497623636776}
   - component: {fileID: 64820077283866540}
-  - component: {fileID: 65885476939216482}
   - component: {fileID: 208965126142687378}
   m_Layer: 10
   m_Name: ladder_2
@@ -94,24 +93,12 @@ MeshCollider:
   m_GameObject: {fileID: 1890804429099966}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c9d14453c732fde4097ab4bd7530557a, type: 3}
---- !u!65 &65885476939216482
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1890804429099966}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.1973838, y: 1.2103958, z: 8.588002}
-  m_Center: {x: -0.000015614412, y: -0.000017694589, z: 4.290418}
 --- !u!208 &208965126142687378
 NavMeshObstacle:
   m_ObjectHideFlags: 1

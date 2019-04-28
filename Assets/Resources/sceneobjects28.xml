@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ObjectCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <O>
+    <SceneObject>
+      <name>cliff_06 (10)</name>
+      <path>Prefabs/prefab_terrain/cliff_06</path>
+      <position>
+        <x>-87.50001</x>
+        <y>-25.5</y>
+        <z>303.300049</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>209.328583</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1.5990535</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>290</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>8</y>
+      </coordinate>
+      <type>terrain</type>
+    </SceneObject>
+    <SceneObject>
+      <name>cliff_04 (3)</name>
+      <path>Prefabs/prefab_terrain/cliff_04</path>
+      <position>
+        <x>-48.20001</x>
+        <y>-25.3</y>
+        <z>296.900024</z>
+      </position>
+      <rotation>
+        <x>270</x>
+        <y>177.933441</y>
+        <z>0</z>
+      </rotation>
+      <scale>
+        <x>1</x>
+        <y>1.06627607</y>
+        <z>1</z>
+      </scale>
+      <tilePosition>
+        <x>-90</x>
+        <y>10</y>
+        <z>290</z>
+      </tilePosition>
+      <coordinate>
+        <x>2</x>
+        <y>8</y>
+      </coordinate>
+      <type>terrain</type>
+    </SceneObject>
+  </O>
+</ObjectCollection>

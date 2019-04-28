@@ -22,9 +22,7 @@ GameObject:
   - component: {fileID: 33116202760086104}
   - component: {fileID: 23814186701353248}
   - component: {fileID: 64914196648952666}
-  - component: {fileID: 208053456097983232}
-  - component: {fileID: 65716596192475314}
-  - component: {fileID: 65637942239237848}
+  - component: {fileID: 208450765135637600}
   m_Layer: 11
   m_Name: dead_tree_f
   m_TagString: Untagged
@@ -95,37 +93,13 @@ MeshCollider:
   m_GameObject: {fileID: 1939841420551160}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3fa8cd6c7ff080b4eb5dd7ee8a9c22dd, type: 3}
---- !u!65 &65637942239237848
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1939841420551160}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 14.323968, y: 13.211689, z: 11.15899}
-  m_Center: {x: 0.23173498, y: 0.6420925, z: 5.579559}
---- !u!65 &65716596192475314
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1939841420551160}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 14.323968, y: 13.21169, z: 11.158992}
-  m_Center: {x: 0.23173879, y: 0.64209026, z: 5.57956}
---- !u!208 &208053456097983232
+--- !u!208 &208450765135637600
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

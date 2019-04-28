@@ -23,9 +23,6 @@ GameObject:
   - component: {fileID: 23796847957189172}
   - component: {fileID: 64680214682235410}
   - component: {fileID: 208122252729909150}
-  - component: {fileID: 65960467187964216}
-  - component: {fileID: 65459994882323994}
-  - component: {fileID: 65189009534967140}
   m_Layer: 10
   m_Name: civilian_bridge_1_b
   m_TagString: Untagged
@@ -99,48 +96,12 @@ MeshCollider:
   m_GameObject: {fileID: 1538459115264492}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7a2154c4a046f564cbdaa7f4476f743c, type: 3}
---- !u!65 &65189009534967140
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1538459115264492}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.557943, y: 1.7579361, z: 4.484183}
-  m_Center: {x: -0.0000044008, y: -0.000007669837, z: 1.4099032}
---- !u!65 &65459994882323994
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1538459115264492}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.557943, y: 1.7579361, z: 4.484183}
-  m_Center: {x: 0.0000032285943, y: -0.000007669837, z: 1.4099032}
---- !u!65 &65960467187964216
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1538459115264492}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.557943, y: 1.7579359, z: 4.484182}
-  m_Center: {x: 0.0000033378603, y: -3.7947076e-19, z: 1.4099032}
 --- !u!208 &208122252729909150
 NavMeshObstacle:
   m_ObjectHideFlags: 1

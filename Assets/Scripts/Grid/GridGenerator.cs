@@ -7,8 +7,9 @@ public class GridGenerator : MonoBehaviour
 {
     public Transform objectTransform;
 
-    private ObjectContainer objectContainer;
-    
+    //private ObjectContainerClass objContainerClass;
+    private List<ObjectContainer> objectContainers = new List<ObjectContainer>();
+        
     public GameObject tilePrefab;
     public int tileSize = 1;
     public Vector2 gridDimensions;
@@ -55,6 +56,8 @@ public class GridGenerator : MonoBehaviour
 
         Node[,] aStarGrid = AStarGrid.g.grid;
 
+        int iter = 0;
+
         // -- Generate Grid -- //
         for (int x = 0; x < gridDimensions.x; x++)
         {
@@ -72,6 +75,8 @@ public class GridGenerator : MonoBehaviour
                 tile.tileObject = newTile;
                 tile.coordinate = new Vector2(x, y);
                 tile.worldPosition = pos;
+                tile.id = iter;
+                iter++;
 
                 //Find all objects in this tile
                 GetObjectsInTile(tile, newTile);
@@ -101,6 +106,7 @@ public class GridGenerator : MonoBehaviour
         //Layer 11 = vegetation
 
         List<GameObject> temp = allObjectsInScene;
+        objectContainers.Add(new ObjectContainer());
 
         for (int i = 0; i < temp.Count; i++)
         {
@@ -119,8 +125,8 @@ public class GridGenerator : MonoBehaviour
                     newObject.SetVariables(temp[i].name, path,
                         temp[i].transform.position, temp[i].transform.eulerAngles, temp[i].transform.localScale,
                         t.worldPosition, t.coordinate, (SceneObject.Type)temp[i].layer);
-
-                    sceneObjects.Add(newObject);
+                    
+                    objectContainers[t.id].sceneObjects.Add(newObject);
 
                     if (temp[i].layer == 9)
                         t.terrain.Add(newObject);
@@ -171,46 +177,52 @@ public class GridGenerator : MonoBehaviour
 
     public void SaveObjects()
     {
-        objectContainer = new ObjectContainer();
-        objectContainer.sceneObjects = sceneObjects;
-        objectContainer.Save("Assets/Resources/sceneobjects.xml");
+        //objContainerClass = new ObjectContainerClass();
+        for (int i = 0; i < objectContainers.Count; i++)
+        {
+            ObjectContainerClass.Save(objectContainers[i], "Assets/Resources/sceneobjects" + i.ToString() + ".xml");
+        }
     }
 
     public IEnumerator ToggleObjectsAtTile(Tile tile, bool enable, ObjectContainer objContainer)
     {
         Vector2 aiCoord = new Vector2(tile.coordinate.x + 1, tile.coordinate.y + 1);
-        
+
         if (enable)
         {
-            List<SceneObject> objectsToLoad = new List<SceneObject>();
+            //List<SceneObject> objectsToLoad = new List<SceneObject>();
             if (!tile.loaded)
             {
                 tile.loaded = true;
+                int iterations = 0;
+                int maxInterationsPerFrame = 5;
                 foreach (SceneObject obj in objContainer.sceneObjects)
                 {
-                    if (obj.coordinate == tile.coordinate)
+                    //if (obj.coordinate == tile.coordinate)
+                    //{
+                    GameObject objToLoad = Resources.Load<GameObject>(obj.path);
+                    if (objToLoad != null)
                     {
-                        //objectsToLoad.Add(obj);
-                        GameObject objToLoad = Resources.Load<GameObject>(obj.path);
-                        if (objToLoad != null)
-                        {
-                            GameObject newObject = Instantiate(objToLoad, objectTransform);
-                            newObject.transform.position = obj.position;
-                            newObject.transform.eulerAngles = obj.rotation;
-                            newObject.transform.localScale = obj.scale;
-                            newObject.layer = (int)obj.type;
+                        GameObject newObject = Instantiate(objToLoad, objectTransform);
+                        newObject.transform.position = obj.position;
+                        newObject.transform.eulerAngles = obj.rotation;
+                        newObject.transform.localScale = obj.scale;
+                        newObject.layer = (int)obj.type;
 
-                            tile.objects.Add(newObject);
-                        }
+                        tile.objects.Add(newObject);
+                    }
+
+                    iterations++;
+                    if (iterations > maxInterationsPerFrame)
+                    {
                         yield return null;
+                        iterations = 0;
                     }
                 }
-
                 GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(aiCoord, true);
             }
             else
             {
-                //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnNewHumanoids(tile.worldPosition, tileSize / 2, 10);
                 GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().SpawnAIAtTile(aiCoord, false);
             }
         }
@@ -218,15 +230,22 @@ public class GridGenerator : MonoBehaviour
         {
             if (tile.loaded)
             {
-                //GameObject.FindGameObjectWithTag("AI").GetComponent<SpawnAI>().DestroyAI(tile.worldPosition);
+                List<GameObject> temp = new List<GameObject>();
+                temp.InsertRange(0, tile.objects); 
 
-                List <GameObject> temp = new List<GameObject>();
-                temp.InsertRange(0, tile.objects);
+                int iterations = 0;
+                int maxInterationsPerFrame = 5;
                 foreach (GameObject obj in tile.objects)
                 {
                     Destroy(obj);
                     temp.Remove(obj);
-                    yield return null;
+
+                    iterations++;
+                    if (iterations > maxInterationsPerFrame)
+                    {
+                        yield return null;
+                        iterations = 0;
+                    }
                 }
                 tile.objects = temp;
 

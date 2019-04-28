@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 23179725137923212}
   - component: {fileID: 64797837408258172}
   - component: {fileID: 208632841806785230}
-  - component: {fileID: 65579961533861650}
-  - component: {fileID: 65912012682497470}
   m_Layer: 10
   m_Name: fortification_tower_big
   m_TagString: Untagged
@@ -99,36 +97,12 @@ MeshCollider:
   m_GameObject: {fileID: 1652712587416272}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 4e15f336d381cb24ea6d425151a57695, type: 3}
---- !u!65 &65579961533861650
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1652712587416272}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.893892, y: 10.893892, z: 26.840847}
-  m_Center: {x: -0.000016114367, y: 0.000058033816, z: 13.420466}
---- !u!65 &65912012682497470
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1652712587416272}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.893892, y: 10.893892, z: 26.840847}
-  m_Center: {x: -0.000031373158, y: 0.00006566321, z: 13.420466}
 --- !u!208 &208632841806785230
 NavMeshObstacle:
   m_ObjectHideFlags: 1

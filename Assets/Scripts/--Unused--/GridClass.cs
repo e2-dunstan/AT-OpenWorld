@@ -122,16 +122,16 @@ public class GridClass : MonoBehaviour
     public void SaveObjects()
     {
         objectContainer = new ObjectContainer();
-        objectContainer.sceneObjects = objects;
-        objectContainer.Save("Assets/Resources/sceneobjects.xml");
+        //objectContainer.sceneObjects = objects;
+        //objectContainer.Save("Assets/Resources/sceneobjects.xml");
     }
 
     public IEnumerator ToggleObjectsAtTile(Vector2 coord, bool enable)
     {
-        ObjectContainer objContainer = ObjectContainer.Load("Assets/Resources/sceneobjects.xml");
+        //ObjectContainer objContainer = ObjectContainer.Load("Assets/Resources/sceneobjects.xml");
 
-        foreach(SceneObject obj in objContainer.sceneObjects)
-        {
+        //foreach(SceneObject obj in objContainer.sceneObjects)
+        //{
             //if (obj.coordinate == coord && enable)
             //{
             //    GameObject newObject = Instantiate(Resources.Load<GameObject>(obj.path), objectTransform);
@@ -143,7 +143,7 @@ public class GridClass : MonoBehaviour
             //}
 
             yield return null;
-        }
+        //}
     }
 
 

@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23056460776456280}
   - component: {fileID: 64421245408369818}
   - component: {fileID: 208816416932935412}
-  - component: {fileID: 65186427301361892}
   m_Layer: 10
   m_Name: citadel_gate
   m_TagString: Untagged
@@ -98,24 +97,12 @@ MeshCollider:
   m_GameObject: {fileID: 1827498319948078}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 53f5c35ca2434cf4ba2f1bc5b0a8384f, type: 3}
---- !u!65 &65186427301361892
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1827498319948078}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 16.4734, y: 10.1589, z: 26.25975}
-  m_Center: {x: 0.0053400993, y: -0.5034288, z: 13.070267}
 --- !u!208 &208816416932935412
 NavMeshObstacle:
   m_ObjectHideFlags: 1

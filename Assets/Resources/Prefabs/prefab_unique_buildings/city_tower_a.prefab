@@ -22,8 +22,7 @@ GameObject:
   - component: {fileID: 33256480582962556}
   - component: {fileID: 23621686598219526}
   - component: {fileID: 64457194983423994}
-  - component: {fileID: 208169002818305968}
-  - component: {fileID: 65148902128007980}
+  - component: {fileID: 208120135581623418}
   m_Layer: 10
   m_Name: city_tower_a
   m_TagString: Untagged
@@ -100,25 +99,13 @@ MeshCollider:
   m_GameObject: {fileID: 1605505815187340}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 32311d0811c6d7d46a7ff6143a99818f, type: 3}
---- !u!65 &65148902128007980
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1605505815187340}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.863988, y: 7.8639874, z: 29.5926}
-  m_Center: {x: 0.000010903188, y: 0.000022609987, z: 14.7963}
---- !u!208 &208169002818305968
+--- !u!208 &208120135581623418
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

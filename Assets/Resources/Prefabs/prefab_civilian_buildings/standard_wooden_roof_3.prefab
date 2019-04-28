@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23207502397320694}
   - component: {fileID: 64599091226424752}
   - component: {fileID: 208223118038927186}
-  - component: {fileID: 65445154373193390}
   m_Layer: 10
   m_Name: standard_wooden_roof_3
   m_TagString: Untagged
@@ -95,24 +94,12 @@ MeshCollider:
   m_GameObject: {fileID: 1642598782982912}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: e6b42c148fbfc36459f07e0de226e338, type: 3}
---- !u!65 &65445154373193390
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1642598782982912}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.2558227, y: 7.3310256, z: 2.4410703}
-  m_Center: {x: -0.0000009536743, y: 0.000015497208, z: 1.2205364}
 --- !u!208 &208223118038927186
 NavMeshObstacle:
   m_ObjectHideFlags: 1

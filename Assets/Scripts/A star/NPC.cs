@@ -64,7 +64,7 @@ public class NPC : MonoBehaviour
         SetNewTarget();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Vector2 currentPlayerTile = new Vector2(PlayerGrid.g.currentTile.coordinate.x + 1,
                                                 PlayerGrid.g.currentTile.coordinate.y + 1);

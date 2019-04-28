@@ -6,6 +6,8 @@ public class Tile
 {
     public bool loaded = false;
 
+    public int id;
+
     public GameObject tileObject;
     public Vector2 coordinate;
     public Vector3 worldPosition;

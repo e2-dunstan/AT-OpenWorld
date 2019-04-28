@@ -22,9 +22,7 @@ GameObject:
   - component: {fileID: 33196615914325052}
   - component: {fileID: 23531902680722158}
   - component: {fileID: 64870315050334218}
-  - component: {fileID: 208568908507312210}
-  - component: {fileID: 65161342336034358}
-  - component: {fileID: 65949876022452108}
+  - component: {fileID: 208896477279112844}
   m_Layer: 10
   m_Name: banner
   m_TagString: Untagged
@@ -96,37 +94,13 @@ MeshCollider:
   m_GameObject: {fileID: 1905082359077414}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 653a77d8711adf3429a390ba25ee55c8, type: 3}
---- !u!65 &65161342336034358
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1905082359077414}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.96470845, y: 6.251312, z: 29.420593}
-  m_Center: {x: -0.111181006, y: -0.30272105, z: -14.47677}
---- !u!65 &65949876022452108
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1905082359077414}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.964707, y: 6.25131, z: 29.420593}
-  m_Center: {x: -0.111151114, y: -0.3027833, z: -14.476767}
---- !u!208 &208568908507312210
+--- !u!208 &208896477279112844
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

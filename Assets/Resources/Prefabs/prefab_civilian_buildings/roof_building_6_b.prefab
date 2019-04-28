@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33922014065213450}
   - component: {fileID: 23296701302818796}
   - component: {fileID: 64088817612088946}
-  - component: {fileID: 65225284961842178}
   - component: {fileID: 208109242066680852}
   m_Layer: 10
   m_Name: roof_building_6_b
@@ -97,24 +96,12 @@ MeshCollider:
   m_GameObject: {fileID: 1835297315867510}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c61ecee472e0f3a48ba2a27fecc60f69, type: 3}
---- !u!65 &65225284961842178
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1835297315867510}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.656917, y: 4.656918, z: 5.5619526}
-  m_Center: {x: 0.00000333786, y: 0.00001749452, z: 2.7809079}
 --- !u!208 &208109242066680852
 NavMeshObstacle:
   m_ObjectHideFlags: 1

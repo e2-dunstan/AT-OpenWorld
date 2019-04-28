@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23421097856458718}
   - component: {fileID: 64243288291764684}
   - component: {fileID: 208707073963971496}
-  - component: {fileID: 65460830643863672}
   m_Layer: 10
   m_Name: fortification_gate
   m_TagString: Untagged
@@ -99,24 +98,12 @@ MeshCollider:
   m_GameObject: {fileID: 1976321354576030}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 0648d4361d8a07d44921f1db2e15b9e0, type: 3}
---- !u!65 &65460830643863672
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1976321354576030}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.519965, y: 10.871781, z: 12.182987}
-  m_Center: {x: 0.50814384, y: 0.000059335936, z: 6.091533}
 --- !u!208 &208707073963971496
 NavMeshObstacle:
   m_ObjectHideFlags: 1

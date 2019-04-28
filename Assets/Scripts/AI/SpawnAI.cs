@@ -115,6 +115,9 @@ public class SpawnAI : MonoBehaviour
 
     private IEnumerator SpawnCoroutine(Vector2 coord, bool completeReset)
     {
+        int iterations = 0;
+        int maxInterationsPerFrame = 1;
+
         //PathRequestManager.prm.ClearQueue();
         foreach (AI npc in NPCs)
         {
@@ -147,8 +150,13 @@ public class SpawnAI : MonoBehaviour
                 else
                     newNPC.transform.position = GetRandomSpawnPosition(coord);
 
-                yield return null;
-                
+
+                iterations++;
+                if (iterations > maxInterationsPerFrame)
+                {
+                    yield return null;
+                    iterations = 0;
+                }
             }
         }
         yield return null;
@@ -156,6 +164,8 @@ public class SpawnAI : MonoBehaviour
 
     private IEnumerator DespawnCoroutine(Vector2 coord)
     {
+        int iterations = 0;
+        int maxInterationsPerFrame = 1;
         foreach (AI npc in NPCs)
         {
             if (npc.coordinate == coord
@@ -173,7 +183,12 @@ public class SpawnAI : MonoBehaviour
                 {
                     npc.obj.SetActive(false);
                 }
-                yield return null;
+                iterations++;
+                if (iterations > maxInterationsPerFrame)
+                {
+                    yield return null;
+                    iterations = 0;
+                }
             }
         }
         yield return null;

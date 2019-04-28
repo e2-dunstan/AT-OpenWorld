@@ -22,10 +22,6 @@ GameObject:
   - component: {fileID: 198988417232782164}
   - component: {fileID: 199279409354471394}
   - component: {fileID: 208001584451322964}
-  - component: {fileID: 65449924704061916}
-  - component: {fileID: 65648484844617606}
-  - component: {fileID: 65899806577621776}
-  - component: {fileID: 65347463946086172}
   m_Layer: 10
   m_Name: fountain_b
   m_TagString: Untagged
@@ -46,54 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65347463946086172
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469104007964376}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.071348, y: 19.881348, z: 5.142}
-  m_Center: {x: 0, y: -4.905, z: 2.5}
---- !u!65 &65449924704061916
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469104007964376}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.071348, y: 19.881355, z: 5.1420026}
-  m_Center: {x: 0.00000007340603, y: -4.9049945, z: 2.500001}
---- !u!65 &65648484844617606
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469104007964376}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.071348, y: 19.881348, z: 5.142}
-  m_Center: {x: 0, y: -4.905, z: 2.5}
---- !u!65 &65899806577621776
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469104007964376}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.071348, y: 19.881348, z: 5.142}
-  m_Center: {x: 0, y: -4.905, z: 2.5}
 --- !u!198 &198988417232782164
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -23,10 +23,6 @@ GameObject:
   - component: {fileID: 23066576593758644}
   - component: {fileID: 64774934865466008}
   - component: {fileID: 208704607607532290}
-  - component: {fileID: 65477049501117438}
-  - component: {fileID: 65581209614069456}
-  - component: {fileID: 65522560684678256}
-  - component: {fileID: 65549538952877464}
   m_Layer: 10
   m_Name: civilian_house_37_e
   m_TagString: Untagged
@@ -102,60 +98,12 @@ MeshCollider:
   m_GameObject: {fileID: 1262017121528458}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: ae30ca202502b494b88a358d60424783, type: 3}
---- !u!65 &65477049501117438
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1262017121528458}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.6844873, y: 7.729935, z: 8.929641}
-  m_Center: {x: 0.355695, y: -0.000015258789, z: 4.4648185}
---- !u!65 &65522560684678256
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1262017121528458}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.6844873, y: 7.7299337, z: 8.929639}
-  m_Center: {x: 0.3556951, y: 0.0000036265194, z: 4.4648175}
---- !u!65 &65549538952877464
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1262017121528458}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.6844873, y: 7.729935, z: 8.929641}
-  m_Center: {x: 0.355695, y: -0.000015258789, z: 4.4648185}
---- !u!65 &65581209614069456
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1262017121528458}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.684488, y: 7.7299337, z: 8.929639}
-  m_Center: {x: 0.355695, y: 0.000000021201075, z: 4.4648175}
 --- !u!208 &208704607607532290
 NavMeshObstacle:
   m_ObjectHideFlags: 1
