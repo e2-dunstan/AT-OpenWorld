@@ -58,6 +58,7 @@ public class AStarGrid : MonoBehaviour
                 {
                     walkable = false;
                 }
+                //Does not work properly for non-primitive colliders
                 //Collider[] collidersInRange = Physics.OverlapSphere(worldPoint, 8, unwalkableLayers);
                 //bool walkable = true;
                 //if (collidersInRange.Length > 0)
