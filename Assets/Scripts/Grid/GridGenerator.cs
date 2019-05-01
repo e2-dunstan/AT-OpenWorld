@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class GridGenerator : MonoBehaviour
 {
@@ -149,8 +148,8 @@ public class GridGenerator : MonoBehaviour
     }
     private string GetFilePath(GameObject _obj)
     {
-        Object parentObject = PrefabUtility.GetCorrespondingObjectFromSource(_obj);
-        string path = AssetDatabase.GetAssetPath(parentObject);
+        Object parentObject = UnityEditor.PrefabUtility.GetCorrespondingObjectFromSource(_obj);
+        string path = UnityEditor.AssetDatabase.GetAssetPath(parentObject);
 
         string resourcePath = "Assets/Resources/";
         if (path.Contains(resourcePath))

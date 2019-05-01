@@ -1,12 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEditor;
-
-/* To do:
- * save unloaded AI with positions etc when leaving tile so they return to the same positions
- */
 
 public class SpawnAI : MonoBehaviour
 {
@@ -70,7 +64,7 @@ public class SpawnAI : MonoBehaviour
     }
     private string GetFilePath(GameObject _obj)
     {
-        string path = AssetDatabase.GetAssetPath(_obj);
+        string path = UnityEditor.AssetDatabase.GetAssetPath(_obj);
 
         string resourcePath = "Assets/Resources/";
         if (path.Contains(resourcePath))
@@ -193,52 +187,4 @@ public class SpawnAI : MonoBehaviour
         }
         yield return null;
     }
-
-    //public void SpawnNewHumanoids(Vector2 coordinate, float tileSize, int count = 1)
-    //{
-    //    for(int i = 0; i < count; i++)
-    //    {
-    //        Vector3 spawnPosition = new Vector3(Random.Range(coordinate.x, coordinate.x + tileSize),
-    //                                            0,
-    //                                            Random.Range(coordinate.y, coordinate.y + tileSize));
-    //        Spawn(humanoid, coordinate, spawnPosition);
-    //    }
-    //}
-
-    //public void Spawn(GameObject newAI, Vector2 coordinate, Vector3 spawnPosition)
-    //{
-    //    NavMeshHit hit;
-    //    if (NavMesh.SamplePosition(spawnPosition, out hit, 10, -1))
-    //    {
-    //        spawnPosition = hit.position;
-    //    }
-
-    //    GameObject instance = GetPooledObject();
-    //    instance.GetComponent<AIController>().coordinate = coordinate;
-    //    instance.transform.position = spawnPosition;
-    //    instance.SetActive(true);
-    //}
-
-    //public void DestroyAI(Vector2 coordinate)
-    //{
-    //    foreach(GameObject npc in npcs)
-    //    {
-    //        if (npc.GetComponent<AIController>().coordinate == coordinate)
-    //        {
-    //            npc.SetActive(false);
-    //        }
-    //    }
-    //}
-
-    //public GameObject GetPooledObject()
-    //{
-    //    for (int i = 0; i < npcs.Count; i++)
-    //    {
-    //        if (!npcs[i].activeInHierarchy)
-    //        {
-    //            return npcs[i];
-    //        }
-    //    }
-    //    return null;
-    //}
 }
